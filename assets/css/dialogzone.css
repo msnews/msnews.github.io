@@ -1,7 +1,7 @@
 #navbar {
     /* background-color: #2679f5; */
     /* background-color: #003459; */
-    background: #008080;
+    background: #1A5276;
 
     /* background-color: linear-gradient(#003459, pink); */
     /* background-color: white; */
@@ -70,7 +70,7 @@ footer .cover{
     text-align: center;
     /* background: #4088f5; */
     /* background: #014779b7; */
-    background: #00a3a3;
+    background: #1A5276;
     /* background-color: rgb(2, 0, 19); */
 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
@@ -101,7 +101,7 @@ site-footer {
     height: 100px;*/
     padding-top: 15px;
     padding-right: 50px;
-    background: #008080;
+    background: #1A5276;
     text-align:right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     

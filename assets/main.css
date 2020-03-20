@@ -437,14 +437,14 @@ table {
   .highlight .s {
     color: #d14; }
   .highlight .na {
-    color: #008080; }
+    color: #1A5276; }
   .highlight .nb {
     color: #0086B3; }
   .highlight .nc {
     color: #458;
     font-weight: bold; }
   .highlight .no {
-    color: #008080; }
+    color: #1A5276; }
   .highlight .ni {
     color: #800080; }
   .highlight .ne {
@@ -458,7 +458,7 @@ table {
   .highlight .nt {
     color: #000080; }
   .highlight .nv {
-    color: #008080; }
+    color: #1A5276; }
   .highlight .ow {
     font-weight: bold; }
   .highlight .w {
@@ -496,10 +496,10 @@ table {
   .highlight .bp {
     color: #999; }
   .highlight .vc {
-    color: #008080; }
+    color: #1A5276; }
   .highlight .vg {
-    color: #008080; }
+    color: #1A5276; }
   .highlight .vi {
-    color: #008080; }
+    color: #1A5276; }
   .highlight .il {
     color: #099; }
