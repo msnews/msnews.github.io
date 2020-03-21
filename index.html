@@ -3,23 +3,14 @@
 
 <head>
   <title>MSN News</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta charset="UTF-8">
   <style>
-    img.half {
-      height: 14%;
-      width: 20%;
-      float: left;
-    }
-    img.half2 {
-      height: 7%;
-      width: 15%;
-      float: right;
-    }
 
     .actionBtn {
       display: block;
       margin: 10px auto;
-      max-width: 350px;
+      max-width: 40%;
       width: 150%;
       height: 30%;
       min-height: 40px;
@@ -28,7 +19,7 @@
       background: #1A5276;
       color: #fff !important;
       text-align: center;
-      font-size: 1.2em;
+      font-size: 1.2em ;
       font-weight: 600;
       
       border: 2px solid #1A5276;
@@ -69,13 +60,11 @@
     }
 
   </style>
-  <!-- <link rel="stylesheet" href="/assets/css/theme.css" type="text/css" /> -->
     <link rel="stylesheet" href="https://msnews.github.io/assets/css/bootstrap.css" type="text/css" />
     <link rel="stylesheet" href="https://msnews.github.io/assets/css/pygments.css" type="text/css" />
     
-    <!-- <link rel="stylesheet" href="/assets/css/fb.css" type="text/css" /> -->
     <link rel="stylesheet" href="https://msnews.github.io/assets/css/dialogzone.css" type="text/css" />
-
+    
     <script src="https://msnews.github.io/assets/jquery/jquery.min.js"></script>
     <script src="https://msnews.github.io/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 </head>
@@ -108,13 +97,13 @@
             <div class="infoBody">
               <div class="infoHeadline">
                 <h2>MSN news</h2>
-                <p> MSN news is a large-scale dataset for news recommendation.
-                    Constructed from the user click logs of a commercial news website. 
-                    MSN news contains xxx users and more than xxx English news articles.
-                    Every news contains rich textual content such as title, abstract, vert, subvert and url.
-                    And every click logs contains positive impressions, negtive impressions and historical behaviors.
-                </p>
               </div>
+              <p> MSN news is a large-scale dataset for news recommendation.
+                Constructed from the user click logs of a commercial news website. 
+                MSN news contains xxx users and more than xxx English news articles.
+                Every news contains rich textual content such as title, abstract, vert, subvert and url.
+                And every click logs contains positive impressions, negtive impressions and historical behaviors.
+             </p>
               <button class=" btn2 actionBtn" onclick="location.href='/'" type="button">
                 MSN News GitHub
               </button>
@@ -129,22 +118,21 @@
             <div class="infoBody">
               <div class="infoHeadline">
                 <h2>Dataset</h2>
-                <p> MSN news datset contains xxx news, xxx users, 
-                  xxx news categories, xxx impressions, xxx entities, 
-                  xxx click behaviors. The average news title length is xxx, 
-                  and the average news abstract length is xxx.
-                </p>
-                <p>
-                  The dataset is shared under an adaption of 
-                    <a href='https://creativecommons.org/licenses/by-nc/4.0/' style="color:black" class="activeLink">“Creative Commons Attribution-NonCommercial” license. </a>
-                </p>
-                <p>Download a copy of the dataset:</p> 
-
-                <button class=" btn2 actionBtn" onclick="location.href='https://drive.google.com/open?id=1iFjdPeDuriIOGWcgA2PAAsHfdR6XKZaB'" type="button">
-                  MSN News Dataset
-                </button>
-
               </div>
+              <p> MSN news datset contains xxx news, xxx users, 
+                xxx news categories, xxx impressions, xxx entities, 
+                xxx click behaviors. The average news title length is xxx, 
+                and the average news abstract length is xxx.
+              </p>
+              <p>
+                The dataset is shared under an adaption of 
+                  <a href='https://creativecommons.org/licenses/by-nc/4.0/' style="color:black" class="activeLink">“Creative Commons Attribution-NonCommercial” license. </a>
+              </p>
+              <p>Download a copy of the dataset:</p> 
+
+              <button class=" btn2 actionBtn" onclick="location.href='https://drive.google.com/open?id=1iFjdPeDuriIOGWcgA2PAAsHfdR6XKZaB'" type="button">
+                MSN News Dataset
+              </button>
             </div>
           </div>
 
@@ -152,32 +140,31 @@
             <div class="infoBody">
               <div class="infoHeadline">
                 <h2>Evaluate</h2>
-                <p> We evaluate news recommendation preformacements by AUC, MRR,nDCG@5 and nDCG@10, 
-                  which are standard metrics for recommendation result evaluation.
-                </p>
-                <p>
-                  You can download the evaluation script:
-                </p>
-                <button class=" btn2 actionBtn" onclick="location.href='https://drive.google.com/open?id=1pY9xTBn29GedgFt-NW6wMDOVjDdGlIYP'" type="button">
-                  Evaluation Script
-                </button>
-
-                <p>
-                  Once you complete training and evaluating your model,
-                  you can submit it to get a official score on dev set and a hidden test set.
-                  To preserve the integrity of test results, we do not release the test set to the public.
-                  Please paticipant in the competition and follow submit steps to get official evaluation of your model.
-                </p>
-
-                <button class=" btn2 actionBtn" onclick="location.href='https://competitions.codalab.org/competitions/23642?secret_key=9e16557c-d595-418c-bd79-062f0b5d3edf'" type="button">
-                  A Simple Test
-                </button>
-
-                <button class=" btn2 actionBtn" onclick="location.href='https://codalab-worksheets.readthedocs.io/en/latest/'" type="button">
-                  CodaLab Tutorial
-                </button>
-
               </div>
+              <p> We evaluate news recommendation preformacements by AUC, MRR,nDCG@5 and nDCG@10, 
+                which are standard metrics for recommendation result evaluation.
+              </p>
+              <p>
+                You can download the evaluation script:
+              </p>
+              <button class=" btn2 actionBtn" onclick="location.href='https://drive.google.com/open?id=1pY9xTBn29GedgFt-NW6wMDOVjDdGlIYP'" type="button">
+                Evaluation Script
+              </button>
+
+              <p>
+                Once you complete training and evaluating your model,
+                you can submit it to get a official score on dev set and a hidden test set.
+                To preserve the integrity of test results, we do not release the test set to the public.
+                Please paticipant in the competition and follow submit steps to get official evaluation of your model.
+              </p>
+
+              <button class=" btn2 actionBtn" onclick="location.href='https://competitions.codalab.org/competitions/23642?secret_key=9e16557c-d595-418c-bd79-062f0b5d3edf'" type="button">
+                A Simple Test
+              </button>
+
+              <button class=" btn2 actionBtn" onclick="location.href='https://codalab-worksheets.readthedocs.io/en/latest/'" type="button">
+                CodaLab Tutorial
+              </button>
             </div>
           </div>
         </div>
