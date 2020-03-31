@@ -72,6 +72,59 @@
     
     <script src="https://msnews.github.io/assets/jquery/jquery.min.js"></script>
     <script src="https://msnews.github.io/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <script>
+      function getJson(url) {
+          return JSON.parse($.ajax({
+           type: 'GET',
+           url: url,
+           dataType: 'json',
+           global: false,
+           async: false,
+           success: function (data) {
+              return data;
+           }
+         }).responseText);
+       }
+    </script> 
+
+    <script>
+      function buildDataTable() {
+         var leaderboard = [];  
+         //Access the leaderboard of phase 1 of the competition 1.
+         leaderboard.push(getJson("http://118.89.168.163:8080/")[0]);
+         var tr;
+         //clear the table
+         $("#leaderboardtable").empty();
+         var columnSet = [];
+         var headerTr$ = $('<tr/>');
+         //Get the header data
+         var headers = leaderboard[0].headers;
+         headerTr$.append($('<th/>').html("participant"));  
+         //Populate the header in the leaderboardtable                  
+         for (var j = 0; j < headers.length; j++) {
+            headerTr$.append($('<th/>').html(headers[j].label)); 
+         }   		
+         $("#leaderboardtable").append(headerTr$);
+         //Populate the scores in the leaderboardtable             
+         for (var i = 0; i < leaderboard[0].scores.length; i++) {
+                 tr = $('<tr/>');
+                 tr.append("<td>" + leaderboard[0].scores[i][1].username + "</td>");
+                 values = leaderboard[0].scores[i][1].values;
+                 for (var j = 0; j < values.length; j++) {
+                    tr.append("<td>" + values[j].val + "</td>");                        
+                 }
+                 $('#leaderboardtable').append(tr);
+          }
+          console.log(leaderboard)
+       }
+      </script>
+      <script>
+        window.onload=function(){
+          buildDataTable();
+        }
+      </script>
 </head>
 
 
@@ -104,7 +157,7 @@
                 <h2>MSN news</h2>
               </div>
               <p> MSN news is a large-scale dataset for news recommendation.
-                Constructed from the user click logs of a commercial news website. 
+                Constructed from the user click logs of a commercial news website, 
                 MSN news contains 1,000,000 users and more than 161,013 English news articles.
                 Every news contains rich textual content such as title, abstract, vert, subvert and url.
                 And every click logs contains positive impressions, negtive impressions and historical behaviors.
@@ -177,11 +230,18 @@
 
       <div class="row justify-content-center">
         <div class="col-md-12 col-lg-10">
-          <!-- <div class="infoCard">
-            <div class="infoBodyScroll"> -->
-              <iframe title="CodaLab Leaderboard" src="https://competitions.codalab.org/competitions/leaderboard_widget/23642/" style="height: 500px; width: 100%; border: none;"></iframe>
-            <!-- </div>
-          </div> -->
+          <div class="infoCard">
+            <div class="infoBodyScroll">
+              <div class="infoHeadline">
+                <h2>Evaluation Leaderboard</h2>
+              </div>
+              
+              <div class="leaderboard-result-table">
+                  <table class="table borderless performance" id="leaderboardtable"></table>
+              </div>   
+              <!-- <iframe title="CodaLab Leaderboard" src="https://competitions.codalab.org/competitions/leaderboard_widget/23642/" style="height: 500px; width: 100%; border: none;"></iframe> -->
+            </div>
+          </div>
         </div>
       </div>
     </div>
