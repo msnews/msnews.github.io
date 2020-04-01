@@ -1573,7 +1573,7 @@ table th {
 
 @media only screen and (min-width: 48em) {
     .post-list {
-        padding-top: 5em
+        padding-top: 1em
     }
 }
 
@@ -1585,7 +1585,7 @@ table th {
 
 @media only screen and (min-width: 48em) {
     .post-content {
-        padding-top: 5em
+        padding-top: 1em
     }
 }
 
