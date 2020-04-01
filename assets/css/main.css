@@ -1128,6 +1128,43 @@ body.modal--open {
 
 
 /* Border styles */
+@media only screen and (min-width: 62em) {
+    table {
+        text-align: center;
+        display: table;
+        width: 100%;
+        overflow-x: scroll;
+        margin-bottom: 1.25rem;
+        border-collapse: collapse;
+        border-spacing: 0;
+        border-radius: 4px;
+        font-size: 14.5px;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: rgb(182, 182, 182);
+    }
+    
+    table thead, table tr {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgb(182, 182, 182);
+    }
+    
+    /* Padding and font style */
+    table td {
+        padding: 10px 30px;
+        margin: 50px;
+        font-size: 14px;
+    }
+    
+    table th {
+        padding: 10px 30px;
+        margin: 50px;
+        color: #000000;
+        font-size: 16px
+    }
+}
+
 table {
     text-align: center;
     display: table;
@@ -1151,17 +1188,16 @@ border-top-color: rgb(182, 182, 182);
 
 /* Padding and font style */
 table td {
-    padding: 10px 30px;
-    margin: 50px;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 table th {
     padding: 10px 30px;
     margin: 50px;
     color: #000000;
-    font-size: 16px
+    font-size: 15px
 }
+
 
 .highlight table td {
     padding: 5px
