@@ -558,7 +558,12 @@
             }
         }
     </script>
-    <script type="text/javascript"> window.onload = function () { buildDataTable(); } </script>
+    <script type="text/javascript"> 
+        window.onload = function (){ 
+            buildDataTable();
+            var term_agree = document.getElementById("TermAgree");
+            checkAllBox(term_agree);
+        } </script>
 </head>
 
 <body class="site">
@@ -632,7 +637,7 @@
 
                 <div style="text-align: center;">
                     <label>
-                        <input style="width: 1.5rem" type="checkbox" name="TermAgree" id='TermAgree' value="true"
+                        <input style="width: 1.5rem" type="checkbox" name="TermAgree" id='TermAgree' value="false"
                             onClick="checkAllBox(this)">I agree to terms and conditions.
                     </label>
                 </div>
