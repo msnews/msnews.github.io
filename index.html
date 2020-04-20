@@ -619,13 +619,14 @@
                     title, abstract, body, category and entities. Each impression log contains the click events,
                     non-clicked events and historical news click behaviors of a user. On the MIND dataset, a
                     well-performed news recommender system needs to accurately model news content and user interest
-                    simultaneously.</p>
+                    simultaneously. For more detailed information about the MIND dataset, you can refer to the following dataset paper:</p>
+				<p>Fangzhao Wu, Ying Qiao, Jiun-Hung Chen, Chuhan Wu, Tao Qi, Jianxun Lian, Danyang Liu, Xing Xie, Jianfeng Gao, Winnie Wu and Ming Zhou. <strong>MIND: A Large-scale Dataset for News Recommendation.</strong> ACL 2020.</p>
                 <div class="button-container">
                     <button class="button button-pill button-primary">
                         <strong>MIND paper (Wu et al., 2020)</strong>
                     </button>
                 </div>
-
+                <p>If you use this dataset in any part of your research work, please cite this paper.</p>
                 <br>
 
                 <!-- <h1 id="terms-and-condition">Terms and Conditions</h1>
@@ -668,9 +669,15 @@
                         <strong>Dev Set</strong>
                     </button>
                 </div>
-
-                <p>To help you locally evaluate your algorithms, we provide the offical evaluation script and a sample
-                    prediction file in the offical format, which can be downloaded here:</p>
+				<p>For more details about the data fields, structures and formats, you can refer to the document below:</p>
+				<div class="button-container">
+                    <button class="button button-pill button-border"
+                        onclick="location.href='https://github.com/msnews/msnews.github.io/blob/master/assets/doc/dataset_doc.pdf';">
+                        <strong>Dataset Desription</strong>
+                    </button>
+                </div>
+               <!--  <p>To help you locally evaluate your algorithms, we provide an evaluation script and a sample
+                    prediction file for this script, which can be downloaded here:</p>
                 <div class="button-container">
                     <button class="button button-pill button-border"
                         onclick="location.href='https://github.com/msnews/MIND/blob/master/evaluate.py';">
@@ -680,19 +687,18 @@
                 <div class="button-container">
                     <button class="button button-pill button-border"
                         onclick="location.href='https://github.com/msnews/MIND/blob/master/sample_answer.zip'">
-                        <strong>Sample Submission</strong>
+                        <strong>Sample Prediction</strong>
                     </button>
-                </div>
-                <p>Once you complete training and model evaluation, you can submit the results to the codalab sytem to
-                    get a official score on the dev set that appears on the leaderboard. The test set will be released
-                    soon. Please paticipant in the competition and follow submit steps to get official evaluation of
-                    your model.</p>
-                <!-- <div class="button-container">
+                </div>-->
+                <p>To collectively facilitate the research and practice on news recommendation, we also hold a news recommendation challenge based on the MIND dataset.
+                For more information about this challenge, you can refer to our challenge webpage on Codalab. You are highly welcomed to paticipate in this competition 
+                and contribute your ideas and models to the news recommendation community.</p>
+                <div class="button-container">
                     <button class="button button-pill button-border"
                         onclick="location.href='https://competitions.codalab.org/competitions/24122?secret_key=e075b839-d0cb-4c7b-b755-b34c5a666cba';">
                         <strong>MIND News Recommendation Challenge</strong>
                     </button>
-                </div> -->
+                </div> 
 
                 <br>
 
