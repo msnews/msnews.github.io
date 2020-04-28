@@ -83,7 +83,7 @@ OccurrenceOffsets | The character-level entity offset in the concatenation of ne
 SurfaceForms | The raw entity in the original text
 
 Due to the policy of news publishers, you need to crawl the news body (and may be other information) through the news URL.
-We provide a [crawler script](https://github.com/msnews/MIND/crawler) written in Python.
+We provide a [crawler script](https://github.com/msnews/MIND/tree/master/crawler) written in Python.
  
 
 ### entity_embedding.vec & relation_embedding.vec 
