@@ -558,12 +558,12 @@
             }
         }
     </script>
-    <script type="text/javascript"> 
+    <!-- <script type="text/javascript"> 
         window.onload = function (){ 
             buildDataTable();
             var term_agree = document.getElementById("TermAgree");
             checkAllBox(term_agree);
-        } </script>
+        } </script> -->
 </head>
 
 <body class="site">
@@ -619,13 +619,14 @@
                     title, abstract, body, category and entities. Each impression log contains the click events,
                     non-clicked events and historical news click behaviors of a user. On the MIND dataset, a
                     well-performed news recommender system needs to accurately model news content and user interest
-                    simultaneously.</p>
+                    simultaneously. For more detailed information about the MIND dataset, you can refer to the following dataset paper:</p>
+				<p>Fangzhao Wu, Ying Qiao, Jiun-Hung Chen, Chuhan Wu, Tao Qi, Jianxun Lian, Danyang Liu, Xing Xie, Jianfeng Gao, Winnie Wu and Ming Zhou. <strong>MIND: A Large-scale Dataset for News Recommendation.</strong> ACL 2020.</p>
                 <div class="button-container">
                     <button class="button button-pill button-primary">
                         <strong>MIND paper (Wu et al., 2020)</strong>
                     </button>
                 </div>
-
+                <p>If you use this dataset in any part of your research work, please cite this paper.</p>
                 <br>
 
                 <!-- <h1 id="terms-and-condition">Terms and Conditions</h1>
@@ -668,9 +669,15 @@
                         <strong>Dev Set</strong>
                     </button>
                 </div>
-
-                <p>To help you locally evaluate your algorithms, we provide the offical evaluation script and a sample
-                    prediction file in the offical format, which can be downloaded here:</p>
+				<p>For more details about the data fields, structures and formats, you can refer to the document below:</p>
+				<div class="button-container">
+                    <button class="button button-pill button-border"
+                        onclick="location.href='https://github.com/msnews/msnews.github.io/blob/master/assets/doc/dataset_doc.pdf';">
+                        <strong>Dataset Desription</strong>
+                    </button>
+                </div>
+               <!--  <p>To help you locally evaluate your algorithms, we provide an evaluation script and a sample
+                    prediction file for this script, which can be downloaded here:</p>
                 <div class="button-container">
                     <button class="button button-pill button-border"
                         onclick="location.href='https://github.com/msnews/MIND/blob/master/evaluate.py';">
@@ -680,20 +687,20 @@
                 <div class="button-container">
                     <button class="button button-pill button-border"
                         onclick="location.href='https://github.com/msnews/MIND/blob/master/sample_answer.zip'">
-                        <strong>Sample Submission</strong>
+                        <strong>Sample Prediction</strong>
                     </button>
-                </div>
+                </div> -->
 
                 <br>
 
-                <h1 id='evaluation-leaderboard'>Evaluation Leaderboard</h1>
+                <!-- <h1 id='evaluation-leaderboard'>Evaluation Leaderboard</h1>
                 <p>Systems are evaluated using several standard evaluation metrics in the recommendation field including
                     AUC, MRR,nDCG@5 and nDCG@10, and the primary metric for submission ranking on the leaderboard is
                     AUC.
                 </p>
                 <br>
 
-                <table id="leaderboardtable"></table>
+                <table id="leaderboardtable"></table> -->
 
                 <br><br>
 
