@@ -11,7 +11,7 @@ We collected the news click behaviors of these users in this period, which are f
 We used the samples in the last week for test, and the samples in the fifth week for training.
 For samples in training set, we used the click behaviors in the first four weeks to construct the news click history.
 Among the training data, we used the samples in the last day of the fifth week as development set.
-Currently we release a small verison of MIND (**MIND-small**), which contains the logs of 5% of users (50k) in the full MIND dataset.
+Currently we release a small version of MIND (**MIND-small**), which contains the logs of 5% of users (50k) in the full MIND dataset.
 
 ## Dataset Format
 
