@@ -618,14 +618,16 @@
                     <strong> 15,777,377</strong> impression logs. Every news article contains rich textual content including
                     title, abstract, body, category and entities. Each impression log contains the click events,
                     non-clicked events and historical news click behaviors of this user before this impression. For more detailed information about the MIND dataset, you can refer to the following paper:</p>
-				<p>Fangzhao Wu, Ying Qiao, Jiun-Hung Chen, Chuhan Wu, Tao Qi, Jianxun Lian, Danyang Liu, Xing Xie, Jianfeng Gao, Winnie Wu and Ming Zhou. <strong>MIND: A Large-scale Dataset for News Recommendation.</strong> ACL 2020.</p>
                 <div class="button-container">
                     <button class="button button-pill button-primary">
                         <strong>MIND paper (Wu et al., 2020)</strong>
                     </button>
                 </div>
                 <p>If you are interested in using this dataset in your research work, welcome to cite this paper.</p>
-                <br>
+		    
+		    <p>Fangzhao Wu, Ying Qiao, Jiun-Hung Chen, Chuhan Wu, Tao Qi, Jianxun Lian, Danyang Liu, Xing Xie, Jianfeng Gao, Winnie Wu and Ming Zhou. <strong>MIND: A Large-scale Dataset for News Recommendation.</strong> ACL 2020.</p>
+               
+		<br>
 
                 <!-- <h1 id="terms-and-condition">Terms and Conditions</h1>
                 <p>Please read
@@ -642,12 +644,11 @@
                 </div> -->
 
 
-                <h1 id="getting-start">Getting Start</h1>
-                <p>A few resources can help you easily get started with the MIND dataset. 
-                    Please read
+                <h1 id="getting-start">Dataset Download</h1>
+                <p>The MIND dataset is free to be downloaded for research purpose under
                     <a href="https://github.com/msnews/MIND/blob/master/MSR%20License_Data.pdf">Microsoft Research
                         License Terms</a>
-                    before you download the dataset. Upon accepting links to dataset will become available.
+                    before you download the dataset. Please click below button to confirm that you have read these terms and agreed with them.
                 </p>
                 <div style="text-align: center;">
                     <label>
@@ -655,7 +656,13 @@
                             onClick="checkAllBox(this)">I agree to terms and conditions.
                     </label>
                 </div>
-                <p>Download a dataset copy:</p>
+                <p>The complete MIND dataset will be released during the ACL 2020 conference. 
+			Currently, we release a small version of the MIND dataset to help the 
+			researchers get farmiliar with our data by randomly sampling 50,000 users and their behavior logs
+			from the MIND dataset. We name this dataset <strong> MIND-small </strong>.
+			It is sufficient to do many researches on news recommendation.
+			The links of the training and validation datasets are as follows:
+		    </p>
                 <div class="button-container">
                     <button class="button button-pill button-border" disabled id='train-set'
                         onclick="location.href='https://aad.cosmos09.osdinfra.net/cosmos/MSN.EXP/local/users/v-jinyi/MIND_2019-09/';">
@@ -667,7 +674,7 @@
                         <strong>Dev Set</strong>
                     </button>
                 </div>
-				<p>For more details about the data fields, structures and formats, you can refer to the document below:</p>
+				<p>For more details about the data formats, please refer to this document:</p>
 				<div class="button-container">
                     <button class="button button-pill button-border"
                         onclick="location.href='https://github.com/msnews/msnews.github.io/blob/master/assets/doc/dataset_doc.pdf';">
