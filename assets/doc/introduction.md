@@ -43,9 +43,9 @@ An example is shown in the table below:
 
 Column | Content
 ------------- | -------------
-User ID | 1 
-History | AAILo3Y AAHTTnY AAIDF2D AAILEPP AAId0Jq AAIP9Iu AAIUBNg AAIUZLr AAJ77GF AAIZiRj AAJ44GF AAJ78cD AAJ7b2R AAJ7p5A AAJ8VW1 AAJjwCz AAJjPME AAJkGqm AAJjvBc AAJl72L AAJjm1I AAIokLY AAJsnPc AAJpzEv AAIT99q AAJsbD8 AAJhbUQ AAJvHE4 AAJuVER AAJwFwZ AAJy6rv AAJBsSa AAJBmut AAJAS2G AAJD04K AAJO1fS AAJOzRe AAJHU3j AAJMQY3 AAJPvxp AAJOB8z AAJOADo AAJQJWm AAJQHG7 AAJTZQY AAJWBzM AAJQK0Y AAJUClf AAJUAE8 AAJWgJA AAJT0gz AAJXnjy AAJY0GD
-Impressions | BBWqeaV BBWEvuv#TAB#BBFu2Vk AAJWrdR BBWG130 BBWF0Kt BBWG0gw BBWEF0P BBWF3V2 BBWEm3k BBWGf4l BBWHiSI BBWGfty BBWGhtW BBWGxS0#TAB#11/13/2019 8:36:57 AM
+User ID | U_123
+History | N_101 N_102 N_103
+Impressions | N_104 N_105#TAB#N_106 N_107 N_108#TAB#11/13/2019 8:36:57 AM
  
 ### news.tsv
 
@@ -88,7 +88,7 @@ We provide a [crawler script](https://github.com/msnews/MIND/tree/master/crawler
 
 ### entity_embedding.vec & relation_embedding.vec 
 The entity_embedding.vec and relation_embedding.vec files contains the 100-dimensional embeddings of the entities and relations obtained by transE.
-In both files, the first column is the ID of en entity/relation, and the other columns store its real-valued embedding.
+In both files, the first column is the ID of entity/relation, and the other columns store its real-valued embedding.
 An example is shown as follows:
 ID | Embedding Values
 ------------- | -------------
