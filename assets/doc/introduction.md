@@ -65,13 +65,13 @@ An example is shown in the following table:
 
 Column | Content
 ------------- | -------------
-News ID | N94289
-Category | health
-SubCategory | weightloss
-Title | 50 Worst Habits For Belly Fat
-Abstract | These seemingly harmless habits are holding you back and keeping you from shedding that unwanted belly fat for good.
-URL | https://www.msn.com/en-us/health/weightloss/50-worst-habits-for-belly-fat/ss-AAB19MK?ocid=chopendata
-Entities | [{"Label": "Adipose tissue", "Type": "C", "WikidataId": "Q193583", "Confidence": 1.0, "OccurrenceOffsets": [22, 130], "SurfaceForms": ["Belly Fat", "belly fat"]}]
+News ID | N29398
+Category | sports
+SubCategory | more_sports
+Title | Locked On Suns Wednesday: Suns blast Kings to begin 2019-20 season
+Abstract | What a way to begin the season for the Phoenix Suns, winning 124-95 over the Kings.
+URL | https://www.msn.com/en-us/sports/more_sports/locked-on-suns-wednesday:-suns-blast-kings-to-begin-2019-20-season/ar-AAJgOKk?ocid=chopendata
+Entities | [{"Label": "Phoenix Suns", "Type": "O", "WikidataId": "Q164177", "Confidence": 1.0, "OccurrenceOffsets": [12, 28, 109], "SurfaceForms": ["Suns", "Suns", "Phoenix Suns"]}, {"Label": "Sacramento Kings", "Type": "O", "WikidataId": "Q166105", "Confidence": 0.993, "OccurrenceOffsets": [39, 147], "SurfaceForms": ["Kings", "Kings"]}]
 
 The descriptions of the dictionary keys in the "Entities" column are listed as follows:
 Keys | Description
