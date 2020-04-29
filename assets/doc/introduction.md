@@ -28,7 +28,7 @@ relation_embedding.vec    | The embeddings of relations between entities extract
 ### behaviors.tsv
 
 The behaviors.tsv file contains the impression logs and users' news click hostories. 
-It has 3 columns divided by the tab symbol ("\t"):
+It has 3 columns divided by the tab symbol:
 
 * User ID. The hashed ID of a user.
 * Time. The impression time with format "MM/DD/YYYY HH:MM:SS AM/PM".
