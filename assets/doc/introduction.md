@@ -10,7 +10,7 @@ We used the impression logs in the last week for test, and the logs in the fifth
 For samples in training set, we used the click behaviors in the first four weeks to construct the news click history for user modeling.
 Among the training data, we used the samples in the last day of the fifth week as validation set.
 The complete MIND dataset will be released during the ACL 2020 conference.
-Currently we release a small version of MIND (**MIND-small**), by randomly 50,000 users and their behavior logs.
+Currently we release a small version of MIND (**MIND-small**), by randomly sampling 50,000 users and their behavior logs.
 Only training and validation sets are contained in the MIND-small dataset.
 
 ## Dataset Format
