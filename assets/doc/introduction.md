@@ -32,6 +32,7 @@ The behaviors.tsv file records users' historical clicked news and impression log
 It contains 3 columns divided by the tab symbol ("\t"):
 
 * User ID. The hashed ID of a user.
+* Time. The impression time stamp.
 * History. This column contains the historical news click behaivors. The data format is "[News ID 1] [News ID 2] ... [News ID N]".
 * Impressions. This column contains both clicked (positive) and non-clicked (negative) news in an impression log.
 Its format is "[Positive News IDs]#TAB#[Negative News IDs]#TAB#[Impression Time]''.
@@ -44,8 +45,9 @@ An example is shown in the table below:
 Column | Content
 ------------- | -------------
 User ID | U_123
+Time | 11/13/2019 8:36:57 AM
 History | N_101 N_102 N_103
-Impressions | N_104 N_105#TAB#N_106 N_107 N_108#TAB#11/13/2019 8:36:57 AM
+Impressions | N_104,1 N_105,1 N_106,0 N_107,0 N_108,0
  
 ### news.tsv
 
