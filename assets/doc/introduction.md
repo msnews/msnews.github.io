@@ -65,13 +65,13 @@ An example is shown in the following table:
 
 Column | Content
 ------------- | -------------
-News ID | N201
-Category | lifestyle
-SubCategory | lifestyleroyals
-Title | The Brands Queen Elizabeth, Prince Charles, and Prince Philip Swear By Shop
-Abstract | the notebooks, jackets, and more that the royals can't live without.
-URL | https://www.msn.com/en-us/lifestyle/lifestyleroyals/the-brands-queen-elizabeth,-prince-charles,-and-prince-philip-swear-by/ss-AAGH0ET?ocid=chopendata
-Entities | [{"Label": "Prince Philip, Duke of Edinburgh", "Type": "P", "WikidataId": "Q80976", "Confidence": 1.0, "OccurrenceOffsets": [50], "SurfaceForms": ["Prince Philip"]}, {"Label": "Business", "Type": "C", "WikidataId": "Q4830453", "Confidence": 0.775, "OccurrenceOffsets": [74], "SurfaceForms": ["Shop"]}, {"Label": "Charles, Prince of Wales", "Type": "P", "WikidataId": "Q43274", "Confidence": 1.0, "OccurrenceOffsets": [30], "SurfaceForms": ["Prince Charles"]}, {"Label": "Elizabeth II", "Type": "P", "WikidataId": "Q9682", "Confidence": 0.97, "OccurrenceOffsets": [13], "SurfaceForms": ["Queen Elizabeth"]}]
+News ID | N94289
+Category | health
+SubCategory | weightloss
+Title | 50 Worst Habits For Belly Fat
+Abstract | These seemingly harmless habits are holding you back and keeping you from shedding that unwanted belly fat for good.
+URL | https://www.msn.com/en-us/health/weightloss/50-worst-habits-for-belly-fat/ss-AAB19MK?ocid=chopendata
+Entities | [{"Label": "Adipose tissue", "Type": "C", "WikidataId": "Q193583", "Confidence": 1.0, "OccurrenceOffsets": [22, 130], "SurfaceForms": ["Belly Fat", "belly fat"]}]
 
 The descriptions of the dictionary keys in the "Entities" column are listed as follows:
 Keys | Description
