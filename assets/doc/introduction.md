@@ -1,4 +1,4 @@
-# Introduction to MIND-small dataset
+# Introduction to MIND and MIND-small datasets
 
 ## Overall Introduction
 
