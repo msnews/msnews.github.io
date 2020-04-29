@@ -65,13 +65,13 @@ An example is shown in the following table:
 
 Column | Content
 ------------- | -------------
-News ID | N29398
+News ID | N37378
 Category | sports
-SubCategory | more_sports
-Title | Locked On Suns Wednesday: Suns blast Kings to begin 2019-20 season
-Abstract | What a way to begin the season for the Phoenix Suns, winning 124-95 over the Kings.
-URL | https://www.msn.com/en-us/sports/more_sports/locked-on-suns-wednesday:-suns-blast-kings-to-begin-2019-20-season/ar-AAJgOKk?ocid=chopendata
-Entities | [{"Label": "Phoenix Suns", "Type": "O", "WikidataId": "Q164177", "Confidence": 1.0, "OccurrenceOffsets": [12, 28, 109], "SurfaceForms": ["Suns", "Suns", "Phoenix Suns"]}, {"Label": "Sacramento Kings", "Type": "O", "WikidataId": "Q166105", "Confidence": 0.993, "OccurrenceOffsets": [39, 147], "SurfaceForms": ["Kings", "Kings"]}]
+SubCategory | golf
+Title | PGA Tour winners
+Abstract | A gallery of recent winners on the PGA Tour.
+URL | https://www.msn.com/en-us/sports/golf/pga-tour-winners/ss-AAjnQjj?ocid=chopendata
+Entities | [{"Label": "PGA Tour", "Type": "O", "WikidataId": "Q910409", "Confidence": 1.0, "OccurrenceOffsets": [2, 55], "SurfaceForms": ["PGA Tour", "PGA Tour"]}]
 
 The descriptions of the dictionary keys in the "Entities" column are listed as follows:
 Keys | Description
