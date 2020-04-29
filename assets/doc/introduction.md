@@ -11,7 +11,7 @@ For samples in training set, we used the click behaviors in the first four weeks
 Among the training data, we used the samples in the last day of the fifth week as validation set.
 The complete MIND dataset will be released during the ACL 2020 conference.
 Currently we release a small version of MIND (**MIND-small**), by randomly 50,000 users and their behavior logs.
-Only training and validation sets are contained in MIND-small dataset.
+Only training and validation sets are contained in the MIND-small dataset.
 
 ## Dataset Format
 
@@ -66,8 +66,8 @@ An example is shown in the following table:
 Column | Content
 ------------- | -------------
 News ID | N201
-Vertical | lifestyle
-Subvertical | lifestyleroyals
+Category | lifestyle
+SubCategory | lifestyleroyals
 Title | The Brands Queen Elizabeth, Prince Charles, and Prince Philip Swear By Shop
 Abstract | the notebooks, jackets, and more that the royals can't live without.
 URL | https://www.msn.com/en-us/lifestyle/lifestyleroyals/the-brands-queen-elizabeth,-prince-charles,-and-prince-philip-swear-by/ss-AAGH0ET?ocid=chopendata
@@ -81,14 +81,14 @@ Type | The type of this entity in Wikidata
 WikidataId | The entity ID in Wikidata
 Confidence | The confidence of entity linking
 OccurrenceOffsets | The character-level entity offset in the concatenation of news title, abstract and body
-SurfaceForms | The raw entity name in the original text
+SurfaceForms | The raw entity names in the original text
 
 
  
 
 ### entity_embedding.vec & relation_embedding.vec 
-The entity_embedding.vec and relation_embedding.vec files contains the 100-dimensional embeddings of the entities and relations obtained by transE.
-In both files, the first column is the ID of entity/relation, and the other columns store its real-valued embedding.
+The entity_embedding.vec and relation_embedding.vec files contain the 100-dimensional embeddings of the entities and relations learned from WikiData knowledge graph by TransE method.
+In both files, the first column is the ID of entity/relation, and the other columns are the embedding vector values.
 We hope this data can facilitate the research of knowledge-aware news recommendation.
 An example is shown as follows:
 ID | Embedding Values
