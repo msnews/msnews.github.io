@@ -1,7 +1,5 @@
 # Introduction to MIND-small
 
-<img src="https://msnews.github.io/assets/img/icons/logo.png" width = "320" height = "100" alt="MIND" align=center />
-
 ## Dataset Construction
 
 The MIND dataset for news recommendation was collected from the user behavior logs of Microsoft News.
