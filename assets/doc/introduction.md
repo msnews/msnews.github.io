@@ -1,8 +1,8 @@
-# Introduction to MIND-small dataset
+# Introduction to MIND and MIND-small datasets
 
 ## Overall Introduction
 
-The MIND dataset for news recommendation was collected from the user behavior logs of Microsoft News.
+The MIND dataset for news recommendation was collected from the user behavior logs of <a href="https://microsoftnews.msn.com/">Microsoft News</a> website.
 We randomly sampled 1 million users who had at least 5 news clicks during 6 weeks from October 12 to November 22, 2019.
 To protect user privacy, each user is de-linked from the production system when securely hashed into an anonymized ID.
 We collected the news click behaviors of these users in this period, which are formatted into impression logs.
@@ -31,7 +31,7 @@ relation_embedding.vec    | The embeddings of relations between entities extract
 ### behaviors.tsv
 
 The behaviors.tsv file contains the impression logs and users' news click hostories. 
-It has 3 columns divided by the tab symbol ("\t"):
+It has 3 columns divided by the tab symbol:
 
 * User ID. The hashed ID of a user.
 * Time. The impression time with format "MM/DD/YYYY HH:MM:SS AM/PM".
