@@ -13,6 +13,9 @@ The complete MIND dataset will be released during the ACL 2020 conference.
 Currently we release a small version of MIND (**MIND-small**), by randomly sampling 50,000 users and their behavior logs.
 Only training and validation sets are contained in the MIND-small dataset.
 
+
+The datasets are intended for non-commercial research purposes only to promote advancement in the field of artificial intelligence and related areas, and is made available free of charge without extending any license or other intellectual property rights. The dataset is provided “as is” without warranty and usage of the data has risks since we may not own the underlying rights in the documents. We are not be liable for any damages related to use of the dataset. Feedback is voluntarily given and can be used as we see fit. Upon violation of any of these terms, your rights to use the dataset will end automatically. If you have questions about use of the dataset or any research outputs, we encourage you to undertake your own independent legal review. For other questions, please feel free to contact us at mind@microsoft.com.
+
 ## Dataset Format
 
 Both the training and validation data are a zip-compressed folder, which contains four different files:
@@ -57,9 +60,7 @@ It has 7 columns, which are divided by the tab symbol:
 * URL
 * Entities (entities contained in the text of this news)
 
-Due to the policy of news publishers, we cannot directly provide the body of the news article.
-If you need, you can crawl the news body from the news URL.
-We wrote a [crawler script](https://github.com/msnews/MIND/tree/master/crawler) to help you crawl and parse the news webpage.
+The full content body of MSN news articles are not made available for download, due to licensing structure. However, for your convenience, we have provided a [utility script](https://github.com/msnews/MIND/tree/master/crawler) to help parse news webpage from the MSN URLs in the dataset.
 
 An example is shown in the following table:
 
