@@ -58,9 +58,10 @@ It has 7 columns, which are divided by the tab symbol:
 * Title
 * Abstract
 * URL
-* Entities (entities contained in the text of this news)
+* Title Entities (entities contained in the title of this news)
+* Abstract Entities (entites contained in the abstract of this news)
 
-The full content body of MSN news articles are not made available for download, due to licensing structure. However, for your convenience, we have provided a [utility script](https://github.com/msnews/MIND/tree/master/crawler) to help parse news webpage from the MSN URLs in the dataset.
+The full content body of MSN news articles are not made available for download, due to licensing structure. However, for your convenience, we have provided a [utility script](https://github.com/msnews/MIND/tree/master/crawler) to help parse news webpage from the MSN URLs in the dataset. Due to time limitation, some URLs are expired and cannot be accessed successfully. Currently, we are tring our best to solve this problem.
 
 An example is shown in the following table:
 
@@ -72,7 +73,8 @@ SubCategory | golf
 Title | PGA Tour winners
 Abstract | A gallery of recent winners on the PGA Tour.
 URL | https://www.msn.com/en-us/sports/golf/pga-tour-winners/ss-AAjnQjj?ocid=chopendata
-Entities | [{"Label": "PGA Tour", "Type": "O", "WikidataId": "Q910409", "Confidence": 1.0, "OccurrenceOffsets": [2, 55], "SurfaceForms": ["PGA Tour", "PGA Tour"]}]
+Title Entities | [{"Label": "PGA Tour", "Type": "O", "WikidataId": "Q910409", "Confidence": 1.0, "OccurrenceOffsets": [0], "SurfaceForms": ["PGA Tour"]}]	
+Abstract Entites | [{"Label": "PGA Tour", "Type": "O", "WikidataId": "Q910409", "Confidence": 1.0, "OccurrenceOffsets": [35], "SurfaceForms": ["PGA Tour"]}]
 
 The descriptions of the dictionary keys in the "Entities" column are listed as follows:
 Keys | Description
@@ -81,14 +83,14 @@ Label | The entity name in the Wikidata knwoledge graph
 Type | The type of this entity in Wikidata
 WikidataId | The entity ID in Wikidata
 Confidence | The confidence of entity linking
-OccurrenceOffsets | The character-level entity offset in the concatenation of news title, abstract and body
+OccurrenceOffsets | The character-level entity offset in the text of title or abstract
 SurfaceForms | The raw entity names in the original text
 
 
  
 
 ### entity_embedding.vec & relation_embedding.vec 
-The entity_embedding.vec and relation_embedding.vec files contain the 100-dimensional embeddings of the entities and relations learned from WikiData knowledge graph by TransE method.
+The entity_embedding.vec and relation_embedding.vec files contain the 100-dimensional embeddings of the entities and relations learned from the subgraph (from WikiData knowledge graph) by TransE method.
 In both files, the first column is the ID of entity/relation, and the other columns are the embedding vector values.
 We hope this data can facilitate the research of knowledge-aware news recommendation.
 An example is shown as follows:
@@ -96,3 +98,4 @@ ID | Embedding Values
 ------------- | -------------
 Q42306013 | 0.014516	-0.106958	0.024590	...	-0.080382
 
+When generating subgraph from Wikidata kenowledge grapgh we keep entities in the msn news dataset and their one-hop neightbors which are connected with at least 5 entites in the subgrapgh. Some entites might be isolated in this process, which do not have entities embeddings in the entity_embedding.vec file.
