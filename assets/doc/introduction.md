@@ -98,4 +98,4 @@ ID | Embedding Values
 ------------- | -------------
 Q42306013 | 0.014516	-0.106958	0.024590	...	-0.080382
 
-When generating subgraph from Wikidata kenowledge grapgh we keep entities in the msn news dataset and their one-hop neightbors which are connected with at least 5 entites in the subgrapgh. Some entite nodes might be isolated in this process, which do not have entitie embeddings in the entity_embedding.vec file.
+Due to some reasons in learning embedding from the subgraph, a few entities may not have embeddings in the entity_embedding.vec file.
