@@ -547,7 +547,6 @@
         function checkAllBox(obj) {
             var train_set = document.getElementById("train-set");
             var dev_set = document.getElementById("dev-set");
-            console.log(obj, obj.checked)
             if (obj.checked == true) {
                 train_set.disabled = false;
                 dev_set.disabled = false;
@@ -590,6 +589,7 @@
                                 MIND</span> </a>
                         <a class="header__link" href="#getting-start" itemprop="url">
                             <span itemprop="name">Download</span> </a>
+                    </div>
                         <!-- <a class="header__link" href="#evaluation-leaderboard" itemprop="url"> <span
                                 itemprop="name">Leaderboard</span> </a></div> -->
                 </nav>
@@ -682,6 +682,21 @@
 
                 <!-- MIND Competition -->
                 <h1 id="getting-start">Competition</h1>
+                <p>
+                    News recommendation is an important technique for personalized news services to improve the reading experience of users and alleviate information overload.
+                    We conduct a competition based MIND dataset.
+                    The task in this challenge is to predict the ranking scores of the candidate news in each impression log based on the news click histories of users. 
+                    The predicted ranking score is used to rank the candidaite news in each impression and the news ranking is compared with the ground truth to measure the ranking quialtiy based on different metrics such as AUC, MRR, nDCG@K.
+                </p>
+
+                <br>
+                
+                <p>
+                    We have prepared generous rewards for the outstanding teams. 
+                    The top-ranked team can get a $10,000 prize. 
+                    The second- and the third-ranked team can get a prize of $5,000. 
+                    In addition, members of the top 5 teams have the opportunity to join the MSN team of Microsoft or the NLC team of Microsoft Research Asia for an internship.
+                </p>
                 <br>
 
                 <h1 id="getting-start">Leaderboard</h1>
