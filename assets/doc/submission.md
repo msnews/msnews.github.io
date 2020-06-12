@@ -25,7 +25,7 @@ Submission guide:
 
 If the submission status is 'Failed', you can click 'View scoring output log' and 'View scoring error log' to see the debug logs. When the evaluation is finished, you can decide whether to show your scores on the leaderboard.
 
-Important: You can only upload at most 3 submissions each day in order not to overwhelm the system.
+*Important*: You can only upload at most 3 submissions each day in order not to overwhelm the system.
 
 ## Test Phase
 During the test phase, teams can upload their submissions on the test data by following the same process as in the development phase. Note that the leaderboard will **NOT** be visible during the test phase, and you cannot see the evaluation results on the test set. The results will be posted a few weeks after the end of the test phase since we need to check the validity of each submission and fix the broken submissions.
