@@ -585,12 +585,12 @@
                 </a>
                 <nav class="header__links">
                     <div class="container header__links-wrapper">
-                        <a class="header__link" href="competition.html" itemprop="url">
-                            <span itemprop="name">Competition</span> </a>
-                        <a class="header__link" href="#about-mind" itemprop="url"> <span itemprop="name">About
+                        <a class="header__link" href="index.html" itemprop="url"> <span itemprop="name">About
                                 MIND</span> </a>
-                        <a class="header__link" href="#getting-start" itemprop="url">
-                            <span itemprop="name">Download</span> </a>
+                        <a class="header__link" href="#competition" itemprop="url">
+                                <span itemprop="name">Competition</span> </a>
+                        <a class="header__link" href="#leaderboard" itemprop="url">
+                            <span itemprop="name">Leaderboard</span> </a>
                     </div>
                         <!-- <a class="header__link" href="#evaluation-leaderboard" itemprop="url"> <span
                                 itemprop="name">Leaderboard</span> </a></div> -->
@@ -602,85 +602,45 @@
     <div class="hero lazyload" data-bg="https://msnews.github.io/assets/img/posts/sleek.jpg">
         <div class="hero__wrap">
             <div class="hero__categories"></div>
-            <h1 class="hero__title">MIND: MIcrosoft News Dataset</h1>
-            <p class="hero__meta"> <span> A Large-Scale English Dataset for News Recommendation Research </span></p>
+            <h1 class="hero__title">MIND Competition</h1>
+            <p class="hero__meta"> <span> A Large-Scale News Recommendation Competition </span></p>
         </div>
     </div>
     <main class="site__content">
         <div class="container">
             <article class="post-content">
                 <!-- about mind -->
-                <h1 id="about-mind">About MIND</h1>
-                <p><strong>MI</strong>crosoft <strong>N</strong>ews <strong>D</strong>ataset (MIND) is a large-scale
-                    dataset for news recommendation research. 
-		    It was collected from the real user behavior logs of <a href="https://microsoftnews.msn.com/">Microsoft News</a> website.
-			The mission of MIND is to serve as a
-                    benchmark dataset for news recommendation and facilitate the research in news recommendation and recommender systems area.</p>
-		    
-                <p>MIND contains 1,000,000 users, 161,013 English news articles and
-              15,777,377 impression logs. Every news article contains rich textual content including
-                    title, abstract, body, category and entities. Each impression log contains the click events,
-                    non-clicked events and historical news click behaviors of this user before this impression. For more detailed information about the MIND dataset, you can refer to the following paper:</p>
-                <div class="button-container">
-                    <button class="button button-pill button-primary"
-			    onclick="location.href='./assets/doc/ACL2020_MIND.pdf';">
-                        <strong>MIND paper (Wu et al., 2020)</strong>
-                    </button>
-                </div>
-                <p>If you are interested in using this dataset in your research work, welcome to cite this paper:</p>
-		    
-		        <p>Fangzhao Wu, Ying Qiao, Jiun-Hung Chen, Chuhan Wu, Tao Qi, Jianxun Lian, Danyang Liu, Xing Xie, Jianfeng Gao, Winnie Wu and Ming Zhou. <strong>MIND: A Large-scale Dataset for News Recommendation.</strong> ACL 2020.</p>
-               
-                <br>
-                
-                <!-- download -->
-
-                <h1 id="getting-start">Download</h1>
-                <p>The MIND dataset is free to download for research purposes under
-                    <a href="https://github.com/msnews/MIND/blob/master/MSR%20License_Data.pdf">Microsoft Research
-                        License Terms</a>. 
-		Before you download the dataset, please read these terms and click below button to confirm that you agree to them.
-                </p>
-                <div style="text-align: center;">
-                    <label>
-                        <input style="width: 1.5rem" type="checkbox" name="TermAgree" id='TermAgree' value="false"
-                            onClick="checkAllBox(this)">I agree to the Microsoft Research License Terms.
-                    </label>
-                </div>
-		        <br>
-                <div>  
-                        <p>The complete MIND dataset will be released during the ACL 2020 conference. 
-                    Currently, we release a small version of the MIND dataset to help the 
-                    researchers get familiar with our data by randomly sampling 50,000 users and their behavior logs
-                    from the MIND dataset. We name this dataset <strong> MIND-small</strong>.
-                    It can support many researches on news recommendation, and can be downloaded at:
-                    </p>
-                </div>
-                <div class="button-container">
-                    <button class="button button-pill button-border" disabled id='train-set'
-                        onclick="location.href='https://mind201910small.blob.core.windows.net/release/MINDsmall_train.zip';">
-                        <strong>Training Set</strong>
-                    </button></div>
-                <div class="button-container">
-                    <button class="button button-pill button-border" disabled id='dev-set'
-                        onclick="location.href='https://mind201910small.blob.core.windows.net/release/MINDsmall_dev.zip';">
-                        <strong>Validation Set</strong>
-                    </button>
-                </div>
-				<p>For more details about the data formats, please refer to this document:</p>
-				<div class="button-container">
-                    <button class="button button-pill button-border"
-                        onclick="location.href='https://github.com/msnews/msnews.github.io/blob/master/assets/doc/introduction.md';">
-                        <strong>Dataset Description</strong>
-                    </button>
-                </div>
-            
-                <br>
+                <h1 id="competition">MIND Competition</h1>
                 <p>
-                The implementation of several existing news recommendation methods and general recommendation methods 
-                    can be found at <a href="https://github.com/microsoft/recommenders">Microsoft Recommenders</a>.
+                    News recommendation is an important technique for personalized news services to improve the reading experience of users and alleviate information overload.
+                    We conduct a <a href="https://competitions.codalab.org/competitions/24122?secret_key=e075b839-d0cb-4c7b-b755-b34c5a666cbas">MIND competition</a> based MIND dataset.
+                    The task in this challenge is to predict the ranking scores of the candidate news in each impression log based on the news click histories of users. 
+                    The predicted ranking score is used to rank the candidaite news in each impression and the news ranking is compared with the ground truth to measure the ranking quialtiy based on different metrics such as AUC, MRR, nDCG@K.
                 </p>
+
+                For more details about the data formats, please refer to this document:
+                <div class="button-container">
+                    <button class="button button-pill button-border"
+                        onclick="location.href='https://github.com/msnews/msnews.github.io/blob/competition/assets/doc/submission.md';">
+                        <strong>Submission Guidlines</strong>
+                    </button>
+                </div>
+
+                <p>
+                    We have prepared generous rewards for the outstanding teams. 
+                    The top-ranked team can get a $10,000 prize. 
+                    The second- and the third-ranked team can get a prize of $5,000. 
+                    In addition, members of the top 5 teams have the opportunity to join the MSN team of Microsoft or the NLC team of Microsoft Research Asia for an internship.
+                </p>
+
                 <br>
+
+
+                <h1 id="leaderboard">Leaderboard</h1>
+                <iframe src="https://competitions.codalab.org/competitions/leaderboard_widget/24122/" style="height: 300px; width: 100%; border: none;"></iframe>
+                
+                <br>
+
             </article>
         </div>
     </main>
