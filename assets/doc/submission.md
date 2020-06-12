@@ -17,6 +17,7 @@ During the development phase, teams can upload their predictions on the developm
 
 Submission guide:
 
+* Participant in [our competition](https://competitions.codalab.org/competitions/24122?secret_key=e075b839-d0cb-4c7b-b755-b34c5a666cba)
 * Navigate to 'Participate'
 * Write a description of your submission (optional) 
 * Click the button 'Submit / View Results'
