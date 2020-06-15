@@ -1,12 +1,12 @@
 # Submission Guidelines
 
-In this tutorial, we will cover the process of participanting in the competition, downloading our `MIND` dataset, submitting your prediction data and receiving the official evaluation results on `MIND` dataset.
+In this tutorial, we will cover the process of participating in the competition, downloading our `MIND` dataset, submitting your prediction data and receiving the official evaluation results on `MIND` dataset.
 
-## Participant In Competition
+## Participate In Competition
 The MIND News Recommendation Competition is hold on Codalab platform. 
 Before you begins, please create a [Codalab account](https://worksheets.codalab.org/) and finish the [Codalab tutorial](https://codalab-worksheets.readthedocs.io/en/latest/).
-Please read [Microsoft Research License Terms](https://github.com/msnews/MIND/blob/master/MSR%20License_Data.pdf) before you participant in the competition.
-Enter the [home page](https://competitions.codalab.org/competitions/24122?secret_key=e075b839-d0cb-4c7b-b755-b34c5a666cba) of MIND competition and agree to participant.
+Please read [Microsoft Research License Terms](https://github.com/msnews/MIND/blob/master/MSR%20License_Data.pdf) before you participate in the competition.
+Enter the [home page](https://competitions.codalab.org/competitions/24122?secret_key=e075b839-d0cb-4c7b-b755-b34c5a666cba) of MIND competition and agree to participate.
 
 ## Download Dataset
 **MIcrosoft News Dataset** (MIND) is a large-scale dataset for news recommendation research, which contains 1,000,000 users, 161,013 English news articles and 15,777,377 impression logs.
