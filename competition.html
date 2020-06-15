@@ -585,12 +585,6 @@
                         <a class="header__link" href="index.html" itemprop="url"> <span itemprop="name"><strong>Dataset</strong></span> </a>
                         <a class="header__link" href="#competition" itemprop="url">
                                 <span itemprop="name">Overview</span> </a>
-					 <a class="header__link" href="#evaluation" itemprop="url">
-                                    <span itemprop="name">Evaluation</span> </a>
-                        <a class="header__link" href="#reward" itemprop="url">
-                                    <span itemprop="name">Prizes</span> </a>
-						<a class="header__link" href="#timeline" itemprop="url">
-                                    <span itemprop="name">Timeline</span> </a>
                         <a class="header__link" href="#leaderboard" itemprop="url">
                             <span itemprop="name">Leaderboard</span> </a>
                     </div>
@@ -617,8 +611,24 @@
                     Online news services such as <a href="https://www.msn.com">MSN news</a> have gained huge popularity for online news reading. 
 					However, since massive news articles are published everyday, users of online news services are facing heavy information overload. 
 					Therefore, news recommendation is an important technique for personalized news services to improve the reading experience of users and alleviate information overload.
-					To promote the research and practice on news recommendation, we hold a <strong> MIND News Recommendation Competition </strong> based on the <a href="https://msnews.github.io/index.html">MIND dataset</a>.
-                    The competition requires the participants to model news and user interest precisely to provide accurate rankings of candidate news. 
+					  </p>
+					<p>
+					However, news recommendation is a challenging task. 
+					First, news articles on news websites emerge and update very quickly. 
+					Many new articles are posted continuously, and existing news articles will disappear after a short period of time. 
+					Thus, there is a severe cold-start problem in news recommendation. 
+					Second, news articles usually contain rich textual information such as title and body. 
+					It is very important to understand news content from their texts using NLP techniques. 
+					Third, there is no explicit rating of news articles posted by users in news platforms. 
+					Thus, in news recommendation we need to model users’ interests from their browsing and click behaviors.
+					However, user interests are usually diverse and may evolve over time, which poses significant challenges to user modeling algorithms.
+					Thus, further researches are highly needed to tackle the various challenges in news recommendation.
+  </p>
+  <p>
+To promote the research and practice on news recommendation, 
+we hold a <strong> MIND News Recommendation Competition </strong>based on the <a href="https://msnews.github.io/index.html">MIND dataset</a>, 
+which is a large-scale English dataset for news recommendation. 
+This challenge will provide a good testbed for participants to develop better news recommender systems and to improve the future reading experience of millions of users.
                      </p>
 					 
                 <div class="button-container">
@@ -628,47 +638,7 @@
                     </button>
                 </div>
             
-                
-                <h1 id="evaluation">Evaluation</h1>
-                <p>
-
-					<p><span>Systems are evaluated using several standard evaluation metrics in the recommendation field, including</span>
-					<a href="https://en.wikipedia.org/wiki/Receiver_operating_characteristic">area under the ROC curve</a> (AUC), 
-					<a href="https://en.wikipedia.org/wiki/Mean_reciprocal_rank">mean reciprocal rank</a> (MRR), and 
-					<a href="https://en.wikipedia.org/wiki/Discounted_cumulative_gain">normalized discounted cumulative gain</a> for K shown recommendations (nDCG@K).  
-The final result is the average of these metrics on all impression logs. The primary metric for submission ranking is <strong>AUC</strong>.</p>
-<p> You can submit your prediction results to Codalab to get an online evaluation results.
-For more details about the submission guideline, please refer to this document:                </p>
-                
-                <div class="button-container">
-                    <button class="button button-pill button-border"
-                        onclick="location.href='https://github.com/msnews/msnews.github.io/blob/competition/assets/doc/submission.md';">
-                        <strong>Submission Guideline</strong>
-                    </button>
-                </div>
-<p>You can also download the official evaluation <a href="https://github.com/msnews/MIND/blob/master/evaluate.py">script</a> to conduct offline evaluation.</p>
-                <br>
-                <h1 id="reward">Prizes</h1>
-                <p>
-                    We have prepared generous rewards for the outstanding teams:
-					<ul>
-                    <li>1st place: <strong>$10,000</strong> </li>
-                    <li>2nd place: <strong>$5,000</strong> </li>
-					<li>3rd place: <strong>$3,000</strong> </li>
-                    <li>Members of Top 5 teams: The opportunity to join the MSN team of Microsoft or the NLC team of Microsoft Research Asia for an internship.</li>
-                    </ul>
-				</p>
-
-                <br>
-
-                <h1 id="timeline">Timeline</h1>
-                <div>
-				<ul>
-                   <li>July 1st - August 1st, 2020: CodaLab competition is open. Training/dev data and the evaluation script can be downloaded. </li>
- <li>August 1st - August 7th, 2020: Test phase. Test data can be downloaded and participants can submit their results. </li>
- <li>August 8th - August 14th, 2020: The competition results will be annouced during this period. </li>
-				</ul>
-                </div>
+         
 
                 <br>
                 <h1 id="leaderboard">Leaderboard</h1>
