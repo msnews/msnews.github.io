@@ -19,7 +19,8 @@
         <meta name="apple-mobile-web-app-title" content="MIND">
         <meta name="application-name" content="MIND">
         <meta name="theme-color" content="#ffffff">
-        <link rel="stylesheet" href="./assets/css/layout.css" type="text/css">
+        <link rel="stylesheet" href="./stylesheets/layout.css" type="text/css">
+        <link rel="stylesheet" href="./stylesheets/index.css" type="text/css">
         <style class="inlineCSS" type="text/css">
 h1 {
             color: #313237;
@@ -543,7 +544,19 @@ h1 {
         <script type="text/javascript">
 (function (w) { "use strict"; if (!w.loadCSS) { w.loadCSS = function () { } } var rp = loadCSS.relpreload = {}; rp.support = (function () { var ret; try { ret = w.document.createElement("link").relList.supports("preload") } catch (e) { ret = !1 } return function () { return ret } })(); rp.bindMediaToggle = function (link) { var finalMedia = link.media || "all"; function enableStylesheet() { link.media = finalMedia } if (link.addEventListener) { link.addEventListener("load", enableStylesheet) } else if (link.attachEvent) { link.attachEvent("onload", enableStylesheet) } setTimeout(function () { link.rel = "stylesheet"; link.media = "only x" }); setTimeout(enableStylesheet, 3000) }; rp.poly = function () { if (rp.support()) { return } var links = w.document.getElementsByTagName("link"); for (var i = 0; i < links.length; i++) { var link = links[i]; if (link.rel === "preload" && link.getAttribute("as") === "style" && !link.getAttribute("data-loadcss")) { link.setAttribute("data-loadcss", !0); rp.bindMediaToggle(link) } } }; if (!rp.support()) { rp.poly(); var run = w.setInterval(rp.poly, 500); if (w.addEventListener) { w.addEventListener("load", function () { rp.poly(); w.clearInterval(run) }) } else if (w.attachEvent) { w.attachEvent("onload", function () { rp.poly(); w.clearInterval(run) }) } } if (typeof exports !== "undefined") { exports.loadCSS = loadCSS } else { w.loadCSS = loadCSS } }(typeof global !== "undefined" ? global : this)) 
         </script><script type="text/javascript">
-function getJson(url) { return JSON.parse($.ajax({ type: 'GET', url: url, dataType: 'json', global: false, async: false, success: function (data) { return data; } }).responseText); } function buildDataTable() { var leaderboard = []; leaderboard.push(getJson("https://yjw.wh98.me:8080")[0]); var tr; $("#leaderboardtable").empty(); var columnSet = []; var headerTr$ = $('<tr/>'); var headers = leaderboard[0].headers; headerTr$.append($('<th/>').html("participant")); for (var j = 0; j < headers.length; j++) { headerTr$.append($('<th/>').html(headers[j].label)); } $("#leaderboardtable").append(headerTr$); for (var i = 0; i < leaderboard[0].scores.length; i++) { tr = $('<tr/>'); tr.append("<td>" + leaderboard[0].scores[i][1].username + "<\/td>"); values = leaderboard[0].scores[i][1].values; for (var j = 0; j < values.length; j++) { tr.append("<td>" + values[j].val + "<\/td>"); } $('#leaderboardtable').append(tr); } console.log(leaderboard) } 
+function getJson(url) { return JSON.parse($.ajax({ type: 'GET', url: url, dataType: 'json', global: false, async: false, success: function (data) { return data; } }).responseText); } 
+        function buildDataTable() { var leaderboard = []; leaderboard.push(getJson("https://yjw.wh98.me:8080")[0]); 
+        var tr; $("#leaderboardtable").empty();
+        var columnSet = [];
+        var headerTr$ = $('<tr/>'); 
+        var headers = leaderboard[0].headers; 
+        headerTr$.append($('<th/>').html("participant")); 
+        for (var j = 0; j < headers.length; j++) { headerTr$.append($('<th/>').html(headers[j].label)); } 
+        $("#leaderboardtable").append(headerTr$);
+        for (var i = 0; i < leaderboard[0].scores.length; i++) { tr = $('<tr/>'); tr.append("<td>" + leaderboard[0].scores[i][1].username + "<\/td>"); 
+        values = leaderboard[0].scores[i][1].values; 
+        for (var j = 0; j < values.length; j++) { tr.append("<td>" + values[j].val + "<\/td>"); } 
+        $('#leaderboardtable').append(tr); } console.log(leaderboard) } 
         </script><script type="text/javascript">
 function checkAllBox(obj) {
             var join = document.getElementById("join");
@@ -554,12 +567,7 @@ function checkAllBox(obj) {
                 join.disabled = true;
             }
         }
-        </script><!-- <script type="text/javascript"> 
-        window.onload = function (){ 
-            buildDataTable();
-            var term_agree = document.getElementById("TermAgree");
-            checkAllBox(term_agree);
-        } </script> -->
+        </script>
         <div class="container">
             <div class="header__inner">
                 <a class="header__logo" href="/"></a>
@@ -576,7 +584,7 @@ function checkAllBox(obj) {
                     <img style="max-width:200%; width:90px;" src="https://msnews.github.io/assets/img/icons/logo.png">
                 </div>
                 <div class="container header__links-wrapper">
-                    <a class="header__link" href="index.html" itemprop="url"><span itemprop="name"><strong>Dataset</strong></span></a> <a class="header__link" href="#competition" itemprop="url"><span itemprop="name">Overview</span></a> <a class="header__link" href="#leaderboard" itemprop="url"><span itemprop="name">Leaderboard</span></a>
+                    <a class="header__link" href="index.html" itemprop="url"><span itemprop="name"><strong>Dataset</strong></span></a> <a class="header__link" href="#competition" itemprop="url"><span itemprop="name">Overview</span></a> <a class="header__link" href="#evaluation" itemprop="url"><span itemprop="name">Evaluation</span></a> <a class="header__link" href="#reward" itemprop="url"><span itemprop="name">Prizes</span></a> <a class="header__link" href="#timeline" itemprop="url"><span itemprop="name">Timeline</span></a> <a class="header__link" href="#leaderboard" itemprop="url"><span itemprop="name">Leaderboard</span></a>
                 </div><!-- <a class="header__link" href="#evaluation-leaderboard" itemprop="url"> <span
                                 itemprop="name">Leaderboard</span> </a></div> -->
                 <div class="header__toggle"></div>
@@ -596,16 +604,60 @@ function checkAllBox(obj) {
                 Overview
             </h1>
             <p>
-                Online news services such as <a href="https://microsoftnews.msn.com/">Microsoft News</a> have gained huge popularity for online news reading. However, since massive news articles are published everyday, users of online news services are facing heavy information overload. Therefore, news recommendation is an important technique for personalized news services to improve the reading experience of users and alleviate information overload.
+                Online news services such as <a href="https://www.msn.com">MSN news</a> have gained huge popularity for online news reading. However, since massive news articles are published everyday, users of online news services are facing heavy information overload. Therefore, news recommendation is an important technique for personalized news services to improve the reading experience of users and alleviate information overload.
             </p>
             <p>
-                However, news recommendation is a challenging task. First, news articles on news websites emerge and update very quickly. Many new articles are posted continuously, and existing news articles will disappear after a short period of time. Thus, there is a severe cold-start problem in news recommendation. Second, news articles usually contain rich textual information such as title and body. It is very important to understand news content from their texts using NLP techniques. Third, there is no explicit rating of news articles posted by users in news platforms. Thus, in news recommendation we need to model users’ interests from their browsing and click behaviors. However, user interests are usually diverse and dynamic, which poses significant challenges to user modeling algorithms. Thus, further researches are highly needed to tackle the various challenges in news recommendation.
+                However, news recommendation is a challenging task. First, news articles on news websites emerge and update very quickly. Many new articles are posted continuously, and existing news articles will disappear after a short period of time. Thus, there is a severe cold-start problem in news recommendation. Second, news articles usually contain rich textual information such as title and body. It is very important to understand news content from their texts using NLP techniques. Third, there is no explicit rating of news articles posted by users in news platforms. Thus, in news recommendation we need to model users’ interests from their browsing and click behaviors. However, user interests are usually diverse and may evolve over time, which poses significant challenges to user modeling algorithms. Thus, further researches are highly needed to tackle the various challenges in news recommendation.
             </p>
             <p>
-                To promote the research and practice on news recommendation, we hold a <strong>MIND News Recommendation Competition</strong> based on the <a href="https://msnews.github.io/index.html">MIND dataset</a>, which is a large-scale English dataset for news recommendation. This challenge will provide a good testbed for participants to develop better news recommender systems to improve the future reading experience of millions of users.
+                To promote the research and practice on news recommendation, we hold a <strong>MIND News Recommendation Competition</strong> based on the <a href="https://msnews.github.io/index.html">MIND dataset</a>, which is a large-scale English dataset for news recommendation. This challenge will provide a good testbed for participants to develop better news recommender systems.
             </p>
             <div class="button-container">
                 <button class="button button-pill button-border" onclick="location.href='https://competitions.codalab.org/competitions/24122?secret_key=e075b839-d0cb-4c7b-b755-b34c5a666cba#participate';"><strong>Join Competition</strong></button>
+            </div>
+            <h1 id="evaluation">
+                Evaluation
+            </h1>
+            <p>
+                <span>Systems are evaluated using several standard evaluation metrics in the recommendation field, including</span> <a href="https://en.wikipedia.org/wiki/Receiver_operating_characteristic">area under the ROC curve</a> (AUC), <a href="https://en.wikipedia.org/wiki/Mean_reciprocal_rank">mean reciprocal rank</a> (MRR), and <a href="https://en.wikipedia.org/wiki/Discounted_cumulative_gain">normalized discounted cumulative gain</a> for K shown recommendations (nDCG@K). The final result is the average of these metrics on all impression logs. The primary metric for submission ranking is <strong>AUC</strong>.
+            </p>
+            <p>
+                You can submit your prediction results to Codalab to get an online evaluation results. For more details about the submission guideline, please refer to this document:
+            </p>
+            <div class="button-container">
+                <button class="button button-pill button-border" onclick="location.href='https://github.com/msnews/msnews.github.io/blob/competition/assets/doc/submission.md';"><strong>Submission Guideline</strong></button>
+            </div>
+            <p>
+                You can also download the official evaluation <a href="https://github.com/msnews/MIND/blob/master/evaluate.py">script</a> to conduct offline evaluation.
+            </p><br>
+            <h1 id="reward">
+                Prizes
+            </h1>
+            <p>
+                We have prepared generous rewards for the outstanding teams:
+            </p>
+            <ul>
+                <li>1st place: <strong>$10,000</strong>
+                </li>
+                <li>2nd place: <strong>$5,000</strong>
+                </li>
+                <li>3rd place: <strong>$3,000</strong>
+                </li>
+                <li>Members of Top 5 teams: The opportunity to join the MSN team of Microsoft or the NLC team of Microsoft Research Asia for an internship.
+                </li>
+            </ul><br>
+            <h1 id="timeline">
+                Timeline
+            </h1>
+            <div>
+                <ul>
+                    <li>July 1st - August 1st, 2020: CodaLab competition is open. Training/dev data and the evaluation script can be downloaded.
+                    </li>
+                    <li>August 1st - August 7th, 2020: Test phase. Test data can be downloaded and participants can submit their results.
+                    </li>
+                    <li>August 8th - August 14th, 2020: The competition results will be annouced during this period.
+                    </li>
+                </ul>
             </div><br>
             <h1 id="leaderboard">
                 Leaderboard
@@ -619,7 +671,7 @@ function checkAllBox(obj) {
                                     Rank
                                 </th>
                                 <th>
-                                    User
+                                    Team
                                 </th>
                                 <th>
                                     AUC
@@ -638,6 +690,28 @@ function checkAllBox(obj) {
                                 <td>
                                     <p class="word-break2">
                                         1
+                                    </p><span class="date label label-default">Apr. 01, 2020</span>
+                                </td>
+                                <td class="word-break">
+                                    THU_NGN
+                                </td>
+                                <td class="word-break">
+                                    <b>0.6420</b>
+                                </td>
+                                <td class="word-break">
+                                    <b>0.1174</b>
+                                </td>
+                                <td class="word-break">
+                                    <b>0.3253</b>
+                                </td>
+                                <td class="word-break">
+                                    <b>0.3905</b>
+                                </td>
+                            </tr>
+                            <tr class='leaderboardlinemask'>
+                                <td>
+                                    <p class="word-break2">
+                                        2
                                     </p><span class="date label label-default">Jul. 05, 2020</span>
                                 </td>
                                 <td class="word-break">
@@ -656,10 +730,10 @@ function checkAllBox(obj) {
                                     <b>0.3709</b>
                                 </td>
                             </tr>
-                            <tr class='leaderboardlinemask'>
+                            <tr class='leaderboardline'>
                                 <td>
                                     <p class="word-break2">
-                                        2
+                                        3
                                     </p><span class="date label label-default">Jul. 05, 2020</span>
                                 </td>
                                 <td class="word-break">
@@ -678,10 +752,10 @@ function checkAllBox(obj) {
                                     <b>0.3709</b>
                                 </td>
                             </tr>
-                            <tr class='leaderboardline'>
+                            <tr class='leaderboardlinemask'>
                                 <td>
                                     <p class="word-break2">
-                                        3
+                                        4
                                     </p><span class="date label label-default">Jun. 15, 2020</span>
                                 </td>
                                 <td class="word-break">
@@ -704,7 +778,6 @@ function checkAllBox(obj) {
                     </div>
                 </div>
             </div><br>
-            <br>
         </div>
         <div class="container">
             <a href="https://go.microsoft.com/fwlink/?LinkId=521839">Privacy &amp; Cookies</a> <span>|</span> <a href="https://www.microsoft.com/trademarks">Trademarks</a> <span>|</span> <a href="https://go.microsoft.com/fwlink/?LinkID=206977">Terms of use</a> <span>|</span> <span>©2020 Microsoft</span>
