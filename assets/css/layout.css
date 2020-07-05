@@ -1,0 +1,108 @@
+
+.infoCard {
+  background: #fff;
+  margin-bottom: 20px;
+}
+@media (min-width: 999px) {
+  .infoCard {
+    box-shadow: 0px 0px 20px 2px rgba(120,120,120,0.1);
+  }
+}
+.word-break{
+font-size:15px;
+margin-bottom:0px;
+}
+.word-break2{
+font-size:18px;
+margin-bottom:0px;
+margin-top:3px;
+}
+.infoCard .infoSubheadline {
+  background: #f3f3f3;
+  padding: 20px 30px;
+}
+.infoCard .infoSubheadline h1,
+.infoCard .infoSubheadline h2,
+.infoCard .infoSubheadline p {
+  color: #888;
+}
+.infoCard .infoSubheadline h1 {
+  font-weight: 500;
+}
+.infoCard .infoSubheadline h2,
+.infoCard .infoSubheadline p {
+  font-weight: 400;
+}
+.infoCard .infoSubheadline.backgrounded {
+  background: #eb984e;
+}
+.infoCard .infoSubheadline.backgrounded h1,
+.infoCard .infoSubheadline.backgrounded h2,
+.infoCard .infoSubheadline.backgrounded p {
+  color: #fff;
+}
+.infoCard .actLink {
+  background: #eb984e;
+}
+.infoCard .actLink h1,
+.infoCard .actLink h2,
+.infoCard .actLink p,
+.infoCard .actLink a {
+  color: #fff;
+}
+.infoCard .actLink:hover {
+  opacity: 0.9;
+}
+.infoCard .infoBody {
+  padding: 30px;
+}
+.infoCard .infoBody >.infoHeadline {
+  margin: 15px 0px;
+}
+.infoCard .infoBody >.infoHeadline h1,
+.infoCard .infoBody >.infoHeadline h2,
+.infoCard .infoBody >.infoHeadline p {
+  margin: 5px 0px;
+  font-weight: 600;
+  color: #333;
+}
+.infoCard .infoBody >.infoHeadline h1 {
+  font-size: 1.8em;
+}
+.infoCard .infoBody >.infoHeadline h2 {
+  font-size: 1.4em;
+  padding-bottom: 2px;
+  border-bottom: 2px solid #ddd;
+}
+.infoCard .infoBody h2 {
+  font-weight: 600;
+  color: #666;
+  font-size: 1.6em;
+}
+.leaderboardhead{
+	background-color: #f3f3f3;
+	padding: 0px 30px;
+}
+.leaderboardline td{
+	padding: 0px 30px;
+}
+.leaderboardlinemask td{
+	background-color: #f9f9f9;
+	padding: 0px 30px;
+}
+  .label{border:1px solid #000}
+ .label{display:inline;padding:.2em .6em .3em;font-size:75%;font-weight:700;line-height:1;color:#fff;text-align:center;white-space:nowrap;vertical-align:baseline;border-radius:.25em}
+ a.label:focus,a.label:hover{color:#fff;text-decoration:none;cursor:pointer}.label:empty{display:none}.btn 
+ .label{position:relative;top:-1px}
+ .label-default{background-color:#777}
+ .label-default[href]:focus,.label-default[href]:hover{background-color:#5e5e5e}
+ .label-primary{background-color:#337ab7}.label-primary[href]:focus,
+ .label-primary[href]:hover{background-color:#286090}.label-success{background-color:#5cb85c}
+ .label-success[href]:focus,.label-success[href]:hover{background-color:#449d44}.label-info{background-color:#5bc0de}
+ .label-info[href]:focus,.label-info[href]:hover{background-color:#31b0d5}
+ .label-warning{background-color:#f0ad4e}
+ .label-warning[href]:focus,.label-warning[href]:hover{background-color:#ec971f}
+ .label-danger{background-color:#d9534f}
+ .label-danger[href]:focus,
+ .label-danger[href]:hover{background-color:#c9302c}
+
