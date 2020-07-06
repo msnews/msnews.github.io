@@ -1,27 +1,26 @@
-<!DOCTYPE html>
 <html lang="en-US">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MIND</title>
-    <meta property="og:title" content="MIND" />
-    <meta name="author" content="msnews" />
-    <meta property="og:locale" content="en_US" />
-    <meta name="description" content="About MIND" />
-    <meta property="og:description" content="About MIND" />
-    <link rel="canonical" href="https://msnews.github.io/" />
-    <meta property="og:url" content="https://msnews.github.io/" />
-    <meta property="og:site_name" content="MIND" />
-    <meta property="og:type" content="article" />
-
-    <link rel="icon" type="image/png" sizes="32x32" href="https://msnews.github.io/assets/img/icons/M.png">
-    <meta name="apple-mobile-web-app-title" content="MIND">
-    <meta name="application-name" content="MIND">
-    <meta name="theme-color" content="#ffffff">
-    <style class="inlineCSS">
-        h1 {
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            MIND
+        </title>
+        <meta property="og:title" content="MIND">
+        <meta name="author" content="msnews">
+        <meta property="og:locale" content="en_US">
+        <meta name="description" content="About MIND">
+        <meta property="og:description" content="About MIND">
+        <link rel="canonical" href="https://msnews.github.io/">
+        <meta property="og:url" content="https://msnews.github.io/">
+        <meta property="og:site_name" content="MIND">
+        <meta property="og:type" content="article">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://msnews.github.io/assets/img/icons/M.png">
+        <meta name="apple-mobile-web-app-title" content="MIND">
+        <meta name="application-name" content="MIND">
+        <meta name="theme-color" content="#ffffff">
+        <style class="inlineCSS" type="text/css">
+h1 {
             color: #313237;
             margin-top: 0;
             margin-bottom: .5rem
@@ -535,42 +534,45 @@
                 padding-top: 5em
             }
         }
-    </style>
-    <link rel="preload" href="https://msnews.github.io/assets/css/main.css" as="style" onload="this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="https://msnews.github.io/assets/css/main.css"></noscript>
-    <script
-        type="text/javascript"> (function (w) { "use strict"; if (!w.loadCSS) { w.loadCSS = function () { } } var rp = loadCSS.relpreload = {}; rp.support = (function () { var ret; try { ret = w.document.createElement("link").relList.supports("preload") } catch (e) { ret = !1 } return function () { return ret } })(); rp.bindMediaToggle = function (link) { var finalMedia = link.media || "all"; function enableStylesheet() { link.media = finalMedia } if (link.addEventListener) { link.addEventListener("load", enableStylesheet) } else if (link.attachEvent) { link.attachEvent("onload", enableStylesheet) } setTimeout(function () { link.rel = "stylesheet"; link.media = "only x" }); setTimeout(enableStylesheet, 3000) }; rp.poly = function () { if (rp.support()) { return } var links = w.document.getElementsByTagName("link"); for (var i = 0; i < links.length; i++) { var link = links[i]; if (link.rel === "preload" && link.getAttribute("as") === "style" && !link.getAttribute("data-loadcss")) { link.setAttribute("data-loadcss", !0); rp.bindMediaToggle(link) } } }; if (!rp.support()) { rp.poly(); var run = w.setInterval(rp.poly, 500); if (w.addEventListener) { w.addEventListener("load", function () { rp.poly(); w.clearInterval(run) }) } else if (w.attachEvent) { w.attachEvent("onload", function () { rp.poly(); w.clearInterval(run) }) } } if (typeof exports !== "undefined") { exports.loadCSS = loadCSS } else { w.loadCSS = loadCSS } }(typeof global !== "undefined" ? global : this)) </script>
-    <script
-        type="text/javascript"> function getJson(url) { return JSON.parse($.ajax({ type: 'GET', url: url, dataType: 'json', global: false, async: false, success: function (data) { return data; } }).responseText); } function buildDataTable() { var leaderboard = []; leaderboard.push(getJson("https://yjw.wh98.me:8080")[0]); var tr; $("#leaderboardtable").empty(); var columnSet = []; var headerTr$ = $('<tr/>'); var headers = leaderboard[0].headers; headerTr$.append($('<th/>').html("participant")); for (var j = 0; j < headers.length; j++) { headerTr$.append($('<th/>').html(headers[j].label)); } $("#leaderboardtable").append(headerTr$); for (var i = 0; i < leaderboard[0].scores.length; i++) { tr = $('<tr/>'); tr.append("<td>" + leaderboard[0].scores[i][1].username + "</td>"); values = leaderboard[0].scores[i][1].values; for (var j = 0; j < values.length; j++) { tr.append("<td>" + values[j].val + "</td>"); } $('#leaderboardtable').append(tr); } console.log(leaderboard) } </script>
-    <script type="text/javascript">
-        function checkAllBox(obj) {
+        </style>
+        <link rel="preload" href="https://msnews.github.io/assets/css/main.css" as="style" onload="this.rel='stylesheet'">
+        <link rel="stylesheet" href="https://msnews.github.io/assets/css/main.css" type="text/css">
+    </head>
+    <body>
+        <script type="text/javascript">
+(function (w) { "use strict"; if (!w.loadCSS) { w.loadCSS = function () { } } var rp = loadCSS.relpreload = {}; rp.support = (function () { var ret; try { ret = w.document.createElement("link").relList.supports("preload") } catch (e) { ret = !1 } return function () { return ret } })(); rp.bindMediaToggle = function (link) { var finalMedia = link.media || "all"; function enableStylesheet() { link.media = finalMedia } if (link.addEventListener) { link.addEventListener("load", enableStylesheet) } else if (link.attachEvent) { link.attachEvent("onload", enableStylesheet) } setTimeout(function () { link.rel = "stylesheet"; link.media = "only x" }); setTimeout(enableStylesheet, 3000) }; rp.poly = function () { if (rp.support()) { return } var links = w.document.getElementsByTagName("link"); for (var i = 0; i < links.length; i++) { var link = links[i]; if (link.rel === "preload" && link.getAttribute("as") === "style" && !link.getAttribute("data-loadcss")) { link.setAttribute("data-loadcss", !0); rp.bindMediaToggle(link) } } }; if (!rp.support()) { rp.poly(); var run = w.setInterval(rp.poly, 500); if (w.addEventListener) { w.addEventListener("load", function () { rp.poly(); w.clearInterval(run) }) } else if (w.attachEvent) { w.attachEvent("onload", function () { rp.poly(); w.clearInterval(run) }) } } if (typeof exports !== "undefined") { exports.loadCSS = loadCSS } else { w.loadCSS = loadCSS } }(typeof global !== "undefined" ? global : this)) 
+        </script><script type="text/javascript">
+function getJson(url) { return JSON.parse($.ajax({ type: 'GET', url: url, dataType: 'json', global: false, async: false, success: function (data) { return data; } }).responseText); } function buildDataTable() { var leaderboard = []; leaderboard.push(getJson("https://yjw.wh98.me:8080")[0]); var tr; $("#leaderboardtable").empty(); var columnSet = []; var headerTr$ = $('<tr/>'); var headers = leaderboard[0].headers; headerTr$.append($('<th/>').html("participant")); for (var j = 0; j < headers.length; j++) { headerTr$.append($('<th/>').html(headers[j].label)); } $("#leaderboardtable").append(headerTr$); for (var i = 0; i < leaderboard[0].scores.length; i++) { tr = $('<tr/>'); tr.append("<td>" + leaderboard[0].scores[i][1].username + "<\/td>"); values = leaderboard[0].scores[i][1].values; for (var j = 0; j < values.length; j++) { tr.append("<td>" + values[j].val + "<\/td>"); } $('#leaderboardtable').append(tr); } console.log(leaderboard) } 
+        </script><script type="text/javascript">
+function checkAllBox(obj) {
             var train_set = document.getElementById("train-set");
             var dev_set = document.getElementById("dev-set");
+            var smalltrain_set = document.getElementById("smalltrain-set");
+            var smalldev_set = document.getElementById("smalldev-set");
             if (obj.checked == true) {
                 train_set.disabled = false;
                 dev_set.disabled = false;
+                smalltrain_set.disabled = false;
+                smalldev_set.disabled = false;
             }
             else {
                 train_set.disabled = true;
                 dev_set.disabled = true;
+                smalltrain_set.disabled = true;
+                smalldev_set.disabled = true;
             }
         }
-    </script>
-    <!-- <script type="text/javascript"> 
+        </script><!-- <script type="text/javascript"> 
         window.onload = function (){ 
             buildDataTable();
             var term_agree = document.getElementById("TermAgree");
             checkAllBox(term_agree);
         } </script> -->
-</head>
-
-<body class="site">
-    <header class="header" itemscope itemtype="http://schema.org/SiteNavigationElement" aria-label="Main navigation">
         <div class="container">
-            <div class="header__inner"> <a class="header__logo" href="/">
-                    <div class="header__logo--container">
-                        <!-- <svg width="60px" height="153px" viewBox="10 0 277 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <div class="header__inner">
+                <a class="header__logo" href="/"></a>
+                <div class="header__logo--container">
+                    <!-- <svg width="60px" height="153px" viewBox="10 0 277 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <g id="logocon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="LucidaGrande, Lucida Grande" font-size="100" font-weight="normal">
                                 <g id="logo" transform="translate(-14.000000, -69.000000)" fill="#515556">
                                     <text id="MIND">
@@ -579,125 +581,89 @@
                                 </g>
                             </g>
                         </svg> -->
-                        <img style="max-width:200%; width:90px;"
-                            src="https://msnews.github.io/assets/img/icons/logo.png">
-                    </div>
-                </a>
-                <nav class="header__links">
-                    <div class="container header__links-wrapper">
-                        <a class="header__link" href="competition.html" itemprop="url">
-                            <span itemprop="name"><strong>Competition</strong></span> </a>
-                        <a class="header__link" href="#about-mind" itemprop="url"> <span itemprop="name">About
-                                MIND</span> </a>
-                        <a class="header__link" href="#getting-start" itemprop="url">
-                            <span itemprop="name">Download</span> </a>
-                    </div>
-                        <!-- <a class="header__link" href="#evaluation-leaderboard" itemprop="url"> <span
+                    <img style="max-width:200%; width:90px;" src="https://msnews.github.io/assets/img/icons/logo.png">
+                </div>
+                <div class="container header__links-wrapper">
+                    <a class="header__link" href="competition.html" itemprop="url"><span itemprop="name"><strong>Competition</strong></span></a> <a class="header__link" href="#about-mind" itemprop="url"><span itemprop="name">About MIND</span></a> <a class="header__link" href="#getting-start" itemprop="url"><span itemprop="name">Download</span></a>
+                </div><!-- <a class="header__link" href="#evaluation-leaderboard" itemprop="url"> <span
                                 itemprop="name">Leaderboard</span> </a></div> -->
-                </nav>
-                <div class="header__toggle"> <span></span> <span></span> <span></span></div>
+                <div class="header__toggle"></div>
             </div>
         </div>
-    </header>
-    <div class="hero lazyload" data-bg="https://msnews.github.io/assets/img/posts/sleek.jpg">
-        <div class="hero__wrap">
-            <div class="hero__categories"></div>
-            <h1 class="hero__title">MIND: MIcrosoft News Dataset</h1>
-            <p class="hero__meta"> <span> A Large-Scale English Dataset for News Recommendation Research </span></p>
-        </div>
-    </div>
-    <main class="site__content">
-        <div class="container">
-            <article class="post-content">
-                <!-- about mind -->
-                <h1 id="about-mind">About MIND</h1>
-                <p><strong>MI</strong>crosoft <strong>N</strong>ews <strong>D</strong>ataset (MIND) is a large-scale
-                    dataset for news recommendation research. 
-		    It was collected from anonymized behavior logs of <a href="https://microsoftnews.msn.com/">Microsoft News</a> website.
-			The mission of MIND is to serve as a
-                    benchmark dataset for news recommendation and facilitate the research in news recommendation and recommender systems area.</p>
-		    
-                <p>MIND contains about 160k English news articles and more than 15 million impression logs generated by 1 million users. Every news article contains rich textual content including
-                    title, abstract, body, category and entities. Each impression log contains the click events,
-                    non-clicked events and historical news click behaviors of this user before this impression. 
-                    To protect user privacy, each user was de-linked from the production system when securely hashed into an anonymized ID.
-                    For more detailed information about the MIND dataset, you can refer to the following paper:</p>
-                <div class="button-container">
-                    <button class="button button-pill button-primary"
-			    onclick="location.href='./assets/doc/ACL2020_MIND.pdf';">
-                        <strong>MIND paper (Wu et al., 2020)</strong>
-                    </button>
-                </div>
-                <p>If you are interested in using this dataset in your research work, welcome to cite this paper:</p>
-		    
-		        <p>Fangzhao Wu, Ying Qiao, Jiun-Hung Chen, Chuhan Wu, Tao Qi, Jianxun Lian, Danyang Liu, Xing Xie, Jianfeng Gao, Winnie Wu and Ming Zhou. <strong>MIND: A Large-scale Dataset for News Recommendation.</strong> ACL 2020.</p>
-               
-                <br>
-                
-                <!-- download -->
-
-                <h1 id="getting-start">Download</h1>
-                <p>The MIND dataset is free to download for research purposes under
-                    <a href="https://github.com/msnews/MIND/blob/master/MSR%20License_Data.pdf">Microsoft Research
-                        License Terms</a>. 
-		Before you download the dataset, please read these terms and click below button to confirm that you agree to them.
+        <div class="hero lazyload" data-bg="https://msnews.github.io/assets/img/posts/sleek.jpg">
+            <div class="hero__wrap">
+                <div class="hero__categories"></div>
+                <h1 class="hero__title">
+                    MIND: MIcrosoft News Dataset
+                </h1>
+                <p class="hero__meta">
+                    <span>A Large-Scale English Dataset for News Recommendation Research</span>
                 </p>
-                <div style="text-align: center;">
-                    <label>
-                        <input style="width: 1.5rem" type="checkbox" name="TermAgree" id='TermAgree' value="false"
-                            onClick="checkAllBox(this)">I agree to the Microsoft Research License Terms.
-                    </label>
-                </div>
-		        <br>
-                <div>  
-                        <p>The complete MIND dataset will be released during the ACL 2020 conference. 
-                    Currently, we release a small version of the MIND dataset to help the 
-                    researchers get familiar with our data by randomly sampling 50,000 users and their behavior logs
-                    from the MIND dataset. We name this dataset <strong> MIND-small</strong>.
-                    It can support many researches on news recommendation, and can be downloaded at:
-                    </p>
-                </div>
-                <div class="button-container">
-                    <button class="button button-pill button-border" disabled id='train-set'
-                        onclick="location.href='https://mind201910small.blob.core.windows.net/release/MINDsmall_train.zip';">
-                        <strong>Training Set</strong>
-                    </button></div>
-                <div class="button-container">
-                    <button class="button button-pill button-border" disabled id='dev-set'
-                        onclick="location.href='https://mind201910small.blob.core.windows.net/release/MINDsmall_dev.zip';">
-                        <strong>Validation Set</strong>
-                    </button>
-                </div>
-				<p>For more details about the data formats, please refer to this document:</p>
-				<div class="button-container">
-                    <button class="button button-pill button-border"
-                        onclick="location.href='https://github.com/msnews/msnews.github.io/blob/master/assets/doc/introduction.md';">
-                        <strong>Dataset Description</strong>
-                    </button>
-                </div>
-            
-                <br>
+            </div>
+        </div>
+        <div class="container">
+            <!-- about mind -->
+            <h1 id="about-mind">
+                About MIND
+            </h1>
+            <p>
+                <strong>MI</strong>crosoft <strong>N</strong>ews <strong>D</strong>ataset (MIND) is a large-scale dataset for news recommendation research. It was collected from anonymized behavior logs of <a href="https://microsoftnews.msn.com/">Microsoft News</a> website. The mission of MIND is to serve as a benchmark dataset for news recommendation and facilitate the research in news recommendation and recommender systems area.
+            </p>
+            <p>
+                MIND contains about 160k English news articles and more than 15 million impression logs generated by 1 million users. Every news article contains rich textual content including title, abstract, body, category and entities. Each impression log contains the click events, non-clicked events and historical news click behaviors of this user before this impression. To protect user privacy, each user was de-linked from the production system when securely hashed into an anonymized ID. For more detailed information about the MIND dataset, you can refer to the following paper:
+            </p>
+            <div class="button-container">
+                <button class="button button-pill button-primary" onclick="location.href='./assets/doc/ACL2020_MIND.pdf';"><strong>MIND paper (Wu et al., 2020)</strong></button>
+            </div>
+            <p>
+                If you are interested in using this dataset in your research work, welcome to cite this paper:
+            </p>
+            <p>
+                Fangzhao Wu, Ying Qiao, Jiun-Hung Chen, Chuhan Wu, Tao Qi, Jianxun Lian, Danyang Liu, Xing Xie, Jianfeng Gao, Winnie Wu and Ming Zhou. <strong>MIND: A Large-scale Dataset for News Recommendation.</strong> ACL 2020.
+            </p><br>
+            <!-- download -->
+            <h1 id="getting-start">
+                Download
+            </h1>
+            <p>
+                The MIND dataset is free to download for research purposes under <a href="https://github.com/msnews/MIND/blob/master/MSR%20License_Data.pdf">Microsoft Research License Terms</a>. Before you download the dataset, please read these terms and click below button to confirm that you agree to them.
+            </p>
+            <div style="text-align: center;">
+                <label><input style="width: 1.5rem" type="checkbox" name="TermAgree" id='TermAgree' value="false" onclick="checkAllBox(this)">I agree to the Microsoft Research License Terms.</label>
+            </div><br>
+            <div>
                 <p>
-                The implementation of several existing news recommendation methods and general recommendation methods 
-                    can be found at <a href="https://github.com/microsoft/recommenders">Microsoft Recommenders</a>.
+                    Currently, we release the training and validation sets of MIND, and the complete MIND dataset will be released soon. They can support many researches on news recommendation, and can be downloaded at:
                 </p>
-                <br>
-            </article>
+            </div>
+            <div class="button-container">
+                <button class="button button-pill button-border" disabled id='train-set' onclick="location.href='https://mind201910small.blob.core.windows.net/release/MINDsmall_train.zip';"><strong>Training Set</strong></button>
+            </div>
+            <div class="button-container">
+                <button class="button button-pill button-border" disabled id='dev-set' onclick="location.href='https://mind201910small.blob.core.windows.net/release/MINDsmall_dev.zip';"><strong>Validation Set</strong></button>
+            </div>
+            <p>
+                For more details about the data formats, please refer to this document:
+            </p>
+            <div class="button-container">
+                <button class="button button-pill button-border" onclick="location.href='https://github.com/msnews/msnews.github.io/blob/master/assets/doc/introduction.md';"><strong>Dataset Description</strong></button>
+            </div><br>
+            <p>
+                In addition, to help the researchers get familiar with our data and run quick experiments, we release a small version of the MIND dataset by randomly sampling 50,000 users and their behavior logs from the MIND dataset. We name this dataset <strong>MIND-small</strong>. The training and validation sets of MIND-small can be downloaded at:
+            </p>
+            <div class="button-container">
+                <button class="button button-pill button-border" disabled id='smalltrain-set' onclick="location.href='https://mind201910small.blob.core.windows.net/release/MINDsmall_train.zip';"><strong>Training Set</strong></button>
+            </div>
+            <div class="button-container">
+                <button class="button button-pill button-border" disabled id='smalldev-set' onclick="location.href='https://mind201910small.blob.core.windows.net/release/MINDsmall_dev.zip';"><strong>Validation Set</strong></button>
+            </div><br>
+            <p>
+                The implementation of several existing news recommendation methods and general recommendation methods can be found at <a href="https://github.com/microsoft/recommenders">Microsoft Recommenders</a>.
+            </p><br>
         </div>
-    </main>
-    <footer class="footer">
         <div class="container">
-            <a href="https://go.microsoft.com/fwlink/?LinkId=521839">Privacy & Cookies</a>
-            <span>|</span>
-            <a href="https://www.microsoft.com/trademarks">Trademarks</a>
-            <span>|</span>
-            <a href="https://go.microsoft.com/fwlink/?LinkID=206977">Terms of use</a>
-            <span>|</span>
-            <span> ©2020 Microsoft </span>
-        </div>
-    </footer>
-    <script async src="https://msnews.github.io/assets/js/bundle.js"></script>
-
-</body>
-
+            <a href="https://go.microsoft.com/fwlink/?LinkId=521839">Privacy &amp; Cookies</a> <span>|</span> <a href="https://www.microsoft.com/trademarks">Trademarks</a> <span>|</span> <a href="https://go.microsoft.com/fwlink/?LinkID=206977">Terms of use</a> <span>|</span> <span>©2020 Microsoft</span>
+        </div><script async="" src="https://msnews.github.io/assets/js/bundle.js" type="text/javascript">
+</script>
+    </body>
 </html>
