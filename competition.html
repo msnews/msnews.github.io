@@ -20,6 +20,7 @@
     <meta name="apple-mobile-web-app-title" content="MIND">
     <meta name="application-name" content="MIND">
     <meta name="theme-color" content="#ffffff">
+	        <link rel="stylesheet" href="./assets/css/layout.css" type="text/css">
     <style class="inlineCSS">
         h1 {
             color: #313237;
@@ -608,7 +609,7 @@
                 <!-- about mind -->
                 <h1 id="competition">Overview</h1>
                 <p>
-                    Online news services such as <a href="https://www.msn.com">MSN news</a> have gained huge popularity for online news reading. 
+                    Online news services such as <a href="https://microsoftnews.msn.com/">Microsoft News</a> have gained huge popularity for online news reading. 
 					However, since massive news articles are published everyday, users of online news services are facing heavy information overload. 
 					Therefore, news recommendation is an important technique for personalized news services to improve the reading experience of users and alleviate information overload.
 					  </p>
@@ -621,14 +622,14 @@
 					It is very important to understand news content from their texts using NLP techniques. 
 					Third, there is no explicit rating of news articles posted by users in news platforms. 
 					Thus, in news recommendation we need to model users’ interests from their browsing and click behaviors.
-					However, user interests are usually diverse and may evolve over time, which poses significant challenges to user modeling algorithms.
+					However, user interests are usually diverse and dynamic, which poses significant challenges to user modeling algorithms.
 					Thus, further researches are highly needed to tackle the various challenges in news recommendation.
   </p>
   <p>
 To promote the research and practice on news recommendation, 
 we hold a <strong> MIND News Recommendation Competition </strong>based on the <a href="https://msnews.github.io/index.html">MIND dataset</a>, 
 which is a large-scale English dataset for news recommendation. 
-This challenge will provide a good testbed for participants to develop better news recommender systems and to improve the future reading experience of millions of users.
+This challenge will provide a good testbed for participants to develop better news recommender systems to improve the future reading experience of millions of users.
                      </p>
 					 
                 <div class="button-container">
@@ -641,9 +642,125 @@ This challenge will provide a good testbed for participants to develop better ne
          
 
                 <br>
-                <h1 id="leaderboard">Leaderboard</h1>
-                <iframe src="https://competitions.codalab.org/competitions/leaderboard_widget/24122/" style="height: 300px; width: 100%; border: none;"></iframe>
-                
+            <h1 id="leaderboard">
+                Leaderboard
+            </h1>
+            <div class="col-md-7">
+                <div class="infoCard">
+                    <div class="infoBody">
+                        <table class="table performanceTable">
+                            <tr class='leaderboardhead'>
+                                <th>
+                                    Rank
+                                </th>
+                                <th>
+                                    User
+                                </th>
+                                <th>
+                                    AUC
+                                </th>
+                                <th>
+                                    MRR
+                                </th>
+                                <th>
+                                    nDCG@5
+                                </th>
+                                <th>
+                                    nDCG@10
+                                </th>
+                            </tr>
+                            <tr class='leaderboardline'>
+                                <td>
+                                    <p class="word-break2">
+                                        1
+                                    </p><span class="date label label-default">Apr. 01, 2020</span>
+                                </td>
+                                <td class="word-break">
+                                    THU_NGN
+                                </td>
+                                <td class="word-break">
+                                    <b>0.6420</b>
+                                </td>
+                                <td class="word-break">
+                                    <b>0.1174</b>
+                                </td>
+                                <td class="word-break">
+                                    <b>0.3253</b>
+                                </td>
+                                <td class="word-break">
+                                    <b>0.3905</b>
+                                </td>
+                            </tr>
+                            <tr class='leaderboardlinemask'>
+                                <td>
+                                    <p class="word-break2">
+                                        2
+                                    </p><span class="date label label-default">Jul. 05, 2020</span>
+                                </td>
+                                <td class="word-break">
+                                    Test team creation2
+                                </td>
+                                <td class="word-break">
+                                    <b>0.6156</b>
+                                </td>
+                                <td class="word-break">
+                                    <b>0.2824</b>
+                                </td>
+                                <td class="word-break">
+                                    <b>0.3076</b>
+                                </td>
+                                <td class="word-break">
+                                    <b>0.3709</b>
+                                </td>
+                            </tr>
+                            <tr class='leaderboardline'>
+                                <td>
+                                    <p class="word-break2">
+                                        3
+                                    </p><span class="date label label-default">Jul. 05, 2020</span>
+                                </td>
+                                <td class="word-break">
+                                    Test
+                                </td>
+                                <td class="word-break">
+                                    <b>0.6156</b>
+                                </td>
+                                <td class="word-break">
+                                    <b>0.2824</b>
+                                </td>
+                                <td class="word-break">
+                                    <b>0.3076</b>
+                                </td>
+                                <td class="word-break">
+                                    <b>0.3709</b>
+                                </td>
+                            </tr>
+                            <tr class='leaderboardlinemask'>
+                                <td>
+                                    <p class="word-break2">
+                                        4
+                                    </p><span class="date label label-default">Jun. 15, 2020</span>
+                                </td>
+                                <td class="word-break">
+                                    Anonymous
+                                </td>
+                                <td class="word-break">
+                                    <b>0.4991</b>
+                                </td>
+                                <td class="word-break">
+                                    <b>0.2183</b>
+                                </td>
+                                <td class="word-break">
+                                    <b>0.2230</b>
+                                </td>
+                                <td class="word-break">
+                                    <b>0.2857</b>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div><br>
                 <br>
 
             </article>
