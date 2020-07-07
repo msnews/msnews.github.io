@@ -94,7 +94,7 @@ margin-top:3px;
  .label{display:inline;padding:.2em .6em .3em;font-size:75%;font-weight:700;line-height:1;color:#fff;text-align:center;white-space:nowrap;vertical-align:baseline;border-radius:.25em}
  a.label:focus,a.label:hover{color:#fff;text-decoration:none;cursor:pointer}.label:empty{display:none}.btn 
  .label{position:relative;top:-1px}
- .label-default{background-color:#777}
+ .label-default{background-color:#606060}
  .label-default[href]:focus,.label-default[href]:hover{background-color:#5e5e5e}
  .label-primary{background-color:#337ab7}.label-primary[href]:focus,
  .label-primary[href]:hover{background-color:#286090}.label-success{background-color:#5cb85c}
