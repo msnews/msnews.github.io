@@ -542,13 +542,63 @@
         <link rel="stylesheet" href="./assets/css/main.css"></noscript>
     <script
         type="text/javascript"> (function (w) { "use strict"; if (!w.loadCSS) { w.loadCSS = function () { } } var rp = loadCSS.relpreload = {}; rp.support = (function () { var ret; try { ret = w.document.createElement("link").relList.supports("preload") } catch (e) { ret = !1 } return function () { return ret } })(); rp.bindMediaToggle = function (link) { var finalMedia = link.media || "all"; function enableStylesheet() { link.media = finalMedia } if (link.addEventListener) { link.addEventListener("load", enableStylesheet) } else if (link.attachEvent) { link.attachEvent("onload", enableStylesheet) } setTimeout(function () { link.rel = "stylesheet"; link.media = "only x" }); setTimeout(enableStylesheet, 3000) }; rp.poly = function () { if (rp.support()) { return } var links = w.document.getElementsByTagName("link"); for (var i = 0; i < links.length; i++) { var link = links[i]; if (link.rel === "preload" && link.getAttribute("as") === "style" && !link.getAttribute("data-loadcss")) { link.setAttribute("data-loadcss", !0); rp.bindMediaToggle(link) } } }; if (!rp.support()) { rp.poly(); var run = w.setInterval(rp.poly, 500); if (w.addEventListener) { w.addEventListener("load", function () { rp.poly(); w.clearInterval(run) }) } else if (w.attachEvent) { w.attachEvent("onload", function () { rp.poly(); w.clearInterval(run) }) } } if (typeof exports !== "undefined") { exports.loadCSS = loadCSS } else { w.loadCSS = loadCSS } }(typeof global !== "undefined" ? global : this)) </script>
-    <script
-        type="text/javascript"> 
-        function buildDataTable() { 
-            const resultURL = 'https://competitions.codalab.org/competitions/24122/results/40018/data';
-            console.log(resultURL);
-        };
-         </script>
+        <script type="text/javascript">
+            function loadScript(src) {
+              return new Promise(function (resolve, reject) {
+                var s;
+                s = document.createElement('script');
+                s.src = src;
+                s.onload = resolve;
+                s.onerror = reject;
+                document.head.appendChild(s);
+              });
+            }
+            function buildDataTable() {
+              loadScript(
+                'https://cdn.jsdelivr.net/npm/jquery-csv@1.0.11/src/jquery.csv.min.js'
+              )
+                .then(() => {
+                  // TODO currently use a proxy to solve CORS problem
+                  const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+                  const resultURL =
+                    'https://competitions.codalab.org/competitions/24122/results/40018/data';
+                  return fetch(proxyUrl + resultURL);
+                })
+                .then((response) => response.text())
+                .then((csvText) => {
+                  const results = $.csv.toObjects(csvText);
+                  const tableRows = results.map(
+                    (e, idx) => `
+          <tr class="leaderboardline${idx % 2 === 0 ? '' : 'mask'}">
+          <td><p class="word-break2">${idx + 1}</p></td>
+          <td class="word-break">${e['User']}</td>
+          <td class="word-break"><b>${e['AUC']}</b></td>
+          <td class="word-break"><b>${e['MRR']}</b></td>
+          <td class="word-break"><b>${e['nDCG@5']}</b></td>
+          <td class="word-break"><b>${e['nDCG@10']}</b></td>
+          </tr>`
+                  );
+                  document.querySelector('.infoBody').innerHTML = `
+          <table class="table performanceTable">
+          <tr class="leaderboardhead">
+          <th>Rank</th>
+          <th>User</th>
+          <th>AUC</th>
+          <th>MRR</th>
+          <th>nDCG@5</th>
+          <th>nDCG@10</th>
+          </tr>
+          ${tableRows.join('')}
+          </table>
+          `;
+                })
+                .catch(() => {
+                  document.querySelector(
+                    '.infoBody'
+                  ).innerHTML = `Error while loading results. Click <a href="https://competitions.codalab.org/competitions/24122?secret_key=e075b839-d0cb-4c7b-b755-b34c5a666cba#results" target="_blank">here</a> to visit the original page.`;
+                });
+            }
+          </script>          
     <script type="text/javascript">
         function checkAllBox(obj) {
             var join = document.getElementById("join");
@@ -651,116 +701,7 @@ This challenge will provide a good testbed for participants to develop better ne
             <div class="col-md-7">
                 <div class="infoCard">
                     <div class="infoBody">
-                        <table class="table performanceTable">
-                            <tr class='leaderboardhead'>
-                                <th>
-                                    Rank
-                                </th>
-                                <th>
-                                    User
-                                </th>
-                                <th>
-                                    AUC
-                                </th>
-                                <th>
-                                    MRR
-                                </th>
-                                <th>
-                                    nDCG@5
-                                </th>
-                                <th>
-                                    nDCG@10
-                                </th>
-                            </tr>
-                            <tr class='leaderboardline'>
-                                <td>
-                                    <p class="word-break2">
-                                        1
-                                    </p><span class="date label label-default">Apr. 01, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    THU_NGN
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6420</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.1174</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3253</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3905</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardlinemask'>
-                                <td>
-                                    <p class="word-break2">
-                                        2
-                                    </p><span class="date label label-default">Jul. 05, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    Test team creation2
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6156</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.2824</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3076</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3709</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardline'>
-                                <td>
-                                    <p class="word-break2">
-                                        3
-                                    </p><span class="date label label-default">Jul. 05, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    Test
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6156</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.2824</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3076</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3709</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardlinemask'>
-                                <td>
-                                    <p class="word-break2">
-                                        4
-                                    </p><span class="date label label-default">Jun. 15, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    Anonymous
-                                </td>
-                                <td class="word-break">
-                                    <b>0.4991</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.2183</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.2230</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.2857</b>
-                                </td>
-                            </tr>
-                        </table>
+                        Loading data...
                     </div>
                 </div>
             </div><br>
