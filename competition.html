@@ -16,7 +16,7 @@
     <meta property="og:site_name" content="MIND" />
     <meta property="og:type" content="article" />
 
-    <link rel="icon" type="image/png" sizes="32x32" href="https://msnews.github.io/assets/img/icons/M.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/icons/M.png">
     <meta name="apple-mobile-web-app-title" content="MIND">
     <meta name="application-name" content="MIND">
     <meta name="theme-color" content="#ffffff">
@@ -537,13 +537,18 @@
             }
         }
     </style>
-    <link rel="preload" href="https://msnews.github.io/assets/css/main.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="./assets/css/main.css" as="style" onload="this.rel='stylesheet'">
     <noscript>
-        <link rel="stylesheet" href="https://msnews.github.io/assets/css/main.css"></noscript>
+        <link rel="stylesheet" href="./assets/css/main.css"></noscript>
     <script
         type="text/javascript"> (function (w) { "use strict"; if (!w.loadCSS) { w.loadCSS = function () { } } var rp = loadCSS.relpreload = {}; rp.support = (function () { var ret; try { ret = w.document.createElement("link").relList.supports("preload") } catch (e) { ret = !1 } return function () { return ret } })(); rp.bindMediaToggle = function (link) { var finalMedia = link.media || "all"; function enableStylesheet() { link.media = finalMedia } if (link.addEventListener) { link.addEventListener("load", enableStylesheet) } else if (link.attachEvent) { link.attachEvent("onload", enableStylesheet) } setTimeout(function () { link.rel = "stylesheet"; link.media = "only x" }); setTimeout(enableStylesheet, 3000) }; rp.poly = function () { if (rp.support()) { return } var links = w.document.getElementsByTagName("link"); for (var i = 0; i < links.length; i++) { var link = links[i]; if (link.rel === "preload" && link.getAttribute("as") === "style" && !link.getAttribute("data-loadcss")) { link.setAttribute("data-loadcss", !0); rp.bindMediaToggle(link) } } }; if (!rp.support()) { rp.poly(); var run = w.setInterval(rp.poly, 500); if (w.addEventListener) { w.addEventListener("load", function () { rp.poly(); w.clearInterval(run) }) } else if (w.attachEvent) { w.attachEvent("onload", function () { rp.poly(); w.clearInterval(run) }) } } if (typeof exports !== "undefined") { exports.loadCSS = loadCSS } else { w.loadCSS = loadCSS } }(typeof global !== "undefined" ? global : this)) </script>
     <script
-        type="text/javascript"> function getJson(url) { return JSON.parse($.ajax({ type: 'GET', url: url, dataType: 'json', global: false, async: false, success: function (data) { return data; } }).responseText); } function buildDataTable() { var leaderboard = []; leaderboard.push(getJson("https://yjw.wh98.me:8080")[0]); var tr; $("#leaderboardtable").empty(); var columnSet = []; var headerTr$ = $('<tr/>'); var headers = leaderboard[0].headers; headerTr$.append($('<th/>').html("participant")); for (var j = 0; j < headers.length; j++) { headerTr$.append($('<th/>').html(headers[j].label)); } $("#leaderboardtable").append(headerTr$); for (var i = 0; i < leaderboard[0].scores.length; i++) { tr = $('<tr/>'); tr.append("<td>" + leaderboard[0].scores[i][1].username + "</td>"); values = leaderboard[0].scores[i][1].values; for (var j = 0; j < values.length; j++) { tr.append("<td>" + values[j].val + "</td>"); } $('#leaderboardtable').append(tr); } console.log(leaderboard) } </script>
+        type="text/javascript"> 
+        function buildDataTable() { 
+            const resultURL = 'https://competitions.codalab.org/competitions/24122/results/40018/data';
+            console.log(resultURL);
+        };
+         </script>
     <script type="text/javascript">
         function checkAllBox(obj) {
             var join = document.getElementById("join");
@@ -555,11 +560,9 @@
             }
         }
     </script>
-    <!-- <script type="text/javascript"> 
+    <script type="text/javascript"> 
         window.onload = function (){ 
             buildDataTable();
-            var term_agree = document.getElementById("TermAgree");
-            checkAllBox(term_agree);
         } </script> -->
 </head>
 
@@ -578,7 +581,7 @@
                             </g>
                         </svg> -->
                         <img style="max-width:200%; width:90px;" alt="backgound image"
-                            src="https://msnews.github.io/assets/img/icons/logo.png">
+                            src="./assets/img/icons/logo.png">
                     </div>
                 </a>
                 <nav class="header__links">
@@ -596,7 +599,7 @@
             </div>
         </div>
     </header>
-    <div class="hero lazyload" data-bg="https://msnews.github.io/assets/img/posts/sleek.jpg">
+    <div class="hero lazyload" data-bg="./assets/img/posts/sleek.jpg">
         <div class="hero__wrap">
             <div class="hero__categories"></div>
             <h1 class="hero__title2">MIND News Recommendation Competition</h1>
@@ -627,7 +630,7 @@
   </p>
   <p>
 To promote the research and practice on news recommendation, 
-we hold a <strong> MIND News Recommendation Competition </strong>based on the <a href="https://msnews.github.io/index.html">MIND dataset</a>, 
+we hold a <strong> MIND News Recommendation Competition </strong>based on the <a href="./index.html">MIND dataset</a>, 
 which is a large-scale English dataset for news recommendation. 
 This challenge will provide a good testbed for participants to develop better news recommender systems to improve the future reading experience of millions of users.
                      </p>
@@ -777,7 +780,7 @@ This challenge will provide a good testbed for participants to develop better ne
             <span> ©2020 Microsoft </span>
         </div>
     </footer>
-    <script async src="https://msnews.github.io/assets/js/bundle.js"></script>
+    <script async src="./assets/js/bundle.js"></script>
 
 </body>
 
