@@ -24,7 +24,7 @@ File Name | Description
 behaviors.tsv  | The click histories and impression logs of users
 news.tsv  | The information of news articles
 entity_embedding.vec    | The embeddings of entities in news extracted from knowledge graph
-
+relation_embedding.vec    | The embeddings of relations between entities extracted from knowledge graph
 
 ### behaviors.tsv
 
