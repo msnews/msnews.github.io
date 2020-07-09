@@ -9,8 +9,7 @@ We collected the news click behaviors of these users in this period, which are f
 We used the impression logs in the last week for test, and the logs in the fifth week for training.
 For samples in training set, we used the click behaviors in the first four weeks to construct the news click history for user modeling.
 Among the training data, we used the samples in the last day of the fifth week as validation set.
-The complete MIND dataset will be released during the ACL 2020 conference.
-Currently we release a small version of MIND (**MIND-small**), by randomly sampling 50,000 users and their behavior logs.
+In addition, we release a small version of MIND (**MIND-small**), by randomly sampling 50,000 users and their behavior logs.
 Only training and validation sets are contained in the MIND-small dataset.
 
 
@@ -31,8 +30,9 @@ relation_embedding.vec    | The embeddings of relations between entities extract
 ### behaviors.tsv
 
 The behaviors.tsv file contains the impression logs and users' news click hostories. 
-It has 3 columns divided by the tab symbol:
+It has 5 columns divided by the tab symbol:
 
+* Impression ID. The ID of an impression.
 * User ID. The anonymous ID of a user.
 * Time. The impression time with format "MM/DD/YYYY HH:MM:SS AM/PM".
 * History. The news click history (ID list of clicked news) of this user before this impression. 
@@ -42,6 +42,7 @@ An example is shown in the table below:
 
 Column | Content
 ------------- | -------------
+Impression ID | 123
 User ID | U131
 Time | 11/13/2019 8:36:57 AM
 History | N11 N21 N103
