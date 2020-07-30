@@ -549,17 +549,20 @@
             var dev_set = document.getElementById("dev-set");
             var smalltrain_set = document.getElementById("smalltrain-set");
             var smalldev_set = document.getElementById("smalldev-set");
+            var az_set = document.getElementById("az-dataset");
             if (obj.checked == true) {
                 train_set.disabled = false;
                 dev_set.disabled = false;
                 smalltrain_set.disabled = false;
                 smalldev_set.disabled = false;
+                az_set.disabled = false;
             }
             else {
                 train_set.disabled = true;
                 dev_set.disabled = true;
                 smalltrain_set.disabled = true;
                 smalldev_set.disabled = true;
+                az_set.disabled = true;
             }
         }
     </script>
@@ -665,6 +668,14 @@
             </div>
             <div class="button-container">
                 <button class="button button-pill button-border" disabled id='dev-set' onclick="location.href='https://mind201910small.blob.core.windows.net/release/MINDlarge_dev.zip';"><strong>Validation Set</strong></button>
+            </div>
+            <div>
+                <p>
+                    We also provide the link to Microsoft Azure Open Datasets for eaiser access to our large dataset on cloud platform:
+                </p>
+            </div>
+            <div class="button-container">
+                <button class="button button-pill button-border" disabled id='az-dataset' onclick="location.href='https://azure.microsoft.com/en-us/services/open-datasets/catalog/microsoft-news-dataset/';"><strong>Microsoft Azure Open Datasets</strong></button>
             </div>
             <p>
                 For more details about the data formats, please refer to this document:

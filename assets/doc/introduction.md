@@ -34,18 +34,19 @@ It has 5 columns divided by the tab symbol:
 * Impression ID. The ID of an impression.
 * User ID. The anonymous ID of a user.
 * Time. The impression time with format "MM/DD/YYYY HH:MM:SS AM/PM".
-* History. The news click history (ID list of clicked news) of this user before this impression. 
-* Impressions. List of news displayed in this impression and user's click behaviors on them (1 for click and 0 for non-click).
+* History. The news click history (ID list of clicked news) of this user before this impression. The clicked news articles are ordered by time.
+* Impressions. List of news displayed in this impression and user's click behaviors on them (1 for click and 0 for non-click). The orders of news in a impressions
+have been shuffled.
 
 An example is shown in the table below:
 
 Column | Content
 ------------- | -------------
-Impression ID | 123
-User ID | U131
-Time | 11/13/2019 8:36:57 AM
-History | N11 N21 N103
-Impressions | N4-1 N34-1 N156-0 N207-0 N198-0
+Impression ID | 91
+User ID | U397059
+Time | 11/15/2019 10:22:32 AM
+History | N106403 N71977 N97080 N102132 N97212 N121652
+Impressions | N129416-0 N26703-1 N120089-1 N53018-0 N89764-0 N91737-0 N29160-0
  
 ### news.tsv
 
