@@ -359,7 +359,11 @@
                 background: #277cea
             }
         }
-
+        .HotDate{
+            font-size: 1.5rem;
+            text-align: center;
+            color: #074b7c;
+        }
         .post-card {
             display: block;
             position: relative;
@@ -561,6 +565,7 @@
             var term_agree = document.getElementById("TermAgree");
             checkAllBox(term_agree);
         } </script> -->
+
 </head>
 
 <body class="site">
@@ -586,6 +591,8 @@
                         <a class="header__link" href="index.html" itemprop="url"> <span itemprop="name"><strong>Dataset</strong></span> </a>
                         <a class="header__link" href="#competition" itemprop="url">
                                 <span itemprop="name">Overview</span> </a>
+                        <a class="header__link" href="#timeline" itemprop="url">
+                            <span itemprop="name">Timeline</span> </a>
                         <a class="header__link" href="#leaderboard" itemprop="url">
                             <span itemprop="name">Leaderboard</span> </a>
                     </div>
@@ -632,14 +639,50 @@ which is a large-scale English dataset for news recommendation.
 This challenge will provide a good testbed for participants to develop better news recommender systems to improve the future reading experience of millions of users.
                      </p>
 					 
+
+            
+         <h1 id="timeline">Timeline</h1>
+<li> July 20th, 2020: Competition is open. Participants registration begins.</li> 
+<li>July 20th - August 20th, 2020: Dev phase. Participants can submit their results on the dev set to obtain official evaluation scores.</li> 
+<li>August 21th - September 4th, 2020: Test phase. Test data can be downloaded and participants can submit their results on the test set. </li> 
+<li>September 11st, 2020: Competition results announcement.</li> 
+<br>
+*All deadlines are at 11:59 PM UTC on the corresponding day. Competition registration is due on August 20th.
+<br>
+<br>
+<div id="CountMsg" class="HotDate"> 
+<span><strong>Registration Deadline:</strong></span> 
+<strong><span id="t_d">0days </span></strong> 
+<strong><span id="t_h">00:   </span></strong> 
+<strong><span id="t_m">00:   </span></strong> 
+<strong><span id="t_s">00    </span></strong> 
+</div> 
+
                 <div class="button-container">
                     <button class="button button-pill button-border" 
                         onclick="location.href='https://competitions.codalab.org/competitions/24122';">
                         <strong>Join Competition</strong>
                     </button>
                 </div>
-            
-         
+<script type="text/javascript"> 
+function getRTime(){ 
+var EndTime= new Date('2020/8/20 23:59:59 UTC'); //截止时间 
+var NowTime = new Date(); 
+var t =EndTime.getTime() - NowTime.getTime(); 
+ 
+var d=Math.floor(t/1000/60/60/24); 
+var h=Math.floor(t/1000/60/60%24); 
+var m=Math.floor(t/1000/60%60); 
+var s=Math.floor(t/1000%60); 
+
+document.getElementById("t_d").innerHTML = d + " days"; 
+document.getElementById("t_h").innerHTML = (h>9?h:"0"+h) + ":"; 
+document.getElementById("t_m").innerHTML = (m>9?m:"0"+m) + ":"; 
+document.getElementById("t_s").innerHTML = (s>9?s:"0"+s); 
+} 
+setInterval(getRTime,1000); 
+</script> 
+
 
                 <br>
             <h1 id="leaderboard">
