@@ -547,12 +547,14 @@
         function checkAllBox(obj) {
             var train_set = document.getElementById("train-set");
             var dev_set = document.getElementById("dev-set");
+            var test_set = document.getElementById("test-set");
             var smalltrain_set = document.getElementById("smalltrain-set");
             var smalldev_set = document.getElementById("smalldev-set");
             var az_set = document.getElementById("az-dataset");
             if (obj.checked == true) {
                 train_set.disabled = false;
                 dev_set.disabled = false;
+                test_set.disabled = false;
                 smalltrain_set.disabled = false;
                 smalldev_set.disabled = false;
                 az_set.disabled = false;
@@ -560,6 +562,7 @@
             else {
                 train_set.disabled = true;
                 dev_set.disabled = true;
+                test_set.disabled = true;
                 smalltrain_set.disabled = true;
                 smalldev_set.disabled = true;
                 az_set.disabled = true;
@@ -660,7 +663,7 @@
 		        <br>
             <div>
                 <p>
-                    Currently, we release the training and validation sets of MIND, and the complete MIND dataset will be released soon. They can support many researches on news recommendation, and can be downloaded at:
+                    This dataset can support many researches on news recommendation, and can be downloaded at:
                 </p>
             </div>
             <div class="button-container">
@@ -668,6 +671,9 @@
             </div>
             <div class="button-container">
                 <button class="button button-pill button-border" disabled id='dev-set' onclick="location.href='https://mind201910small.blob.core.windows.net/release/MINDlarge_dev.zip';"><strong>Validation Set</strong></button>
+            </div>
+            <div class="button-container">
+                <button class="button button-pill button-border" disabled id='test-set' onclick="location.href='https://mind201910small.blob.core.windows.net/release/MINDlarge_test.zip';"><strong>Test Set</strong></button>
             </div>
             <div>
                 <p>
