@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MIND</title>
+    <meta property="og:title" content="MIND" />
+    <meta name="author" content="msnews" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="description" content="About MIND" />
+    <meta property="og:description" content="About MIND" />
+    <link rel="canonical" href="https://msnews.github.io/" />
+    <meta property="og:url" content="https://msnews.github.io/" />
+    <meta property="og:site_name" content="MIND" />
+    <meta property="og:type" content="article" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="https://msnews.github.io/assets/img/icons/M.png">
+    <meta name="apple-mobile-web-app-title" content="MIND">
+    <meta name="application-name" content="MIND">
+    <meta name="theme-color" content="#ffffff">
+	        <link rel="stylesheet" href="./assets/css/layout.css" type="text/css">
+    <style class="inlineCSS">
+        h1 {
+            color: #313237;
+            margin-top: 0;
+            margin-bottom: .5rem
+        }
+
+        .dark-bg {
+            background-color: #313237
+        }
+
+        @media only screen and (min-width:48em) {
+            .post-card {
+                width: 48.4375%;
+                margin-right: 3.125%
+            }
+
+            .post-card:last-of-type,
+            .post-card:nth-child(2n+2) {
+                margin-right: 0
+            }
+        }
+
+        html {
+            line-height: 1.15;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%
+        }
+
+        body {
+            margin: 0
+        }
+
+        header,
+        nav,
+        section {
+            display: block
+        }
+
+        h1 {
+            font-size: 2em;
+            margin: .67em 0
+        }
+
+        figure,
+        main {
+            display: block
+        }
+
+        figure {
+            margin: 1em 40px
+        }
+
+        a {
+            background-color: transparent;
+            -webkit-text-decoration-skip: objects
+        }
+
+        img {
+            border-style: none
+        }
+
+        svg:not(:root) {
+            overflow: hidden
+        }
+
+        ::-webkit-file-upload-button {
+            -webkit-appearance: button;
+            font: inherit
+        }
+
+        html {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box
+        }
+
+        body {
+            -webkit-overflow-scrolling: touch
+        }
+
+        *,
+        ::after,
+        ::before {
+            -webkit-box-sizing: inherit;
+            box-sizing: inherit
+        }
+
+        .site {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            min-height: 100vh;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column
+        }
+
+        .site__content {
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
+            flex: 1
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            width: auto;
+            vertical-align: middle
+        }
+
+        figure {
+            margin: 0
+        }
+
+        body {
+            background-color: #fff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #343851;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-size-adjust: 100%
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 1.25rem
+        }
+
+        h1,
+        h2 {
+            color: #313237;
+            margin-top: 0;
+            margin-bottom: .5rem
+        }
+
+        a {
+            color: #277cea;
+            text-decoration: none;
+            border-bottom: 1px dashed #277cea
+        }
+
+        .blur {
+            background: #fff;
+            filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="16" /></filter></svg>#filter');
+            -webkit-filter: blur(1rem);
+            filter: blur(1rem)
+        }
+
+        .container {
+            padding: 0 20px;
+            max-width: 100%;
+            margin: 0 auto
+        }
+
+        @media only screen and (min-width:36em) {
+            .container {
+                max-width: 540px;
+                margin: 0 auto
+            }
+        }
+
+        @media only screen and (min-width:48em) {
+            .container {
+                max-width: 720px;
+                margin: 0 auto
+            }
+        }
+
+        @media only screen and (min-width:62em) {
+            .container {
+                max-width: 960px;
+                margin: 0 auto
+            }
+        }
+
+        @media only screen and (min-width:75em) {
+            .container {
+                max-width: 1170px;
+                margin: 0 auto
+            }
+        }
+
+        .header {
+            background-color: #fff;
+            color: #343851;
+            position: absolute;
+            z-index: 4;
+            width: 100%;
+            top: 0;
+            left: 0;
+            will-change: transform;
+            -webkit-transform: translateY(0);
+            transform: translateY(0)
+        }
+
+        .header a {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            border-bottom: 0
+        }
+
+        .header__logo {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            height: 100%;
+            overflow: hidden;
+            padding: 19px 0;
+            margin-right: 1.25rem;
+            outline: 0;
+            border-bottom: 0;
+            color: #313237
+        }
+
+        .header__logo .header__logo--container {
+            width: 100px
+        }
+
+        .header__logo .header__logo--container .logo {
+            fill: currentColor
+        }
+
+        .header__inner {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            height: 3.75em;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between
+        }
+
+        .header__links {
+            padding-bottom: .5rem;
+            display: none;
+            position: absolute;
+            top: 3.75em;
+            left: 0;
+            width: 100%;
+            height: auto;
+            background: #fff
+        }
+
+        .header__link {
+            color: #343851;
+            padding: .938rem 0;
+            border-top: 1px solid #ededed
+        }
+
+        .header__toggle {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            width: 44px;
+            height: 100%;
+            background-color: transparent;
+            padding-left: 1.25rem
+        }
+
+        .header__toggle span {
+            display: block;
+            position: relative;
+            margin-top: 4px;
+            background-color: #343851;
+            width: 100%;
+            height: 2px;
+            border-radius: 1px
+        }
+
+        .header__toggle span:first-child {
+            margin-top: 0
+        }
+
+        @media (min-width:62em) {
+            .header__toggle {
+                display: none;
+                visibility: hidden
+            }
+
+            .header__links {
+                position: static;
+                padding: 0;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                visibility: visible;
+                width: auto;
+                height: 100%
+            }
+
+            .header__links-wrapper {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                height: 100%;
+                padding: 0
+            }
+
+            .header__link {
+                position: relative;
+                padding: .938rem 1rem;
+                border: 0;
+                height: 100%
+            }
+
+            .header__link::after {
+                content: "";
+                display: block;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 3px;
+                width: 100%;
+                -webkit-transform: scaleX(0);
+                transform: scaleX(0);
+                background: #277cea
+            }
+        }
+        .HotDate{
+            font-size: 1.5rem;
+            text-align: center;
+            color: #074b7c;
+        }
+        .post-card {
+            display: block;
+            position: relative;
+            width: 100%;
+            min-height: 250px;
+            border-radius: 4px;
+            overflow: hidden;
+            background-color: #fff;
+            -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .08);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .08);
+            margin-bottom: 2.25rem;
+            border-bottom: 0
+        }
+
+        @media only screen and (min-width:48em) {
+            .post-card {
+                width: 48.4375%;
+                margin-right: 3.125%
+            }
+
+            .post-card:nth-child(2n+2) {
+                margin-right: 0
+            }
+        }
+
+        @media only screen and (min-width:75em) {
+            .post-card {
+                width: 31.25%;
+                margin-right: 3.125%
+            }
+
+            .post-card:nth-child(2n+2) {
+                margin-right: 3.125%
+            }
+        }
+
+        .post-card__label {
+            position: absolute;
+            top: 1.5rem;
+            left: 1.5rem;
+            z-index: 2
+        }
+
+        .post-card__inner {
+            display: block;
+            position: relative;
+            padding: 1.875rem 1.25rem .625rem;
+            width: 100%;
+            color: #838c8d;
+            border-bottom: 0
+        }
+
+        .post-card__header {
+            margin-bottom: .75rem
+        }
+
+        .post-card__meta {
+            font-size: .875rem
+        }
+
+        .post-card__thumb {
+            margin: 0;
+            background: #fff;
+            position: relative;
+            overflow: hidden
+        }
+
+        .post-card__thumb::after {
+            content: "";
+            display: block;
+            height: 0;
+            width: 100%;
+            padding-bottom: 56.25%
+        }
+
+        .post-card__thumb>* {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: block
+        }
+
+        .label {
+            padding: 0 10px;
+            margin-bottom: 1rem;
+            display: inline-block;
+            line-height: 20px;
+            font-size: .75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: rgba(255, 255, 255, .8);
+            border: 2px solid rgba(255, 255, 255, .5);
+            border-radius: 100px
+        }
+
+        .hero {
+            margin: 3rem auto 0;
+            min-height: 15rem;
+            width: 100%;
+            position: relative;
+            background-color: #dde5ea;
+            background-repeat: no-repeat;
+            background-position: 50%;
+            background-size: cover
+        }
+
+        @media only screen and (min-width:62em) {
+            .hero {
+                margin: 2.5rem auto;
+                height: 23em
+            }
+        }
+
+        .hero::before {
+            position: absolute;
+            display: block;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(52, 56, 81, .8)
+        }
+
+        .hero__wrap {
+            position: absolute;
+            margin: auto;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: rgba(255, 255, 255, .8);
+            width: 100%;
+            max-width: 90%;
+            z-index: 1
+        }
+
+        .hero__wrap .hero__title2 {
+            font-size: 1.9em;
+            color: #fff
+        }
+
+        .blog {
+            background-color: #f9f9f9
+        }
+
+        .post-list {
+            padding-top: 2.5em;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-flex: 1;
+            -ms-flex: 1 0 auto;
+            flex: 1 0 auto
+        }
+
+        @media only screen and (min-width:48em) {
+            .hero__wrap {
+                max-width: 45em
+            }
+
+            .hero__wrap .hero__title2 {
+                padding: 1rem 0;
+                font-size: 1.9em;
+                line-height: 3.125rem
+            }
+
+            .post-list {
+                padding-top: 5em
+            }
+        }
+    </style>
+    <link rel="preload" href="https://msnews.github.io/assets/css/main.css" as="style" onload="this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://msnews.github.io/assets/css/main.css"></noscript>
+    <script
+        type="text/javascript"> (function (w) { "use strict"; if (!w.loadCSS) { w.loadCSS = function () { } } var rp = loadCSS.relpreload = {}; rp.support = (function () { var ret; try { ret = w.document.createElement("link").relList.supports("preload") } catch (e) { ret = !1 } return function () { return ret } })(); rp.bindMediaToggle = function (link) { var finalMedia = link.media || "all"; function enableStylesheet() { link.media = finalMedia } if (link.addEventListener) { link.addEventListener("load", enableStylesheet) } else if (link.attachEvent) { link.attachEvent("onload", enableStylesheet) } setTimeout(function () { link.rel = "stylesheet"; link.media = "only x" }); setTimeout(enableStylesheet, 3000) }; rp.poly = function () { if (rp.support()) { return } var links = w.document.getElementsByTagName("link"); for (var i = 0; i < links.length; i++) { var link = links[i]; if (link.rel === "preload" && link.getAttribute("as") === "style" && !link.getAttribute("data-loadcss")) { link.setAttribute("data-loadcss", !0); rp.bindMediaToggle(link) } } }; if (!rp.support()) { rp.poly(); var run = w.setInterval(rp.poly, 500); if (w.addEventListener) { w.addEventListener("load", function () { rp.poly(); w.clearInterval(run) }) } else if (w.attachEvent) { w.attachEvent("onload", function () { rp.poly(); w.clearInterval(run) }) } } if (typeof exports !== "undefined") { exports.loadCSS = loadCSS } else { w.loadCSS = loadCSS } }(typeof global !== "undefined" ? global : this)) </script>
+    <script
+        type="text/javascript"> function getJson(url) { return JSON.parse($.ajax({ type: 'GET', url: url, dataType: 'json', global: false, async: false, success: function (data) { return data; } }).responseText); } function buildDataTable() { var leaderboard = []; leaderboard.push(getJson("https://yjw.wh98.me:8080")[0]); var tr; $("#leaderboardtable").empty(); var columnSet = []; var headerTr$ = $('<tr/>'); var headers = leaderboard[0].headers; headerTr$.append($('<th/>').html("participant")); for (var j = 0; j < headers.length; j++) { headerTr$.append($('<th/>').html(headers[j].label)); } $("#leaderboardtable").append(headerTr$); for (var i = 0; i < leaderboard[0].scores.length; i++) { tr = $('<tr/>'); tr.append("<td>" + leaderboard[0].scores[i][1].username + "</td>"); values = leaderboard[0].scores[i][1].values; for (var j = 0; j < values.length; j++) { tr.append("<td>" + values[j].val + "</td>"); } $('#leaderboardtable').append(tr); } console.log(leaderboard) } </script>
+    <script type="text/javascript">
+        function checkAllBox(obj) {
+            var join = document.getElementById("join");
+            if (obj.checked == true) {
+                join.disabled = false;
+            }
+            else {
+                join.disabled = true;
+            }
+        }
+    </script>
+    <!-- <script type="text/javascript"> 
+        window.onload = function (){ 
+            buildDataTable();
+            var term_agree = document.getElementById("TermAgree");
+            checkAllBox(term_agree);
+        } </script> -->
+
+</head>
+
+<body class="site">
+    <header class="header" itemscope itemtype="http://schema.org/SiteNavigationElement" aria-label="Main navigation">
+        <div class="container">
+            <div class="header__inner"> <a class="header__logo" href="/" aria-label="MIND logo">
+                    <div class="header__logo--container">
+                        <!-- <svg width="60px" height="153px" viewBox="10 0 277 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="logocon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="LucidaGrande, Lucida Grande" font-size="100" font-weight="normal">
+                                <g id="logo" transform="translate(-14.000000, -69.000000)" fill="#515556">
+                                    <text id="MIND">
+                                        <tspan x="18" y="179">MIND</tspan>
+                                    </text>
+                                </g>
+                            </g>
+                        </svg> -->
+                        <img style="max-width:200%; width:90px;" alt="backgound image"
+                            src="https://msnews.github.io/assets/img/icons/logo.png">
+                    </div>
+                </a>
+                <nav class="header__links">
+                    <div class="container header__links-wrapper">
+                        <a class="header__link" href="workshop.html" itemprop="url">
+                            <span itemprop="name"><strong>Main</strong></span> </a>
+                        <a class="header__link" href="program.html" itemprop="url"> <span itemprop="name">Program</span> </a>
+						<a class="header__link" href="competition.html" itemprop="url">
+                            <span itemprop="name">Competition</span> </a>
+                        <a class="header__link" href="organization.html" itemprop="url">
+                            <span itemprop="name">Organization</span> </a>
+                    </div>
+                        <!-- <a class="header__link" href="#evaluation-leaderboard" itemprop="url"> <span
+                                itemprop="name">Leaderboard</span> </a></div> -->
+                </nav>
+                <div class="header__toggle"> <span></span> <span></span> <span></span></div>
+            </div>
+        </div>
+    </header>
+    <div class="hero lazyload" data-bg="https://msnews.github.io/assets/img/posts/sleek.jpg">
+        <div class="hero__wrap">
+            <div class="hero__categories"></div>
+            <h1 class="hero__title2">MIND Workshop on News Recommendation</h1>
+            <!--<p class="hero__meta"> <span>Microsoft News Recommendation Competition</span></p>-->
+        </div>
+    </div>
+    <main class="site__content">
+        <div class="container">
+            <article class="post-content">
+                <!-- about mind -->
+<h1 id="keynote">Call for Papers</h1>
+To be announced.
+
+<h1 id="keynote">Keynote Speakers</h1>
+To be announced.
+
+<h1 id="schedule">Planned Schedule</h1>
+<p>All times are in Pacific Time (GMT-7), may be changed according to the attendees' preferences.
+Detailed schedules are listed as follows:</p>
+<h4>1. Opening Remarks (9:00-9:10)</h4> 
+<h4>2. Keynote 1 (9:10-10:00)</h4> 
+<h4>3. Research Paper Session (10:00-11:30)</h4>
+<li>Oral Presentation (10:00-10:40)</li>
+<li>Break (10:40-11:00)</li>
+<li>Oral Presentation (11:00-11:30)</li>
+<li>Poster Presentation (11:30-12:00)</li>
+<h4>4. Lunch Break (12:00-13:00)</h4>
+<h4>5. Keynote 2 (13:00-13:50)</h4> 
+<h4>6. Shared Task Session (13:50-16:00)</h4>
+<li>Shared Task Overview (13:50-14:00) </li>
+<li>Oral Presentation (14:00-15:00)   </li>
+<li>Break (15:00-15:20) </li>
+<li>Poster Presentation (15:20-16:00) </li>
+<h4>7. Closing Remarks (16:00-16:10)</h4> 
+<br>
+            </article>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <a href="https://go.microsoft.com/fwlink/?LinkId=521839">Privacy & Cookies</a>
+            <span>|</span>
+            <a href="https://www.microsoft.com/trademarks">Trademarks</a>
+            <span>|</span>
+            <a href="https://go.microsoft.com/fwlink/?LinkID=206977">Terms of use</a>
+            <span>|</span>
+            <span> ©2020 Microsoft </span>
+        </div>
+    </footer>
+    <script async src="https://msnews.github.io/assets/js/bundle.js"></script>
+
+</body>
+
+</html>
