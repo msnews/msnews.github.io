@@ -588,11 +588,11 @@
                 </a>
                 <nav class="header__links">
                     <div class="container header__links-wrapper">
-                        <a class="header__link" href="index.html" itemprop="url"> <span itemprop="name"><strong>Dataset</strong></span> </a>
+                        <a class="header__link" href="index.html" itemprop="url"> <span itemprop="name"> Dataset </span> </a>
                         <a class="header__link" href="#competition" itemprop="url">
-                                <span itemprop="name">Overview</span> </a>
-                        <a class="header__link" href="#timeline" itemprop="url">
-                            <span itemprop="name">Timeline</span> </a>
+                                <span itemprop="name">Overview</span> </a> 
+						<a class="header__link" href="results.html" itemprop="url">
+                            <span itemprop="name"> Results </span> </a> 
                         <a class="header__link" href="#leaderboard" itemprop="url">
                             <span itemprop="name">Leaderboard</span> </a>
                     </div>
@@ -606,8 +606,8 @@
     <div class="hero lazyload" data-bg="https://msnews.github.io/assets/img/posts/sleek.jpg">
         <div class="hero__wrap">
             <div class="hero__categories"></div>
-            <h1 class="hero__title2">MIND News Recommendation Competition</h1>
-            <!--<p class="hero__meta"> <span>Microsoft News Recommendation Competetion</span></p>-->
+            <h1 class="hero__title2">News Recommendation Competition</h1>
+            <!--<p class="hero__meta"> <span>Microsoft News Recommendation Competition</span></p>-->
         </div>
     </div>
     <main class="site__content">
@@ -639,51 +639,15 @@ which is a large-scale English dataset for news recommendation.
 This challenge will provide a good testbed for participants to develop better news recommender systems to improve the future reading experience of millions of users.
                      </p>
 					 
-
-            
-         <h1 id="timeline">Timeline</h1>
-<li> July 20th, 2020: Competition is open. Participants registration begins.</li> 
-<li>July 20th - August 20th, 2020: Dev phase. Participants can submit their results on the dev set to obtain official evaluation scores.</li> 
-<li>August 21th - September 4th, 2020: Test phase. Test data can be downloaded and participants can submit their results on the test set. </li> 
-<li>September 11st, 2020: Competition results announcement.</li> 
-<br>
-*All deadlines are at 11:59 PM UTC on the corresponding day. Test phase submission will be due on September 4th.
-<br>
-<br>
-<div id="CountMsg" class="HotDate"> 
-<span><strong>Test Phase Submission Deadline:</strong></span> 
-<strong><span id="t_d">0day </span></strong> 
-<strong><span id="t_h">00:   </span></strong> 
-<strong><span id="t_m">00:   </span></strong> 
-<strong><span id="t_s">00    </span></strong> 
-</div> 
-<script type="text/javascript"> 
-function getRTime(){ 
-var EndTime= new Date('2020/9/4 23:59:59 UTC');  
-var NowTime = new Date(); 
-var t =EndTime.getTime() - NowTime.getTime(); 
-if (t<0){
-t=0;
-}
-var d=Math.floor(t/1000/60/60/24); 
-var h=Math.floor(t/1000/60/60%24); 
-var m=Math.floor(t/1000/60%60); 
-var s=Math.floor(t/1000%60); 
-
-document.getElementById("t_d").innerHTML = d + " day"; 
-document.getElementById("t_h").innerHTML = (h>9?h:"0"+h) + ":"; 
-document.getElementById("t_m").innerHTML = (m>9?m:"0"+m) + ":"; 
-document.getElementById("t_s").innerHTML = (s>9?s:"0"+s); 
-} 
-setInterval(getRTime,1000); 
-</script> 
+  <p><strong>Registration and submission are reopened. You can join the competition on the Codalab platform and submit your prediction results on the test set.</strong></p>
                 <div class="button-container">
                     <button class="button button-pill button-border" 
                         onclick="location.href='https://competitions.codalab.org/competitions/24122#participate';">
-                        <strong>Submit Your Results</strong>
+                        <strong>Join Competition</strong>
                     </button>
-                </div>
-
+                </div> 
+ 
+<br>
 		<div>
   <p>Following is a step-by-step tutorial for this competition:</p>
                 <div class="button-container">
@@ -693,12 +657,23 @@ setInterval(getRTime,1000);
                     </button>
                 </div>
 		    </div> 
+			<br>
+			 <p>Winners of the competition and their technical reports can be found on the <a href="./results.html">results</a> page.</p>
 
+			
+			
+			<br>
+
+                <!--<div class="button-container">
+                    <button class="button button-pill button-border" 
+                        onclick="location.href='https://competitions.codalab.org/competitions/24122#participate';">
+                        <strong>Submit Your Results</strong>
+                    </button>
+                </div> -->
                 <br>
             <h1 id="leaderboard">
                 Leaderboard
-            </h1>
-	<p>Currently the results are evaluated on a small subset (10%) of the test set. Results on the full test set will be posted a few days after the end of test phase.</p>	    
+            </h1>    
             <div class="col-md-7">
                 <div class="infoCard">
                     <div class="infoBody">
@@ -723,1106 +698,1248 @@ setInterval(getRTime,1000);
                                     nDCG@10
                                 </th>
                             </tr>
-                            <tr class='leaderboardline'>
-                                <td>
-                                    <p class="word-break2">
-                                        1
-                                    </p><span class="date label label-default">Sept. 04, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    chenghuige
-                                </td>
-                                <td class="word-break">
-                                    <b>0.7133</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3615</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3970</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.4527</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardlinemask'>
-                                <td>
-                                    <p class="word-break2">
-                                        2
-                                    </p><span class="date label label-default">Sept. 04, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    dtsnu
-                                </td>
-                                <td class="word-break">
-                                    <b>0.7113</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3572</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3920</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.4487</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardline'>
-                                <td>
-                                    <p class="word-break2">
-                                        3
-                                    </p><span class="date label label-default">Sept. 04, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    oahciy
-                                </td>
-                                <td class="word-break">
-                                    <b>0.7091</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3540</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3882</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.4451</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardlinemask'>
-                                <td>
-                                    <p class="word-break2">
-                                        4
-                                    </p><span class="date label label-default">Sept. 04, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    Ravox
-                                </td>
-                                <td class="word-break">
-                                    <b>0.7044</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3507</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3848</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.4417</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardline'>
-                                <td>
-                                    <p class="word-break2">
-                                        5
-                                    </p><span class="date label label-default">Sept. 04, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    Qinne
-                                </td>
-                                <td class="word-break">
-                                    <b>0.7028</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3499</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3833</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.4399</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardlinemask'>
-                                <td>
-                                    <p class="word-break2">
-                                        6
-                                    </p><span class="date label label-default">Sept. 04, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    YangZhenghong
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6975</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3481</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3809</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.4378</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardline'>
-                                <td>
-                                    <p class="word-break2">
-                                        7
-                                    </p><span class="date label label-default">Sept. 04, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    xyzhang
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6974</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3475</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3814</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.4383</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardlinemask'>
-                                <td>
-                                    <p class="word-break2">
-                                        8
-                                    </p><span class="date label label-default">Sept. 04, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    gcc_microsoft
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6974</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3483</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3810</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.4375</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardline'>
-                                <td>
-                                    <p class="word-break2">
-                                        9
-                                    </p><span class="date label label-default">Sept. 04, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    huailei
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6966</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3499</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3818</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.4396</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardlinemask'>
-                                <td>
-                                    <p class="word-break2">
-                                        10
-                                    </p><span class="date label label-default">Aug. 29, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    hanyan
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6959</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3451</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3773</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.4340</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardline'>
-                                <td>
-                                    <p class="word-break2">
-                                        11
-                                    </p><span class="date label label-default">Sept. 04, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    fanxiaoxing
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6947</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3455</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3776</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.4342</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardlinemask'>
-                                <td>
-                                    <p class="word-break2">
-                                        12
-                                    </p><span class="date label label-default">Sept. 04, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    Tmail
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6945</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3435</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3757</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.4328</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardline'>
-                                <td>
-                                    <p class="word-break2">
-                                        13
-                                    </p><span class="date label label-default">Sept. 04, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    duchunning
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6943</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3429</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3752</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.4324</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardlinemask'>
-                                <td>
-                                    <p class="word-break2">
-                                        14
-                                    </p><span class="date label label-default">Sept. 04, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    lixmcm
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6942</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3436</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3762</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.4332</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardline'>
-                                <td>
-                                    <p class="word-break2">
-                                        15
-                                    </p><span class="date label label-default">Sept. 04, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    overlord
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6938</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3450</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3772</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.4337</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardlinemask'>
-                                <td>
-                                    <p class="word-break2">
-                                        16
-                                    </p><span class="date label label-default">Sept. 04, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    veason
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6936</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3436</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3752</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.4321</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardline'>
-                                <td>
-                                    <p class="word-break2">
-                                        17
-                                    </p><span class="date label label-default">Sept. 04, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    Ironball
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6923</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3447</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3784</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.4358</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardlinemask'>
-                                <td>
-                                    <p class="word-break2">
-                                        18
-                                    </p><span class="date label label-default">Sept. 04, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    WONNIU
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6922</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3427</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3731</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.4300</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardline'>
-                                <td>
-                                    <p class="word-break2">
-                                        19
-                                    </p><span class="date label label-default">Aug. 30, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    fit4you
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6909</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3418</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3738</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.4313</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardlinemask'>
-                                <td>
-                                    <p class="word-break2">
-                                        20
-                                    </p><span class="date label label-default">Sept. 04, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    wcy419hh
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6905</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3414</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3712</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.4282</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardline'>
-                                <td>
-                                    <p class="word-break2">
-                                        21
-                                    </p><span class="date label label-default">Sept. 04, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    AndreaChao
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6900</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3419</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3734</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.4304</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardlinemask'>
-                                <td>
-                                    <p class="word-break2">
-                                        22
-                                    </p><span class="date label label-default">Sept. 04, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    Ivy
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6898</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3421</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3731</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.4306</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardline'>
-                                <td>
-                                    <p class="word-break2">
-                                        23
-                                    </p><span class="date label label-default">Sept. 04, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    changebin
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6882</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3400</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3712</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.4275</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardlinemask'>
-                                <td>
-                                    <p class="word-break2">
-                                        24
-                                    </p><span class="date label label-default">Sept. 01, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    yupei
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6867</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3404</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3721</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.4288</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardline'>
-                                <td>
-                                    <p class="word-break2">
-                                        25
-                                    </p><span class="date label label-default">Sept. 01, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    majinc
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6862</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3397</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3705</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.4274</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardlinemask'>
-                                <td>
-                                    <p class="word-break2">
-                                        26
-                                    </p><span class="date label label-default">Sept. 04, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    Tsar
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6855</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3377</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3680</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.4257</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardline'>
-                                <td>
-                                    <p class="word-break2">
-                                        27
-                                    </p><span class="date label label-default">Sept. 03, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    heroddaji
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6843</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3383</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3684</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.4249</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardlinemask'>
-                                <td>
-                                    <p class="word-break2">
-                                        28
-                                    </p><span class="date label label-default">Aug. 27, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    CyberFish
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6834</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3373</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3683</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.4258</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardline'>
-                                <td>
-                                    <p class="word-break2">
-                                        29
-                                    </p><span class="date label label-default">Aug. 28, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    amgis3
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6827</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3320</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3615</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.4196</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardlinemask'>
-                                <td>
-                                    <p class="word-break2">
-                                        30
-                                    </p><span class="date label label-default">Sept. 04, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    again_and_again
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6825</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3369</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3667</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.4243</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardline'>
-                                <td>
-                                    <p class="word-break2">
-                                        31
-                                    </p><span class="date label label-default">Sept. 03, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    xinghuaz
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6823</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3390</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3697</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.4260</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardlinemask'>
-                                <td>
-                                    <p class="word-break2">
-                                        32
-                                    </p><span class="date label label-default">Sept. 03, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    dengjia284
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6806</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3324</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3613</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.4190</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardline'>
-                                <td>
-                                    <p class="word-break2">
-                                        33
-                                    </p><span class="date label label-default">Sept. 02, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    ustc_jingang
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6805</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3342</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3639</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.4213</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardlinemask'>
-                                <td>
-                                    <p class="word-break2">
-                                        34
-                                    </p><span class="date label label-default">Sept. 02, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    qqyysg
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6799</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3342</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3650</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.4219</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardline'>
-                                <td>
-                                    <p class="word-break2">
-                                        35
-                                    </p><span class="date label label-default">Aug. 29, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    Reto-hitsz
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6783</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3288</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3575</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.4153</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardlinemask'>
-                                <td>
-                                    <p class="word-break2">
-                                        36
-                                    </p><span class="date label label-default">Sept. 04, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    shahnawaz
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6760</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3283</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3574</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.4149</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardline'>
-                                <td>
-                                    <p class="word-break2">
-                                        37
-                                    </p><span class="date label label-default">Aug. 30, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    simple2better
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6760</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3313</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3610</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.4187</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardlinemask'>
-                                <td>
-                                    <p class="word-break2">
-                                        38
-                                    </p><span class="date label label-default">Sept. 04, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    zidane4ever21
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6707</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3242</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3529</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.4096</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardline'>
-                                <td>
-                                    <p class="word-break2">
-                                        39
-                                    </p><span class="date label label-default">Sept. 03, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    dust
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6686</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3271</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3542</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.4110</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardlinemask'>
-                                <td>
-                                    <p class="word-break2">
-                                        40
-                                    </p><span class="date label label-default">Sept. 04, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    xcw
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6553</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3181</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3441</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.4005</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardline'>
-                                <td>
-                                    <p class="word-break2">
-                                        41
-                                    </p><span class="date label label-default">Sept. 03, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    HJS_TJU
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6503</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3133</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3367</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3942</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardlinemask'>
-                                <td>
-                                    <p class="word-break2">
-                                        42
-                                    </p><span class="date label label-default">Sept. 02, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    AND-OR
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6498</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3084</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3325</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3904</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardline'>
-                                <td>
-                                    <p class="word-break2">
-                                        43
-                                    </p><span class="date label label-default">Aug. 27, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    gaojx
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6342</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3112</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3358</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3919</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardlinemask'>
-                                <td>
-                                    <p class="word-break2">
-                                        44
-                                    </p><span class="date label label-default">Sept. 03, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    TJ_Arthur
-                                </td>
-                                <td class="word-break">
-                                    <b>0.6272</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.2944</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3161</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3739</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardline'>
-                                <td>
-                                    <p class="word-break2">
-                                        45
-                                    </p><span class="date label label-default">Sept. 03, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    tcchiang
-                                </td>
-                                <td class="word-break">
-                                    <b>0.5944</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.2798</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.2980</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3559</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardlinemask'>
-                                <td>
-                                    <p class="word-break2">
-                                        46
-                                    </p><span class="date label label-default">Aug. 26, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    learner
-                                </td>
-                                <td class="word-break">
-                                    <b>0.5847</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.2648</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.2786</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.3361</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardline'>
-                                <td>
-                                    <p class="word-break2">
-                                        47
-                                    </p><span class="date label label-default">Aug. 24, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    cs880141
-                                </td>
-                                <td class="word-break">
-                                    <b>0.5180</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.2327</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.2395</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.2953</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardlinemask'>
-                                <td>
-                                    <p class="word-break2">
-                                        48
-                                    </p><span class="date label label-default">Aug. 26, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    cdj0311
-                                </td>
-                                <td class="word-break">
-                                    <b>0.5059</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.2290</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.2350</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.2900</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardline'>
-                                <td>
-                                    <p class="word-break2">
-                                        49
-                                    </p><span class="date label label-default">Aug. 26, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    zhoubang1
-                                </td>
-                                <td class="word-break">
-                                    <b>0.5009</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.2256</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.2316</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.2869</b>
-                                </td>
-                            </tr>
-                            <tr class='leaderboardlinemask'>
-                                <td>
-                                    <p class="word-break2">
-                                        50
-                                    </p><span class="date label label-default">Aug. 25, 2020</span>
-                                </td>
-                                <td class="word-break">
-                                    bird
-                                </td>
-                                <td class="word-break">
-                                    <b>0.5002</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.2248</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.2304</b>
-                                </td>
-                                <td class="word-break">
-                                    <b>0.2862</b>
-                                </td>
-                            </tr>
+<tr class='leaderboardline'>
+<td>
+<p class="word-break2">
+<strong>1</strong>
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+chenghuige
+</td>
+<td class="word-break">
+0.7131
+</td>
+<td class="word-break">
+0.3608
+</td>
+<td class="word-break">
+0.3960
+</td>
+<td class="word-break">
+0.4521
+</td>
+</tr>
+<tr class='leaderboardlinemask'>
+<td>
+<p class="word-break2" >
+<strong>2</strong>
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+dtsnu
+</td>
+<td class="word-break">
+0.7114
+</td>
+<td class="word-break">
+0.3568
+</td>
+<td class="word-break">
+0.3916
+</td>
+<td class="word-break">
+0.4485
+</td>
+</tr>
+<tr class='leaderboardline'>
+<td>
+<p class="word-break2">
+<strong>3</strong>
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+oahciy
+</td>
+<td class="word-break">
+0.7096
+</td>
+<td class="word-break">
+0.3540
+</td>
+<td class="word-break">
+0.3883
+</td>
+<td class="word-break">
+0.4454
+</td>
+</tr>
+<tr class='leaderboardlinemask'>
+<td>
+<p class="word-break2">
+<strong>4</strong>
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+Ravox
+</td>
+<td class="word-break">
+0.7048
+</td>
+<td class="word-break">
+0.3505
+</td>
+<td class="word-break">
+0.3845
+</td>
+<td class="word-break">
+0.4416
+</td>
+</tr>
+<tr class='leaderboardline'>
+<td>
+<p class="word-break2">
+<strong>5</strong>
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+Qinne
+</td>
+<td class="word-break">
+0.7032
+</td>
+<td class="word-break">
+0.3496
+</td>
+<td class="word-break">
+0.3830
+</td>
+<td class="word-break">
+0.4397
+</td>
+</tr>
+<tr class='leaderboardlinemask'>
+<td>
+<p class="word-break2">
+<strong>6</strong>
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+gcc_microsoft
+</td>
+<td class="word-break">
+0.6979
+</td>
+<td class="word-break">
+0.3479
+</td>
+<td class="word-break">
+0.3806
+</td>
+<td class="word-break">
+0.4373
+</td>
+</tr>
+<tr class='leaderboardline'>
+<td>
+<p class="word-break2">
+7
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+YangZhenghong
+</td>
+<td class="word-break">
+0.6975
+</td>
+<td class="word-break">
+0.3474
+</td>
+<td class="word-break">
+0.3803
+</td>
+<td class="word-break">
+0.4373
+</td>
+</tr>
+<tr class='leaderboardlinemask'>
+<td>
+<p class="word-break2">
+8
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+xyzhang
+</td>
+<td class="word-break">
+0.6970
+</td>
+<td class="word-break">
+0.3471
+</td>
+<td class="word-break">
+0.3809
+</td>
+<td class="word-break">
+0.4379
+</td>
+</tr>
+<tr class='leaderboardline'>
+<td>
+<p class="word-break2">
+9
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+huailei
+</td>
+<td class="word-break">
+0.6968
+</td>
+<td class="word-break">
+0.3492
+</td>
+<td class="word-break">
+0.3812
+</td>
+<td class="word-break">
+0.4386
+</td>
+</tr>
+<tr class='leaderboardlinemask'>
+<td>
+<p class="word-break2">
+10
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+hanyan
+</td>
+<td class="word-break">
+0.6964
+</td>
+<td class="word-break">
+0.3441
+</td>
+<td class="word-break">
+0.3764
+</td>
+<td class="word-break">
+0.4336
+</td>
+</tr>
+<tr class='leaderboardline'>
+<td>
+<p class="word-break2">
+11
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+lixmcm
+</td>
+<td class="word-break">
+0.6952
+</td>
+<td class="word-break">
+0.3438
+</td>
+<td class="word-break">
+0.3765
+</td>
+<td class="word-break">
+0.4335
+</td>
+</tr>
+<tr class='leaderboardlinemask'>
+<td>
+<p class="word-break2">
+12
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+Tmail
+</td>
+<td class="word-break">
+0.6952
+</td>
+<td class="word-break">
+0.3433
+</td>
+<td class="word-break">
+0.3755
+</td>
+<td class="word-break">
+0.4327
+</td>
+</tr>
+<tr class='leaderboardline'>
+<td>
+<p class="word-break2">
+13
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+duchunning
+</td>
+<td class="word-break">
+0.6951
+</td>
+<td class="word-break">
+0.3430
+</td>
+<td class="word-break">
+0.3755
+</td>
+<td class="word-break">
+0.4326
+</td>
+</tr>
+<tr class='leaderboardlinemask'>
+<td>
+<p class="word-break2">
+14
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+fanxiaoxing
+</td>
+<td class="word-break">
+0.6946
+</td>
+<td class="word-break">
+0.3448
+</td>
+<td class="word-break">
+0.3771
+</td>
+<td class="word-break">
+0.4335
+</td>
+</tr>
+<tr class='leaderboardline'>
+<td>
+<p class="word-break2">
+15
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+overlord
+</td>
+<td class="word-break">
+0.6942
+</td>
+<td class="word-break">
+0.3445
+</td>
+<td class="word-break">
+0.3767
+</td>
+<td class="word-break">
+0.4332
+</td>
+</tr>
+<tr class='leaderboardlinemask'>
+<td>
+<p class="word-break2">
+16
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+veason
+</td>
+<td class="word-break">
+0.6941
+</td>
+<td class="word-break">
+0.3433
+</td>
+<td class="word-break">
+0.3749
+</td>
+<td class="word-break">
+0.4319
+</td>
+</tr>
+<tr class='leaderboardline'>
+<td>
+<p class="word-break2">
+17
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+WONNIU
+</td>
+<td class="word-break">
+0.6929
+</td>
+<td class="word-break">
+0.3423
+</td>
+<td class="word-break">
+0.3730
+</td>
+<td class="word-break">
+0.4301
+</td>
+</tr>
+<tr class='leaderboardlinemask'>
+<td>
+<p class="word-break2">
+18
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+Ironball
+</td>
+<td class="word-break">
+0.6923
+</td>
+<td class="word-break">
+0.3440
+</td>
+<td class="word-break">
+0.3778
+</td>
+<td class="word-break">
+0.4351
+</td>
+</tr>
+<tr class='leaderboardline'>
+<td>
+<p class="word-break2">
+19
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+wcy419hh
+</td>
+<td class="word-break">
+0.6915
+</td>
+<td class="word-break">
+0.3410
+</td>
+<td class="word-break">
+0.3711
+</td>
+<td class="word-break">
+0.4282
+</td>
+</tr>
+<tr class='leaderboardlinemask'>
+<td>
+<p class="word-break2">
+20
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+AndreaChao
+</td>
+<td class="word-break">
+0.6903
+</td>
+<td class="word-break">
+0.3413
+</td>
+<td class="word-break">
+0.3727
+</td>
+<td class="word-break">
+0.4299
+</td>
+</tr>
+<tr class='leaderboardline'>
+<td>
+<p class="word-break2">
+21
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+Ivy
+</td>
+<td class="word-break">
+0.6901
+</td>
+<td class="word-break">
+0.3414
+</td>
+<td class="word-break">
+0.3726
+</td>
+<td class="word-break">
+0.4299
+</td>
+</tr>
+<tr class='leaderboardlinemask'>
+<td>
+<p class="word-break2">
+22
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+changebin
+</td>
+<td class="word-break">
+0.6888
+</td>
+<td class="word-break">
+0.3396
+</td>
+<td class="word-break">
+0.3706
+</td>
+<td class="word-break">
+0.4273
+</td>
+</tr>
+<tr class='leaderboardline'>
+<td>
+<p class="word-break2">
+23
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+Tsar
+</td>
+<td class="word-break">
+0.6862
+</td>
+<td class="word-break">
+0.3374
+</td>
+<td class="word-break">
+0.3676
+</td>
+<td class="word-break">
+0.4253
+</td>
+</tr>
+<tr class='leaderboardlinemask'>
+<td>
+<p class="word-break2">
+24
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+heroddaji
+</td>
+<td class="word-break">
+0.6845
+</td>
+<td class="word-break">
+0.3376
+</td>
+<td class="word-break">
+0.3677
+</td>
+<td class="word-break">
+0.4244
+</td>
+</tr>
+<tr class='leaderboardline'>
+<td>
+<p class="word-break2">
+25
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+amgis3
+</td>
+<td class="word-break">
+0.6836
+</td>
+<td class="word-break">
+0.3318
+</td>
+<td class="word-break">
+0.3615
+</td>
+<td class="word-break">
+0.4193
+</td>
+</tr>
+<tr class='leaderboardlinemask'>
+<td>
+<p class="word-break2">
+26
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+fit4you
+</td>
+<td class="word-break">
+0.6835
+</td>
+<td class="word-break">
+0.3325
+</td>
+<td class="word-break">
+0.3628
+</td>
+<td class="word-break">
+0.4210
+</td>
+</tr>
+<tr class='leaderboardline'>
+<td>
+<p class="word-break2">
+27
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+again_and_again
+</td>
+<td class="word-break">
+0.6828
+</td>
+<td class="word-break">
+0.3365
+</td>
+<td class="word-break">
+0.3665
+</td>
+<td class="word-break">
+0.4240
+</td>
+</tr>
+<tr class='leaderboardlinemask'>
+<td>
+<p class="word-break2">
+28
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+xinghuaz
+</td>
+<td class="word-break">
+0.6816
+</td>
+<td class="word-break">
+0.3357
+</td>
+<td class="word-break">
+0.3666
+</td>
+<td class="word-break">
+0.4239
+</td>
+</tr>
+<tr class='leaderboardline'>
+<td>
+<p class="word-break2">
+29
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+dengjia284
+</td>
+<td class="word-break">
+0.6814
+</td>
+<td class="word-break">
+0.3325
+</td>
+<td class="word-break">
+0.3614
+</td>
+<td class="word-break">
+0.4192
+</td>
+</tr>
+<tr class='leaderboardlinemask'>
+<td>
+<p class="word-break2">
+30
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+ustc_jingang
+</td>
+<td class="word-break">
+0.6809
+</td>
+<td class="word-break">
+0.3337
+</td>
+<td class="word-break">
+0.3633
+</td>
+<td class="word-break">
+0.4208
+</td>
+</tr>
+<tr class='leaderboardline'>
+<td>
+<p class="word-break2">
+31
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+qqyysg
+</td>
+<td class="word-break">
+0.6799
+</td>
+<td class="word-break">
+0.3336
+</td>
+<td class="word-break">
+0.3644
+</td>
+<td class="word-break">
+0.4213
+</td>
+</tr>
+<tr class='leaderboardlinemask'>
+<td>
+<p class="word-break2">
+32
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+majinc
+</td>
+<td class="word-break">
+0.6798
+</td>
+<td class="word-break">
+0.3322
+</td>
+<td class="word-break">
+0.3624
+</td>
+<td class="word-break">
+0.4196
+</td>
+</tr>
+<tr class='leaderboardline'>
+<td>
+<p class="word-break2">
+33
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+Reto-hitsz
+</td>
+<td class="word-break">
+0.6786
+</td>
+<td class="word-break">
+0.3283
+</td>
+<td class="word-break">
+0.3572
+</td>
+<td class="word-break">
+0.4151
+</td>
+</tr>
+<tr class='leaderboardlinemask'>
+<td>
+<p class="word-break2">
+34
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+shahnawaz
+</td>
+<td class="word-break">
+0.6766
+</td>
+<td class="word-break">
+0.3282
+</td>
+<td class="word-break">
+0.3576
+</td>
+<td class="word-break">
+0.4149
+</td>
+</tr>
+<tr class='leaderboardline'>
+<td>
+<p class="word-break2">
+35
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+yupei
+</td>
+<td class="word-break">
+0.6765
+</td>
+<td class="word-break">
+0.3321
+</td>
+<td class="word-break">
+0.3619
+</td>
+<td class="word-break">
+0.4193
+</td>
+</tr>
+<tr class='leaderboardlinemask'>
+<td>
+<p class="word-break2">
+36
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+CyberFish
+</td>
+<td class="word-break">
+0.6730
+</td>
+<td class="word-break">
+0.3343
+</td>
+<td class="word-break">
+0.3647
+</td>
+<td class="word-break">
+0.4219
+</td>
+</tr>
+<tr class='leaderboardline'>
+<td>
+<p class="word-break2">
+37
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+zidane4ever21
+</td>
+<td class="word-break">
+0.6710
+</td>
+<td class="word-break">
+0.3236
+</td>
+<td class="word-break">
+0.3523
+</td>
+<td class="word-break">
+0.4093
+</td>
+</tr>
+<tr class='leaderboardlinemask'>
+<td>
+<p class="word-break2">
+38
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+dust
+</td>
+<td class="word-break">
+0.6691
+</td>
+<td class="word-break">
+0.3267
+</td>
+<td class="word-break">
+0.3539
+</td>
+<td class="word-break">
+0.4109
+</td>
+</tr>
+<tr class='leaderboardline'>
+<td>
+<p class="word-break2">
+39
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+xcw
+</td>
+<td class="word-break">
+0.6554
+</td>
+<td class="word-break">
+0.3172
+</td>
+<td class="word-break">
+0.3434
+</td>
+<td class="word-break">
+0.4000
+</td>
+</tr>
+<tr class='leaderboardlinemask'>
+<td>
+<p class="word-break2">
+40
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+HJS_TJU
+</td>
+<td class="word-break">
+0.6512
+</td>
+<td class="word-break">
+0.3122
+</td>
+<td class="word-break">
+0.3357
+</td>
+<td class="word-break">
+0.3934
+</td>
+</tr>
+<tr class='leaderboardline'>
+<td>
+<p class="word-break2">
+41
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+AND-OR
+</td>
+<td class="word-break">
+0.6506
+</td>
+<td class="word-break">
+0.3079
+</td>
+<td class="word-break">
+0.3320
+</td>
+<td class="word-break">
+0.3898
+</td>
+</tr>
+<tr class='leaderboardlinemask'>
+<td>
+<p class="word-break2">
+42
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+simple2better
+</td>
+<td class="word-break">
+0.6490
+</td>
+<td class="word-break">
+0.3088
+</td>
+<td class="word-break">
+0.3341
+</td>
+<td class="word-break">
+0.3918
+</td>
+</tr>
+<tr class='leaderboardline'>
+<td>
+<p class="word-break2">
+43
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+gaojx
+</td>
+<td class="word-break">
+0.6346
+</td>
+<td class="word-break">
+0.3105
+</td>
+<td class="word-break">
+0.3350
+</td>
+<td class="word-break">
+0.3909
+</td>
+</tr>
+<tr class='leaderboardlinemask'>
+<td>
+<p class="word-break2">
+44
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+TJ_Arthur
+</td>
+<td class="word-break">
+0.6282
+</td>
+<td class="word-break">
+0.2945
+</td>
+<td class="word-break">
+0.3162
+</td>
+<td class="word-break">
+0.3738
+</td>
+</tr>
+<tr class='leaderboardline'>
+<td>
+<p class="word-break2">
+45
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+tcchiang
+</td>
+<td class="word-break">
+0.5950
+</td>
+<td class="word-break">
+0.2794
+</td>
+<td class="word-break">
+0.2974
+</td>
+<td class="word-break">
+0.3551
+</td>
+</tr>
+<tr class='leaderboardlinemask'>
+<td>
+<p class="word-break2">
+46
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+learner
+</td>
+<td class="word-break">
+0.5845
+</td>
+<td class="word-break">
+0.2639
+</td>
+<td class="word-break">
+0.2775
+</td>
+<td class="word-break">
+0.3349
+</td>
+</tr>
+<tr class='leaderboardline'>
+<td>
+<p class="word-break2">
+47
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+only2233
+</td>
+<td class="word-break">
+0.5352
+</td>
+<td class="word-break">
+0.2408
+</td>
+<td class="word-break">
+0.2507
+</td>
+<td class="word-break">
+0.3075
+</td>
+</tr>
+<tr class='leaderboardlinemask'>
+<td>
+<p class="word-break2">
+48
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+cs880141
+</td>
+<td class="word-break">
+0.5182
+</td>
+<td class="word-break">
+0.2316
+</td>
+<td class="word-break">
+0.2384
+</td>
+<td class="word-break">
+0.2941
+</td>
+</tr>
+<tr class='leaderboardline'>
+<td>
+<p class="word-break2">
+49
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+Jenny
+</td>
+<td class="word-break">
+0.5157
+</td>
+<td class="word-break">
+0.2336
+</td>
+<td class="word-break">
+0.2411
+</td>
+<td class="word-break">
+0.2966
+</td>
+</tr>
+<tr class='leaderboardlinemask'>
+<td>
+<p class="word-break2">
+50
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+cdj0311
+</td>
+<td class="word-break">
+0.5062
+</td>
+<td class="word-break">
+0.2279
+</td>
+<td class="word-break">
+0.2338
+</td>
+<td class="word-break">
+0.2887
+</td>
+</tr>
+<tr class='leaderboardline'>
+<td>
+<p class="word-break2">
+51
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+zhoubang1
+</td>
+<td class="word-break">
+0.5010
+</td>
+<td class="word-break">
+0.2248
+</td>
+<td class="word-break">
+0.2306
+</td>
+<td class="word-break">
+0.2860
+</td>
+</tr>
+<tr class='leaderboardlinemask'>
+<td>
+<p class="word-break2">
+52
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+q710245300
+</td>
+<td class="word-break">
+0.5006
+</td>
+<td class="word-break">
+0.2242
+</td>
+<td class="word-break">
+0.2297
+</td>
+<td class="word-break">
+0.2858
+</td>
+</tr>
+<tr class='leaderboardline'>
+<td>
+<p class="word-break2">
+53
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+SatyadevNtv
+</td>
+<td class="word-break">
+0.5002
+</td>
+<td class="word-break">
+0.2241
+</td>
+<td class="word-break">
+0.2298
+</td>
+<td class="word-break">
+0.2851
+</td>
+</tr>
+<tr class='leaderboardlinemask'>
+<td>
+<p class="word-break2">
+54
+</p>
+<span class="date label label-default">Sept. 11, 2020</span>
+</td>
+<td class="word-break">
+bird
+</td>
+<td class="word-break">
+0.4367
+</td>
+<td class="word-break">
+0.1957
+</td>
+<td class="word-break">
+0.1954
+</td>
+<td class="word-break">
+0.2489
+</td>
+</tr>
                         </table>
                     </div>
                 </div>
