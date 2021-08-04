@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html  >
 <head>
-  <!-- Site made with Mobirise Website Builder v5.3.5, https://mobirise.com -->
+  <!-- Site made with Mobirise Website Builder v5.3.10, https://mobirise.com -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Mobirise v5.3.5, mobirise.com">
+  <meta name="generator" content="Mobirise v5.3.10, mobirise.com">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <link rel="shortcut icon" href="assets/images/output-onlinepngtools-128x128-2.png" type="image/x-icon">
   <meta name="description" content="Web Site Generator Description">
@@ -71,7 +71,7 @@
             <div class="col-md-10 align-center">
                 <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-2">PENS DATASET</h1>
                 
-                <p class="mbr-text pb-3 mbr-fonts-style display-5">PENS is a benchmark to testify the performance of personalized<br>news headline generation approaches.</p>
+                <p class="mbr-text pb-3 mbr-fonts-style display-5">A benchmark to testify the performance of <br>personalized news headline generation approaches</p>
                 
             </div>
         </div>
@@ -191,17 +191,12 @@
                 
                 
                 
-              <td class="body-item mbr-fonts-style display-7">behaviors.tsv</td><td class="body-item mbr-fonts-style display-7">The click histories and impression logs of users</td></tr><tr> 
+              <td class="body-item mbr-fonts-style display-7">train.tsv</td><td class="body-item mbr-fonts-style display-7">The click histories and impression logs of users for training</td></tr><tr> 
                 
                 
                 
                 
-              <td class="body-item mbr-fonts-style display-7">entity2vecd90_e500_transE.vec</td><td class="body-item mbr-fonts-style display-7">The embeddings of entities in news extracted from <a href="http://ceur-ws.org/Vol-2601/kars2019_paper_01.pdf" class="text-primary">News Graph</a><br></td></tr><tr> 
-                
-                
-                
-                
-              <td class="body-item mbr-fonts-style display-7">entity2id.txt</td><td class="body-item mbr-fonts-style display-7">The id mapping between the <strong>Satorio</strong> ID and entity ID</td></tr></tbody>
+              <td class="body-item mbr-fonts-style display-7">valid.tsv</td><td class="body-item mbr-fonts-style display-7">The click histories and impression logs of users for validation</td></tr></tbody>
           </table>
         </div>
         <div class="container table-info-container">
@@ -218,7 +213,7 @@
     <div class="container">
         <div class="media-container-row">
             <div class="mbr-text col-12 mbr-fonts-style display-5 col-md-12"><p>
-                 news.tsv&nbsp;<span style="font-size: 1rem;">contains the detailed information of news articles involved in the behaviors.tsv file. It has 6 columns divided by the tab symbol:&nbsp;</span></p></div>
+                 news.tsv&nbsp;<span style="font-size: 1rem;">contains the detailed information of news articles involved in the train.tsv&nbsp; and valid.tsv files. It has 7 columns divided by the tab symbol:&nbsp;</span></p></div>
         </div>
     </div>
 </section>
@@ -258,7 +253,7 @@
                 
                 
                 
-              <td class="body-item mbr-fonts-style display-7">News ID</td><td class="body-item mbr-fonts-style display-7">N25879</td><td class="body-item mbr-fonts-style display-7">Unique ID of news</td></tr><tr> 
+              <td class="body-item mbr-fonts-style display-7">News ID</td><td class="body-item mbr-fonts-style display-7">N10000</td><td class="body-item mbr-fonts-style display-7">Unique ID of news</td></tr><tr> 
                 
                 
                 
@@ -268,7 +263,7 @@
                 
                 
                 
-              <td class="body-item mbr-fonts-style display-7">Entities&nbsp;</td><td class="body-item mbr-fonts-style display-7">[{"Label": "Columbus Crew SC", "SatoriId":"14364", "Confidence": 0.998, "OccurrenceOffsets": [45], "SurfaceForms": ["Columbus Crew"], "Type":0}, ...]</td><td class="body-item mbr-fonts-style display-7"><strong>Label</strong>: the entity name in News graph<br><strong>SatoriId</strong>: the entity ID in News graph <br><strong>Confidence</strong>: confidence of entity linking <br><strong>OccurrenceOffsets</strong>: The character-level entity offset in the news headline<br><strong>SurfaceForms</strong>: the raw entity names in the original text</td></tr><tr> 
+              <td class="body-item mbr-fonts-style display-7">topic&nbsp;</td><td class="body-item mbr-fonts-style display-7">soccer</td><td class="body-item mbr-fonts-style display-7">Specific topic of news</td></tr><tr> 
                 
                 
                 
@@ -278,7 +273,25 @@
                 
                 
                 
-              <td class="body-item mbr-fonts-style display-7">News body</td><td class="body-item mbr-fonts-style display-7">Only FIVE internationals allowed, count em, FIVE! So first off we should say, per our usual Atlanta United lineup predictions...</td><td class="body-item mbr-fonts-style display-7">The id mapping between the Satori ID&nbsp;and entity ID</td></tr></tbody>
+              <td class="body-item mbr-fonts-style display-7">News body</td><td class="body-item mbr-fonts-style display-7">Only FIVE internationals allowed, count em, FIVE! So first off we should say, per our usual Atlanta United lineup predictions, this will be wrong...</td><td class="body-item mbr-fonts-style display-7"></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">title entity</td><td class="body-item mbr-fonts-style display-7">{"Atlanta United's": 'Atlanta United FC'}</td><td class="body-item mbr-fonts-style display-7">The mapping between the phrase in title and the entity in wikidata</td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">entity content</td><td class="body-item mbr-fonts-style display-7">{'Atlanta United FC': {
+<br>'type': 'item',
+<br>'id': 'Q16836317',
+<br>'labels': {'en': {'language': 'en', 'value': 'Atlanta United FC'}, ...},
+<br>'descriptions': {'en': {'language': 'en', 'value': 'Football team in the city of Atlanta, Georgia, United States'}, ...},
+<br>'aliases': {'en': [{'language': 'en', 'value': 'Atlanta United'}, {'language': 'en', 'value': 'ATL UTD'}, {'language': 'en', 'value': 'ATL UTD FC'}, ...], ...},
+<br>'claims': {'P31': [{'mainsnak': {'snaktype': 'value', 'property': 'P31', 'datavalue': {'value' {'entity-type': 'item', 'numeric-id': 476028, 'id': 'Q476028'}, 'type': 'wikibase-entityid'}, 'datatype': 'wikibase-item'}, 'type': 'statement', 'id': 'Q16836317$2462E96F-B25E-4BE9-9CAC-876FF99CD5DA', 'rank': 'normal'}, ... ], ...},
+<br>'sitelinks': {'zhwiki': {'site': 'zhwiki', 'title': '阿特蘭大聯足球會', 'badges': []}, ...}
+<br>'lastrevid': 1452771827}, ...}</td><td class="body-item mbr-fonts-style display-7">The mapping between the entity name and the entity content in wikidata. For detailed data structure, please refer to the <a href="https://www.mediawiki.org/wiki/Wikibase/DataModel#Wikidata_Object_Notation" class="text-primary" target="_blank">official documents</a>.</td></tr></tbody>
           </table>
         </div>
         <div class="container table-info-container">
@@ -294,7 +307,7 @@
 
     <div class="container">
         <div class="media-container-row">
-            <div class="mbr-text col-12 mbr-fonts-style display-5 col-md-12"><p>behaviors.tsv&nbsp;<span style="font-size: 1rem;">contains the impression logs and users' news click histories. It has 6 columns divided by the tab symbol:&nbsp;</span></p></div>
+            <div class="mbr-text col-12 mbr-fonts-style display-5 col-md-12"><p>train.tsv &amp; valid.tsv&nbsp;<span style="font-size: 1rem;">contains the impression logs and users' news click histories. They have 9 columns divided by the tab symbol:&nbsp;</span></p></div>
         </div>
     </div>
 </section>
@@ -334,55 +347,53 @@
                 
                 
                 
-              <td class="body-item mbr-fonts-style display-7">Impression ID</td><td class="body-item mbr-fonts-style display-7">1202</td><td class="body-item mbr-fonts-style display-7">Unique ID of impressions</td></tr><tr> 
+              <td class="body-item mbr-fonts-style display-7">UserID</td><td class="body-item mbr-fonts-style display-7">U335175</td><td class="body-item mbr-fonts-style display-7">A unique identity of a user is determined by both ``UserID’’ and ``TypeID’’</td></tr><tr> 
                 
                 
                 
                 
-              <td class="body-item mbr-fonts-style display-7">UserID</td><td class="body-item mbr-fonts-style display-7">U28753</td><td class="body-item mbr-fonts-style display-7">A unique identity of a user is determined by both ``UserID’’ and ``TypeID’’</td></tr><tr> 
+              <td class="body-item mbr-fonts-style display-7">ClicknewsID</td><td class="body-item mbr-fonts-style display-7">N41340 N27570 N83288 ...</td><td class="body-item mbr-fonts-style display-7">The user’s historical clicked news</td></tr><tr> 
                 
                 
                 
                 
-              <td class="body-item mbr-fonts-style display-7">History</td><td class="body-item mbr-fonts-style display-7">N28763 N28743</td><td class="body-item mbr-fonts-style display-7">The user’s historical clicked news</td></tr><tr> 
+              <td class="body-item mbr-fonts-style display-7">dwelltime</td><td class="body-item mbr-fonts-style display-7">116 23 59 ...</td><td class="body-item mbr-fonts-style display-7">The duration of browsing historical clicked news</td></tr><tr> 
                 
                 
                 
                 
-              <td class="body-item mbr-fonts-style display-7">Pos&nbsp;</td><td class="body-item mbr-fonts-style display-7">N22435 N25463</td><td class="body-item mbr-fonts-style display-7">The clicked news in this impression</td></tr><tr> 
+              <td class="body-item mbr-fonts-style display-7">exposure_time</td><td class="body-item mbr-fonts-style display-7">6/19/2019 5:10:01 AM#TAB#...</td><td class="body-item mbr-fonts-style display-7">The exposure time of historical clicked news</td></tr><tr> 
                 
                 
                 
                 
-              <td class="body-item mbr-fonts-style display-7">Neg</td><td class="body-item mbr-fonts-style display-7">N54323 N49857 N93043</td><td class="body-item mbr-fonts-style display-7">The unclicked news in this impression</td></tr></tbody>
+              <td class="body-item mbr-fonts-style display-7">pos</td><td class="body-item mbr-fonts-style display-7">N55476 N103556 N52756 ...</td><td class="body-item mbr-fonts-style display-7">The clicked news in this impression</td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">neg</td><td class="body-item mbr-fonts-style display-7">N48119 N92507 N92467 ...</td><td class="body-item mbr-fonts-style display-7">The unclicked news in this impression</td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">start</td><td class="body-item mbr-fonts-style display-7">7/3/2019 6:43:49 AM</td><td class="body-item mbr-fonts-style display-7">Start time of this impression</td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">end</td><td class="body-item mbr-fonts-style display-7">7/3/2019 7:06:06 AM</td><td class="body-item mbr-fonts-style display-7">End time of this impression</td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">dwelltime_pos</td><td class="body-item mbr-fonts-style display-7">34 83 79 ...</td><td class="body-item mbr-fonts-style display-7">The duration of browsing clicked news in this impression</td></tr></tbody>
           </table>
         </div>
         <div class="container table-info-container">
           
         </div>
       </div>
-    </div>
-</section>
-
-<section class="mbr-section article content1 cid-sxgTmBD6r1" id="content1-1k">
-    
-     
-
-    <div class="container">
-        <div class="media-container-row">
-            <div class="mbr-text col-12 mbr-fonts-style display-5 col-md-12"><p>entity2vecd90_e500_transE.vec&nbsp;<span style="font-size: 16px;">contains the 90-dimensional embeddings of the entities learned from the subgraph (from news graph) by TransE method. The i-th line represents the vector of the i-th entity that is split by the tab symbol.</span></p></div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section article content1 cid-sxhZ02So8a" id="content1-1l">
-    
-     
-
-    <div class="container">
-        <div class="media-container-row">
-            <div class="mbr-text col-12 mbr-fonts-style display-5 col-md-12"><p>entity2id.txt <span style="font-size: 1rem;">contains the mapping between the Satori ID and entity ID.</span></p></div>
-        </div>
     </div>
 </section>
 
@@ -477,7 +488,7 @@
                   
                   
                   
-              <th class="head-item mbr-fonts-style display-7">Column</th><th class="head-item mbr-fonts-style display-7">Example Context</th></tr>
+              <th class="head-item mbr-fonts-style display-7">Column</th><th class="head-item mbr-fonts-style display-7">Example Context</th><th class="head-item mbr-fonts-style display-7">Description</th></tr>
             </thead>
 
             <tbody>
@@ -490,27 +501,22 @@
                 
                 
                 
-              <td class="body-item mbr-fonts-style display-7">UserID</td><td class="body-item mbr-fonts-style display-7">The unique ID of 103 users</td></tr><tr> 
+              <td class="body-item mbr-fonts-style display-7">userid</td><td class="body-item mbr-fonts-style display-7">NT1</td><td class="body-item mbr-fonts-style display-7">The unique ID of 103 users</td></tr><tr> 
                 
                 
                 
                 
-              <td class="body-item mbr-fonts-style display-7">History</td><td class="body-item mbr-fonts-style display-7">The user’s historical clicked news collected at the first stage</td></tr><tr> 
+              <td class="body-item mbr-fonts-style display-7">clicknewsID&nbsp;</td><td class="body-item mbr-fonts-style display-7">N108480,N38238,N35068, ...</td><td class="body-item mbr-fonts-style display-7">The user’s historical clicked news collected at the first stage</td></tr><tr> 
                 
                 
                 
                 
-              <td class="body-item mbr-fonts-style display-7">SeenNews</td><td class="body-item mbr-fonts-style display-7">The exhibited news for each user at the second stage<br></td></tr><tr> 
+              <td class="body-item mbr-fonts-style display-7">posnewID</td><td class="body-item mbr-fonts-style display-7">N24110,N62769,N36186, ...<br></td><td class="body-item mbr-fonts-style display-7">The exhibited news for each user at the second stage<br></td></tr><tr> 
                 
                 
                 
                 
-              <td class="body-item mbr-fonts-style display-7">Headlines</td><td class="body-item mbr-fonts-style display-7">The manually-written news headlines for the exhibited news articles and can be split by '#TAB#'</td></tr><tr> 
-                
-                
-                
-                
-              <td class="body-item mbr-fonts-style display-7">Segments</td><td class="body-item mbr-fonts-style display-7">The highlighted segments corresponding to the exhibited news articles and can be split by '#TAB#'</td></tr></tbody>
+              <td class="body-item mbr-fonts-style display-7">Headlines</td><td class="body-item mbr-fonts-style display-7">'Legal battle looms over Trump EPA\'s rule change of Obama\'s Clean Power Plan rule ...</td><td class="body-item mbr-fonts-style display-7">The manually-written news headlines for the exhibited news articles and can be split by '#TAB#'</td></tr></tbody>
           </table>
         </div>
         <div class="container table-info-container">
@@ -518,7 +524,7 @@
         </div>
       </div>
     </div>
-</section><section style="background-color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; color:#aaa; font-size:12px; padding: 0; align-items: center; display: flex;"><a href="https://mobirise.site/q" style="flex: 1 1; height: 3rem; padding-left: 1rem;"></a><p style="flex: 0 0 auto; margin:0; padding-right:1rem;">Mobirise web builder - <a href="https://mobirise.site/o" style="color:#aaa;">Get more</a></p></section><script src="assets/web/assets/jquery/jquery.min.js"></script>  <script src="assets/popper/popper.min.js"></script>  <script src="assets/bootstrap/js/bootstrap.min.js"></script>  <script src="assets/tether/tether.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/datatables/jquery.data-tables.min.js"></script>  <script src="assets/datatables/data-tables.bootstrap4.min.js"></script>  <script src="assets/dropdown/js/nav-dropdown.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>  <script src="assets/theme/js/script.js"></script>  
+</section><section style="background-color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; color:#aaa; font-size:12px; padding: 0; align-items: center; display: flex;"><a href="https://mobirise.site/o" style="flex: 1 1; height: 3rem; padding-left: 1rem;"></a><p style="flex: 0 0 auto; margin:0; padding-right:1rem;">Built with Mobirise - <a href="https://mobirise.site/k" style="color:#aaa;">Details here</a></p></section><script src="assets/web/assets/jquery/jquery.min.js"></script>  <script src="assets/popper/popper.min.js"></script>  <script src="assets/bootstrap/js/bootstrap.min.js"></script>  <script src="assets/tether/tether.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/datatables/jquery.data-tables.min.js"></script>  <script src="assets/datatables/data-tables.bootstrap4.min.js"></script>  <script src="assets/dropdown/js/nav-dropdown.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>  <script src="assets/theme/js/script.js"></script>  
   
   
 </body>
