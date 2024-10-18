@@ -62,7 +62,7 @@ It has 7 columns, which are divided by the tab symbol:
 * Title Entities (entities contained in the title of this news)
 * Abstract Entities (entites contained in the abstract of this news)
 
-The full content body of MSN news articles are not made available for download, due to licensing structure. However, for your convenience, we have provided a [utility script](https://github.com/msnews/MIND/tree/master/crawler) to help parse news webpage from the MSN URLs in the dataset. Unfortunately, these URLs have expired now and cannot be accessed.
+The full content body of MSN news articles are not made available for download, due to licensing structure. However, for your convenience, we have provided a [utility script](https://github.com/msnews/MIND/tree/master/crawler) to help parse news webpage from the MSN URLs in the dataset. Unfortunately, these URLs have expired now and cannot be accessed. One possible way to get the news content is using search engines with the news title.
 
 An example is shown in the following table:
 
