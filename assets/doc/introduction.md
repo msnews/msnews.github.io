@@ -58,7 +58,7 @@ It has 7 columns, which are divided by the tab symbol:
 * SubCategory
 * Title
 * Abstract
-* URL
+* URL (We are sorry that the URLs have expired now)
 * Title Entities (entities contained in the title of this news)
 * Abstract Entities (entites contained in the abstract of this news)
 
