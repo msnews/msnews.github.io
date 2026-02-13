@@ -3,7 +3,7 @@
 Update the website leaderboard from three upstream sources:
   - CodaLab (old):  https://competitions.codalab.org/competitions/24122#results
   - CodaLab (new):  https://codalab.lisn.upsaclay.fr/competitions/420#results
-  - CodaBench:      https://www.codabench.org/competitions/13955/#/results-tab
+  - CodaBench:      https://www.codabench.org/competitions/13967/#/results-tab
 
 Design goals:
   - Write a single, sorted "combined" leaderboard JSON consumed by index.html.
@@ -33,7 +33,7 @@ from typing import Any, Dict, Iterable, List, Optional, Tuple
 
 CODALAB_OLD = ("codalab-old", "https://competitions.codalab.org", 24122)
 CODALAB_NEW = ("codalab-new", "https://codalab.lisn.upsaclay.fr", 420)
-CODABENCH = ("codabench", "https://www.codabench.org", 13955)
+CODABENCH = ("codabench", "https://www.codabench.org", 13967)
 
 # "results/<id>/data" endpoints (CSV exports) for the Official Test leaderboards.
 # These are stable as long as the competition results page keeps the same result set id.
@@ -42,12 +42,12 @@ CODALAB_NEW_OFFICIAL_RESULTS_ID = 563
 
 # CodaBench exposes a direct CSV export endpoint parameterized by phase.
 # Default comes from the user-provided results-tab phase id.
-CODABENCH_DEFAULT_PHASE_ID = 23177
+CODABENCH_DEFAULT_PHASE_ID = 23196
 
 RESULT_URLS = {
     "codalab-old": "https://competitions.codalab.org/competitions/24122#results",
     "codalab-new": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
-    "codabench": "https://www.codabench.org/competitions/13955/#/results-tab",
+    "codabench": "https://www.codabench.org/competitions/13967/#/results-tab",
 }
 
 
@@ -307,7 +307,9 @@ def _codabench_parse_table(headers: List[str], rows_2d: List[List[str]]) -> List
     return parsed
 
 
-def _codabench_scrape_results_tab(base_url: str, competition_id: int, insecure: bool) -> List[Dict[str, Any]]:
+def _codabench_scrape_results_tab(
+    base_url: str, competition_id: int, phase_id: int, insecure: bool
+) -> List[Dict[str, Any]]:
     """
     Scrape the public Results tab using Playwright and parse the visible table.
     """
@@ -318,13 +320,51 @@ def _codabench_scrape_results_tab(base_url: str, competition_id: int, insecure: 
             "Playwright is required for --codabench-method=scrape. Install with: pip install playwright && python -m playwright install chromium"
         ) from e
 
-    url = "{}/competitions/{}/#/results-tab".format(base_url.rstrip("/"), competition_id)
+    base = base_url.rstrip("/")
+    url = "{}/competitions/{}/#/results-tab".format(base, competition_id)
+    # Try a couple of hash/query variants that some frontends use for phase selection.
+    url_candidates = [
+        url,
+        url + "?phase={}".format(phase_id),
+        url + "?phase_id={}".format(phase_id),
+    ]
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         context = browser.new_context(ignore_https_errors=bool(insecure))
         page = context.new_page()
-        page.goto(url, wait_until="networkidle", timeout=120000)
+        last_nav_err = None
+        for u in url_candidates:
+            try:
+                page.goto(u, wait_until="networkidle", timeout=120000)
+                last_nav_err = None
+                break
+            except Exception as e:
+                last_nav_err = e
+        if last_nav_err:
+            raise RuntimeError("Failed to navigate to CodaBench results tab: {}".format(last_nav_err))
+
+        # Best-effort: if the page has a native <select> for phases, pick the requested phase_id.
+        try:
+            selected = page.evaluate(
+                """(pid) => {
+  const selects = Array.from(document.querySelectorAll('select'));
+  for (const sel of selects) {
+    const opts = Array.from(sel.options || []);
+    const opt = opts.find(o => (o && (o.value === String(pid) || (o.textContent || '').includes(String(pid)))));
+    if (!opt) continue;
+    sel.value = opt.value;
+    sel.dispatchEvent(new Event('change', { bubbles: true }));
+    return true;
+  }
+  return false;
+}""",
+                phase_id,
+            )
+            if selected:
+                page.wait_for_load_state("networkidle", timeout=60000)
+        except Exception:
+            pass
 
         # Try to find a table that contains the expected metric columns.
         try:
@@ -338,6 +378,7 @@ def _codabench_scrape_results_tab(base_url: str, competition_id: int, insecure: 
         tables = page.eval_on_selector_all(
             "table",
             "els => els.map(t => ({"
+            "visible: (t && t.getClientRects && t.getClientRects().length > 0),"
             "headers: Array.from(t.querySelectorAll('thead th')).map(th => (th.innerText||'').trim()),"
             "rows: Array.from(t.querySelectorAll('tbody tr')).map(tr => Array.from(tr.querySelectorAll('td')).map(td => (td.innerText||'').trim()))"
             "}))",
@@ -345,6 +386,8 @@ def _codabench_scrape_results_tab(base_url: str, competition_id: int, insecure: 
         best = None
         best_score = -1
         for t in tables or []:
+            if not t.get("visible"):
+                continue
             hdrs = t.get("headers") or []
             norm = [_norm_key(h) for h in hdrs]
             score = 0
@@ -430,7 +473,7 @@ def _codabench_load_or_fetch(
     def _fetch_rows() -> Tuple[str, List[Dict[str, Any]]]:
         # Default: scrape (CSV export is known to return 403 for this competition).
         if method == "scrape":
-            return ("scrape", _codabench_scrape_results_tab(base_url, competition_id, insecure=insecure))
+            return ("scrape", _codabench_scrape_results_tab(base_url, competition_id, phase_id=phase_id, insecure=insecure))
         if method == "csv":
             raw = _codabench_fetch_leaderboard_csv(base_url, competition_id, phase_id=phase_id, insecure=insecure)
             csv_text = _maybe_unzip_to_csv_text(raw)
@@ -443,7 +486,7 @@ def _codabench_load_or_fetch(
             return ("csv", _parse_generic_leaderboard_rows(csv_text))
         except urllib.error.HTTPError as e:
             if e.code == 403:
-                return ("scrape", _codabench_scrape_results_tab(base_url, competition_id, insecure=insecure))
+                return ("scrape", _codabench_scrape_results_tab(base_url, competition_id, phase_id=phase_id, insecure=insecure))
             raise
 
     try:
@@ -851,7 +894,21 @@ def _bootstrap_rows_from_index_static_table(index_path: Path) -> List[Dict[str, 
 
 
 def _combine_sources(source_payloads: List[Dict[str, Any]]) -> Dict[str, Any]:
-    combined_rows: List[Dict[str, Any]] = []
+    # Some platforms show duplicate entries (e.g., re-exports) where team + metrics are identical.
+    # Deduplicate such rows before sorting/ranking so the table looks clean.
+    def _dedupe_key(row: Dict[str, Any]) -> Tuple[str, Optional[float], Optional[float], Optional[float], Optional[float]]:
+        team_key = _norm_key(row.get("team") or "")
+
+        def mk(k: str) -> Optional[float]:
+            v = row.get(k)
+            try:
+                return None if v is None else round(float(v), 8)
+            except Exception:
+                return None
+
+        return (team_key, mk("auc"), mk("mrr"), mk("ndcg5"), mk("ndcg10"))
+
+    combined_rows_by_key: Dict[Tuple[str, Optional[float], Optional[float], Optional[float], Optional[float]], Dict[str, Any]] = {}
     sources_meta: List[Dict[str, Any]] = []
     for payload in source_payloads:
         source = payload.get("source") or "unknown"
@@ -872,8 +929,25 @@ def _combine_sources(source_payloads: List[Dict[str, Any]]) -> Dict[str, Any]:
             row["source"] = source
             row["competition_id"] = comp_id
             row["results_url"] = results_url
-            combined_rows.append(row)
 
+            key = _dedupe_key(row)
+            prev = combined_rows_by_key.get(key)
+            if not prev:
+                combined_rows_by_key[key] = row
+                continue
+
+            # Prefer the row that has a real date (useful for legacy table display),
+            # and if both have ISO dates, keep the latest one.
+            prev_iso = prev.get("date_iso") or ""
+            row_iso = row.get("date_iso") or ""
+            prev_has_date = bool(prev_iso or prev.get("date_display") or prev.get("date_raw"))
+            row_has_date = bool(row_iso or row.get("date_display") or row.get("date_raw"))
+            if (not prev_has_date) and row_has_date:
+                combined_rows_by_key[key] = row
+            elif prev_has_date and row_has_date and row_iso and (not prev_iso or str(row_iso) > str(prev_iso)):
+                combined_rows_by_key[key] = row
+
+    combined_rows: List[Dict[str, Any]] = list(combined_rows_by_key.values())
     combined_rows.sort(key=_metric_sort_key, reverse=True)
     for i, r in enumerate(combined_rows, 1):
         r["rank"] = i
@@ -1087,7 +1161,7 @@ def main(argv: List[str]) -> int:
 
     codalab_old_cache = cache_dir / "codalab-old_24122_official-test.json"
     codalab_new_cache = cache_dir / "codalab-new_420_official-test.json"
-    codabench_cache = cache_dir / "codabench_13955.csv-export.json"
+    codabench_cache = cache_dir / "codabench_13967.csv-export.json"
 
     payloads: List[Dict[str, Any]] = []
 
