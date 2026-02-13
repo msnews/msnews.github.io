@@ -1,0 +1,57 @@
+name: Update leaderboard
+
+on:
+  schedule:
+    # Monthly (1st day of month, 03:00 UTC)
+    - cron: "0 3 1 * *"
+  workflow_dispatch:
+    inputs:
+      refresh_codalab:
+        description: "Refetch and snapshot the two CodaLab leaderboards (normally cached)"
+        required: false
+        default: "false"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install Playwright (for CodaBench fallback)
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install playwright
+          python -m playwright install --with-deps chromium
+
+      - name: Update leaderboard JSON
+        env:
+          CODABENCH_BEARER_TOKEN: ${{ secrets.CODABENCH_BEARER_TOKEN }}
+          CODABENCH_TOKEN: ${{ secrets.CODABENCH_TOKEN }}
+          CODABENCH_COOKIE: ${{ secrets.CODABENCH_COOKIE }}
+        run: |
+          if [ "${{ github.event.inputs.refresh_codalab }}" = "true" ]; then
+            python scripts/update_leaderboard.py --refresh-codabench --refresh-codalab --write-index index.html
+          else
+            python scripts/update_leaderboard.py --refresh-codabench --write-index index.html
+          fi
+
+      - name: Commit changes (if any)
+        run: |
+          if git diff --quiet; then
+            echo "No changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.html assets/data/leaderboard.json assets/data/leaderboard_sources/*.json
+          git commit -m "chore: update leaderboard ($(date -u +%Y-%m-%d))"
+          git push

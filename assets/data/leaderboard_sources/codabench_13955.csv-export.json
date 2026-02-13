@@ -1,0 +1,20 @@
+{
+  "base_url": "https://www.codabench.org",
+  "competition_id": 13955,
+  "fetched_at": "2026-02-13T07:31:17Z",
+  "method": "scrape",
+  "phase_id": 23177,
+  "results_url": "https://www.codabench.org/competitions/13955/#/results-tab",
+  "rows": [
+    {
+      "auc": null,
+      "date_display": null,
+      "date_iso": null,
+      "mrr": null,
+      "ndcg10": null,
+      "ndcg5": null,
+      "team": "n/a"
+    }
+  ],
+  "source": "codabench"
+}

@@ -81,14 +81,32 @@ margin-top:3px;
 }
 .leaderboardhead{
 	background-color: #f3f3f3;
-	padding: 0px 30px;
+}
+.leaderboardhead th{
+	padding: 12px 18px;
+	vertical-align: middle;
+	border-bottom: 1px solid #ddd;
 }
 .leaderboardline td{
-	padding: 0px 30px;
+	padding: 12px 18px;
+	vertical-align: middle;
+	border-top: 1px solid #eee;
 }
 .leaderboardlinemask td{
 	background-color: #f9f9f9;
-	padding: 0px 30px;
+	padding: 12px 18px;
+	vertical-align: middle;
+	border-top: 1px solid #eee;
+}
+.performanceTable .date{
+	display: none;
+}
+@media (max-width: 768px) {
+	.leaderboardhead th,
+	.leaderboardline td,
+	.leaderboardlinemask td{
+		padding: 10px 10px;
+	}
 }
   .label{border:1px solid #000}
  .label{display:inline;padding:.2em .6em .3em;font-size:75%;font-weight:700;line-height:1;color:#fff;text-align:center;white-space:nowrap;vertical-align:baseline;border-radius:.25em}
@@ -105,4 +123,3 @@ margin-top:3px;
  .label-danger{background-color:#d9534f}
  .label-danger[href]:focus,
  .label-danger[href]:hover{background-color:#c9302c}
-
