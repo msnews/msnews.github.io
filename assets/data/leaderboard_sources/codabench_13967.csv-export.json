@@ -1,15 +1,15 @@
 {
   "base_url": "https://www.codabench.org",
   "competition_id": 13967,
-  "fetched_at": "2026-02-14T04:02:00Z",
+  "fetched_at": "2026-02-14T04:12:57Z",
   "method": "scrape",
   "phase_id": 23196,
   "results_url": "https://www.codabench.org/competitions/13967/#/results-tab",
   "rows": [
     {
       "auc": 0.6319,
-      "date_display": "Feb. 14, 2026",
-      "date_iso": "2026-02-14",
+      "date_display": "Feb. 13, 2026",
+      "date_iso": "2026-02-13",
       "mrr": 0.2975,
       "ndcg10": 0.3785,
       "ndcg5": 0.3208,
