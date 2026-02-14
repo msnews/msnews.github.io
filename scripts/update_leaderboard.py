@@ -151,6 +151,26 @@ def _find_column(headers: List[str], candidates: Iterable[str]) -> Optional[str]
     return None
 
 
+def _find_column_index(headers: List[str], candidates: Iterable[str]) -> Optional[int]:
+    """
+    Find a column index in `headers` that matches any candidate (exact or substring, case-insensitive).
+    Prefer using indices for scraped tables because headers may contain duplicates (e.g., blank <th> cells).
+    """
+    headers = [h for h in headers if h is not None]
+    norm_headers = [_norm_key(h) for h in headers]
+    cand_norm = [_norm_key(c) for c in candidates]
+    # exact match first
+    for i, nh in enumerate(norm_headers):
+        if nh in cand_norm:
+            return i
+    # substring match
+    for i, nh in enumerate(norm_headers):
+        for c in cand_norm:
+            if c and c in nh:
+                return i
+    return None
+
+
 def _parse_float(v: Any) -> Optional[float]:
     if v is None:
         return None
@@ -267,39 +287,123 @@ def _codabench_fetch_leaderboard_csv(
 
 
 def _codabench_parse_table(headers: List[str], rows_2d: List[List[str]]) -> List[Dict[str, Any]]:
-    if not headers or not rows_2d:
+    if not rows_2d:
         return []
 
-    team_col = _find_column(headers, ["team", "team name", "participant", "user", "username"])
-    date_col = _find_column(headers, ["date of last entry", "last entry", "submission date", "submitted", "date"])
-    auc_col = _find_column(headers, ["auc"])
-    mrr_col = _find_column(headers, ["mrr"])
-    ndcg5_col = _find_column(headers, ["ndcg@5", "ndcg5", "ndcg 5"])
-    ndcg10_col = _find_column(headers, ["ndcg@10", "ndcg10", "ndcg 10"])
+    # Normalize header length to the observed row width. Some scraped tables include extra <th> cells
+    # (e.g., sort controls) that don't correspond 1:1 to the extracted data cells.
+    max_row_len = max((len(r) for r in rows_2d if isinstance(r, list)), default=0)
+    headers2 = list(headers or [])
+    if max_row_len > 0 and headers2:
+        if len(headers2) > max_row_len:
+            headers2 = headers2[:max_row_len]
+        elif len(headers2) < max_row_len:
+            headers2 = headers2 + ["__col{}".format(i) for i in range(len(headers2), max_row_len)]
+    elif max_row_len > 0 and not headers2:
+        headers2 = ["__col{}".format(i) for i in range(max_row_len)]
 
-    index = {h: i for i, h in enumerate(headers) if h is not None}
-
-    def cell(row: List[str], col: Optional[str]) -> Optional[str]:
-        if not col:
+    def cell(row: List[str], i: Optional[int]) -> Optional[str]:
+        if i is None:
             return None
-        i = index.get(col)
-        if i is None or i < 0 or i >= len(row):
+        if i < 0 or i >= len(row):
             return None
         return row[i]
 
+    team_i = _find_column_index(headers2, ["team", "team name", "participant", "participants", "user", "username"])
+    date_i = _find_column_index(headers2, ["date of last entry", "last entry", "submission date", "submitted", "date"])
+    auc_i = _find_column_index(headers2, ["auc"])
+    mrr_i = _find_column_index(headers2, ["mrr"])
+    ndcg5_i = _find_column_index(headers2, ["ndcg@5", "ndcg5", "ndcg 5"])
+    ndcg10_i = _find_column_index(headers2, ["ndcg@10", "ndcg10", "ndcg 10"])
+
+    def is_non_numeric_text(s: str) -> bool:
+        st = (s or "").strip()
+        if not st:
+            return False
+        return _parse_float(st) is None
+
+    def pick_team_col_heuristic() -> Optional[int]:
+        if max_row_len <= 0:
+            return None
+        best_i = None
+        best_score = -1
+        for i in range(max_row_len):
+            vals = [cell(r, i) or "" for r in rows_2d if isinstance(r, list)]
+            nonnum = sum(1 for v in vals if is_non_numeric_text(v))
+            nonempty = sum(1 for v in vals if str(v or "").strip())
+            score = nonnum * 10 + nonempty
+            if score > best_score:
+                best_score = score
+                best_i = i
+        return best_i
+
+    if team_i is None:
+        team_i = pick_team_col_heuristic()
+    else:
+        # Guard against false positives: if all team values parse as numbers, it's likely mis-detected.
+        vals = [(cell(r, team_i) or "").strip() for r in rows_2d if isinstance(r, list)]
+        if vals and all((v and _parse_float(v) is not None) for v in vals):
+            team_i = pick_team_col_heuristic()
+
+    # If metric columns are missing, but there are multiple numeric columns, map them left-to-right.
+    metric_is = [auc_i, mrr_i, ndcg5_i, ndcg10_i]
+    if any(i is None for i in metric_is) and max_row_len > 0:
+        # Fallback: infer metric columns by value ranges. Non-metric numeric columns often include:
+        # rank (small integers), year (e.g., 2026), or submission ids (large integers).
+        # Our metrics are typically decimals in [0, 1].
+        candidates: List[Tuple[int, int, int, int]] = []
+        for i in range(max_row_len):
+            if i == team_i or i == date_i:
+                continue
+            numeric_count = 0
+            in_range_count = 0
+            fractional_count = 0
+            for r in rows_2d:
+                if not isinstance(r, list):
+                    continue
+                v = _parse_float(cell(r, i))
+                if v is None:
+                    continue
+                numeric_count += 1
+                if 0.0 <= v <= 1.5:
+                    in_range_count += 1
+                if abs(v - round(v)) > 1e-9:
+                    fractional_count += 1
+            if numeric_count <= 0:
+                continue
+            # Sort key tuple: prefer columns with many in-range values and fractional values.
+            candidates.append((i, in_range_count, fractional_count, numeric_count))
+
+        inferred = None
+        if candidates:
+            # Prefer fractional columns; if none exist, fall back to in-range counts only.
+            has_fractional = any(frac > 0 for _, _, frac, _ in candidates)
+            filtered = candidates if not has_fractional else [c for c in candidates if c[2] > 0]
+            filtered.sort(key=lambda t: (t[1], t[2], t[3], -t[0]), reverse=True)
+            top = [i for i, _, _, _ in filtered[:4]]
+            if len(top) == 4:
+                inferred = sorted(top)
+
+        if inferred:
+            # If header matching is incomplete (common on scraped tables), trust inferred mapping.
+            auc_i, mrr_i, ndcg5_i, ndcg10_i = inferred
+
     parsed: List[Dict[str, Any]] = []
+    
     for row in rows_2d:
-        team = (cell(row, team_col) or "").strip()
+        if not isinstance(row, list):
+            continue
+        team = (cell(row, team_i) or "").strip()
         if not team:
             continue
-        dt = _parse_date_any(cell(row, date_col))
+        dt = _parse_date_any(cell(row, date_i))
         parsed.append(
             {
                 "team": team,
-                "auc": _parse_float(cell(row, auc_col)),
-                "mrr": _parse_float(cell(row, mrr_col)),
-                "ndcg5": _parse_float(cell(row, ndcg5_col)),
-                "ndcg10": _parse_float(cell(row, ndcg10_col)),
+                "auc": _parse_float(cell(row, auc_i)),
+                "mrr": _parse_float(cell(row, mrr_i)),
+                "ndcg5": _parse_float(cell(row, ndcg5_i)),
+                "ndcg10": _parse_float(cell(row, ndcg10_i)),
                 "date_iso": _date_iso(dt),
                 "date_display": _format_date_display(dt),
             }
@@ -380,30 +484,29 @@ def _codabench_scrape_results_tab(
             "els => els.map(t => ({"
             "visible: (t && t.getClientRects && t.getClientRects().length > 0),"
             "headers: Array.from(t.querySelectorAll('thead th')).map(th => (th.innerText||'').trim()),"
-            "rows: Array.from(t.querySelectorAll('tbody tr')).map(tr => Array.from(tr.querySelectorAll('td')).map(td => (td.innerText||'').trim()))"
+            "rows: Array.from(t.querySelectorAll('tbody tr')).map(tr => Array.from(tr.querySelectorAll('th,td')).map(td => (td.innerText||'').trim()))"
             "}))",
         )
-        best = None
-        best_score = -1
         for t in tables or []:
             if not t.get("visible"):
                 continue
             hdrs = t.get("headers") or []
             norm = [_norm_key(h) for h in hdrs]
-            score = 0
-            for key in ("auc", "mrr", "ndcg@5", "ndcg@10"):
-                kn = _norm_key(key)
-                if any(kn in h for h in norm):
-                    score += 1
-            if score > best_score and (t.get("rows") or []):
-                best_score = score
-                best = t
-        if not best:
-            raise RuntimeError("Could not locate a results table on the page.")
 
-        headers = [h for h in (best.get("headers") or [])]
-        rows_2d = [r for r in (best.get("rows") or []) if isinstance(r, list)]
+            if "auc" not in norm:
+                continue
+
+            headers = t.get("headers") or []
+            rows_2d = t.get("rows") or []
+            
+        if not headers:
+            raise RuntimeError("Could not locate a results table on the page.")
         browser.close()
+
+        if len(rows_2d) > 0 and len(headers) != len(rows_2d[0]):
+            print("WARN: Detected table with mismatched header/data widths ({} headers vs {} cells); parsing may be inaccurate.".format(len(headers), len(rows_2d[0])), file=sys.stderr)
+            headers = headers[-len(rows_2d[0]):]
+
         return _codabench_parse_table(headers, rows_2d)
 
 
