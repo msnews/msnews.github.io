@@ -1,27 +1,54 @@
 {
   "base_url": "https://www.codabench.org",
   "competition_id": 13967,
-  "fetched_at": "2026-02-14T04:15:34Z",
+  "fetched_at": "2026-03-01T04:50:32Z",
   "method": "scrape",
   "phase_id": 23196,
   "results_url": "https://www.codabench.org/competitions/13967/#/results-tab",
   "rows": [
     {
-      "auc": 0.6319,
+      "auc": null,
       "date_display": "Feb. 13, 2026",
       "date_iso": "2026-02-13",
-      "mrr": 0.2975,
-      "ndcg10": 0.3785,
-      "ndcg5": 0.3208,
+      "mrr": null,
+      "ndcg10": null,
+      "ndcg5": null,
       "team": "yifanlan"
     },
     {
-      "auc": 0.5001,
+      "auc": null,
+      "date_display": "Feb. 27, 2026",
+      "date_iso": "2026-02-27",
+      "mrr": null,
+      "ndcg10": null,
+      "ndcg5": null,
+      "team": "tienkhoina"
+    },
+    {
+      "auc": null,
+      "date_display": "Feb. 18, 2026",
+      "date_iso": "2026-02-18",
+      "mrr": null,
+      "ndcg10": null,
+      "ndcg5": null,
+      "team": "madsrassers"
+    },
+    {
+      "auc": 0.6793,
+      "date_display": "Mar. 01, 2026",
+      "date_iso": "2026-03-01",
+      "mrr": 0.3319,
+      "ndcg10": 0.4195,
+      "ndcg5": 0.3622,
+      "team": "zyy_catcat"
+    },
+    {
+      "auc": null,
       "date_display": "Feb. 13, 2026",
       "date_iso": "2026-02-13",
-      "mrr": 0.2239,
-      "ndcg10": 0.285,
-      "ndcg5": 0.2295,
+      "mrr": null,
+      "ndcg10": null,
+      "ndcg5": null,
       "team": "if111"
     }
   ],
