@@ -1,37 +1,136 @@
 {
   "base_url": "https://www.codabench.org",
   "competition_id": 13967,
-  "fetched_at": "2026-03-02T03:46:26Z",
+  "fetched_at": "2026-04-01T05:20:01Z",
   "method": "scrape",
   "phase_id": 23196,
   "results_url": "https://www.codabench.org/competitions/13967/#/results-tab",
   "rows": [
     {
-      "auc": null,
-      "date_display": "Feb. 27, 2026",
-      "date_iso": "2026-02-27",
-      "mrr": null,
-      "ndcg10": null,
-      "ndcg5": null,
+      "auc": 0.7201,
+      "date_display": "Mar. 13, 2026",
+      "date_iso": "2026-03-13",
+      "mrr": 0.3688,
+      "ndcg10": 0.4617,
+      "ndcg5": 0.4059,
+      "team": "mengsong"
+    },
+    {
+      "auc": 0.7201,
+      "date_display": "Mar. 29, 2026",
+      "date_iso": "2026-03-29",
+      "mrr": 0.3688,
+      "ndcg10": 0.4617,
+      "ndcg5": 0.4059,
+      "team": "lifanyao"
+    },
+    {
+      "auc": 0.7195,
+      "date_display": "Mar. 28, 2026",
+      "date_iso": "2026-03-28",
+      "mrr": 0.366,
+      "ndcg10": 0.4588,
+      "ndcg5": 0.4025,
+      "team": "wuhao"
+    },
+    {
+      "auc": 0.7122,
+      "date_display": "Mar. 11, 2026",
+      "date_iso": "2026-03-11",
+      "mrr": 0.3608,
+      "ndcg10": 0.4543,
+      "ndcg5": 0.3977,
       "team": "tienkhoina"
     },
     {
-      "auc": 0.6793,
-      "date_display": "Mar. 01, 2026",
-      "date_iso": "2026-03-01",
-      "mrr": 0.3319,
-      "ndcg10": 0.4195,
+      "auc": 0.7109,
+      "date_display": "Mar. 10, 2026",
+      "date_iso": "2026-03-10",
+      "mrr": 0.3576,
+      "ndcg10": 0.4489,
+      "ndcg5": 0.3924,
+      "team": "madsrassers"
+    },
+    {
+      "auc": 0.7048,
+      "date_display": "Mar. 25, 2026",
+      "date_iso": "2026-03-25",
+      "mrr": 0.3555,
+      "ndcg10": 0.4472,
+      "ndcg5": 0.3909,
+      "team": "ethyl"
+    },
+    {
+      "auc": 0.6995,
+      "date_display": "Mar. 30, 2026",
+      "date_iso": "2026-03-30",
+      "mrr": 0.3475,
+      "ndcg10": 0.4368,
+      "ndcg5": 0.3797,
+      "team": "superbabara"
+    },
+    {
+      "auc": 0.697,
+      "date_display": "Mar. 26, 2026",
+      "date_iso": "2026-03-26",
+      "mrr": 0.3459,
+      "ndcg10": 0.4345,
+      "ndcg5": 0.3774,
+      "team": "dulig1902"
+    },
+    {
+      "auc": 0.6856,
+      "date_display": "Mar. 19, 2026",
+      "date_iso": "2026-03-19",
+      "mrr": 0.3384,
+      "ndcg10": 0.4262,
+      "ndcg5": 0.3689,
+      "team": "lelele"
+    },
+    {
+      "auc": 0.6854,
+      "date_display": "Mar. 05, 2026",
+      "date_iso": "2026-03-05",
+      "mrr": 0.3331,
+      "ndcg10": 0.4199,
       "ndcg5": 0.3622,
       "team": "zyy_catcat"
     },
     {
-      "auc": 0.6531,
-      "date_display": "Mar. 01, 2026",
-      "date_iso": "2026-03-01",
-      "mrr": 0.3113,
-      "ndcg10": 0.394,
-      "ndcg5": 0.3365,
+      "auc": 0.6778,
+      "date_display": "Mar. 17, 2026",
+      "date_iso": "2026-03-17",
+      "mrr": 0.3282,
+      "ndcg10": 0.415,
+      "ndcg5": 0.3572,
       "team": "yifanlan"
+    },
+    {
+      "auc": 0.6706,
+      "date_display": "Mar. 18, 2026",
+      "date_iso": "2026-03-18",
+      "mrr": 0.326,
+      "ndcg10": 0.4101,
+      "ndcg5": 0.3529,
+      "team": "peramor"
+    },
+    {
+      "auc": 0.6529,
+      "date_display": "Mar. 03, 2026",
+      "date_iso": "2026-03-03",
+      "mrr": 0.3059,
+      "ndcg10": 0.3884,
+      "ndcg5": 0.3298,
+      "team": "tingnanliu1"
+    },
+    {
+      "auc": 0.6364,
+      "date_display": "Mar. 24, 2026",
+      "date_iso": "2026-03-24",
+      "mrr": 0.3061,
+      "ndcg10": 0.3848,
+      "ndcg5": 0.3281,
+      "team": "new_lmy"
     }
   ],
   "source": "codabench"
