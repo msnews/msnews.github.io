@@ -1,6 +1,19 @@
 {
-  "generated_at": "2026-04-01T05:20:01Z",
+  "generated_at": "2026-06-01T08:30:24Z",
   "rows": [
+    {
+      "auc": 0.7316,
+      "competition_id": 13967,
+      "date_display": "May. 29, 2026",
+      "date_iso": "2026-05-29",
+      "mrr": 0.3768,
+      "ndcg10": 0.4722,
+      "ndcg5": 0.4162,
+      "rank": 1,
+      "results_url": "https://www.codabench.org/competitions/13967/#/results-tab",
+      "source": "codabench",
+      "team": "newsbang"
+    },
     {
       "auc": 0.7304,
       "competition_id": 24122,
@@ -10,7 +23,7 @@
       "mrr": 0.377,
       "ndcg10": 0.4718,
       "ndcg5": 0.418,
-      "rank": 1,
+      "rank": 2,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "UniUM-Fastformer-Pretrain"
@@ -24,7 +37,7 @@
       "mrr": 0.3724,
       "ndcg10": 0.4661,
       "ndcg5": 0.4102,
-      "rank": 2,
+      "rank": 3,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "MINER"
@@ -38,7 +51,7 @@
       "mrr": 0.3727,
       "ndcg10": 0.4673,
       "ndcg5": 0.4112,
-      "rank": 3,
+      "rank": 4,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "_dctr"
@@ -52,7 +65,7 @@
       "mrr": 0.3745,
       "ndcg10": 0.4684,
       "ndcg5": 0.4151,
-      "rank": 4,
+      "rank": 5,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "UniUM-Fastformer"
@@ -66,7 +79,7 @@
       "mrr": 0.3695,
       "ndcg10": 0.4632,
       "ndcg5": 0.4067,
-      "rank": 5,
+      "rank": 6,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "SRIN_LAI"
@@ -80,7 +93,7 @@
       "mrr": 0.372,
       "ndcg10": 0.466,
       "ndcg5": 0.4101,
-      "rank": 6,
+      "rank": 7,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "tuyendv"
@@ -94,7 +107,7 @@
       "mrr": 0.372,
       "ndcg10": 0.466,
       "ndcg5": 0.4101,
-      "rank": 7,
+      "rank": 8,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "quynhnl"
@@ -108,7 +121,7 @@
       "mrr": 0.372,
       "ndcg10": 0.466,
       "ndcg5": 0.4101,
-      "rank": 8,
+      "rank": 9,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "pengwj"
@@ -122,7 +135,7 @@
       "mrr": 0.3709,
       "ndcg10": 0.4647,
       "ndcg5": 0.4089,
-      "rank": 9,
+      "rank": 10,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "who_am_I"
@@ -136,7 +149,7 @@
       "mrr": 0.3709,
       "ndcg10": 0.4647,
       "ndcg5": 0.4089,
-      "rank": 10,
+      "rank": 11,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Riiid"
@@ -150,7 +163,7 @@
       "mrr": 0.371,
       "ndcg10": 0.4655,
       "ndcg5": 0.4093,
-      "rank": 11,
+      "rank": 12,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "fangy"
@@ -164,7 +177,7 @@
       "mrr": 0.3714,
       "ndcg10": 0.4652,
       "ndcg5": 0.4094,
-      "rank": 12,
+      "rank": 13,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "JZSAWYER"
@@ -178,7 +191,7 @@
       "mrr": 0.3711,
       "ndcg10": 0.465,
       "ndcg5": 0.4091,
-      "rank": 13,
+      "rank": 14,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "lnyue"
@@ -192,7 +205,7 @@
       "mrr": 0.3691,
       "ndcg10": 0.4627,
       "ndcg5": 0.4065,
-      "rank": 14,
+      "rank": 15,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "SUDA_NLP_HY"
@@ -206,7 +219,7 @@
       "mrr": 0.3706,
       "ndcg10": 0.4644,
       "ndcg5": 0.4101,
-      "rank": 15,
+      "rank": 16,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "UniUM"
@@ -220,10 +233,23 @@
       "mrr": 0.3689,
       "ndcg10": 0.4624,
       "ndcg5": 0.4062,
-      "rank": 16,
+      "rank": 17,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "rollingUp"
+    },
+    {
+      "auc": 0.7212,
+      "competition_id": 13967,
+      "date_display": "May. 21, 2026",
+      "date_iso": "2026-05-21",
+      "mrr": 0.3678,
+      "ndcg10": 0.4612,
+      "ndcg5": 0.4049,
+      "rank": 18,
+      "results_url": "https://www.codabench.org/competitions/13967/#/results-tab",
+      "source": "codabench",
+      "team": "kemalli"
     },
     {
       "auc": 0.7211,
@@ -234,7 +260,7 @@
       "mrr": 0.3676,
       "ndcg10": 0.4608,
       "ndcg5": 0.4047,
-      "rank": 17,
+      "rank": 19,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "luzepu"
@@ -248,7 +274,7 @@
       "mrr": 0.3667,
       "ndcg10": 0.4602,
       "ndcg5": 0.404,
-      "rank": 18,
+      "rank": 20,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "NoParty4PR"
@@ -262,7 +288,7 @@
       "mrr": 0.3654,
       "ndcg10": 0.4584,
       "ndcg5": 0.4019,
-      "rank": 19,
+      "rank": 21,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "wdacheng"
@@ -276,7 +302,7 @@
       "mrr": 0.3676,
       "ndcg10": 0.4597,
       "ndcg5": 0.404,
-      "rank": 20,
+      "rank": 22,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "chenghuige"
@@ -290,7 +316,7 @@
       "mrr": 0.3676,
       "ndcg10": 0.4608,
       "ndcg5": 0.4046,
-      "rank": 21,
+      "rank": 23,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "kevin_zzh"
@@ -304,7 +330,7 @@
       "mrr": 0.3677,
       "ndcg10": 0.4602,
       "ndcg5": 0.4041,
-      "rank": 22,
+      "rank": 24,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "UNBERT"
@@ -318,7 +344,7 @@
       "mrr": 0.3688,
       "ndcg10": 0.4617,
       "ndcg5": 0.4059,
-      "rank": 23,
+      "rank": 25,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "phviethoang"
@@ -332,7 +358,7 @@
       "mrr": 0.3688,
       "ndcg10": 0.4617,
       "ndcg5": 0.4059,
-      "rank": 24,
+      "rank": 26,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "only2233"
@@ -345,23 +371,10 @@
       "mrr": 0.3688,
       "ndcg10": 0.4617,
       "ndcg5": 0.4059,
-      "rank": 25,
+      "rank": 27,
       "results_url": "https://www.codabench.org/competitions/13967/#/results-tab",
       "source": "codabench",
       "team": "mengsong"
-    },
-    {
-      "auc": 0.7201,
-      "competition_id": 13967,
-      "date_display": "Mar. 29, 2026",
-      "date_iso": "2026-03-29",
-      "mrr": 0.3688,
-      "ndcg10": 0.4617,
-      "ndcg5": 0.4059,
-      "rank": 26,
-      "results_url": "https://www.codabench.org/competitions/13967/#/results-tab",
-      "source": "codabench",
-      "team": "lifanyao"
     },
     {
       "auc": 0.7201,
@@ -372,7 +385,7 @@
       "mrr": 0.3688,
       "ndcg10": 0.4617,
       "ndcg5": 0.4059,
-      "rank": 27,
+      "rank": 28,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "cuongnx20190040"
@@ -386,10 +399,23 @@
       "mrr": 0.3688,
       "ndcg10": 0.4617,
       "ndcg5": 0.4059,
-      "rank": 28,
+      "rank": 29,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "cgw"
+    },
+    {
+      "auc": 0.7199,
+      "competition_id": 13967,
+      "date_display": "May. 19, 2026",
+      "date_iso": "2026-05-19",
+      "mrr": 0.366,
+      "ndcg10": 0.4587,
+      "ndcg5": 0.4023,
+      "rank": 30,
+      "results_url": "https://www.codabench.org/competitions/13967/#/results-tab",
+      "source": "codabench",
+      "team": "kemalau"
     },
     {
       "auc": 0.7196,
@@ -400,7 +426,7 @@
       "mrr": 0.3636,
       "ndcg10": 0.456,
       "ndcg5": 0.3998,
-      "rank": 29,
+      "rank": 31,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "wsm_SotA"
@@ -413,7 +439,7 @@
       "mrr": 0.366,
       "ndcg10": 0.4588,
       "ndcg5": 0.4025,
-      "rank": 30,
+      "rank": 32,
       "results_url": "https://www.codabench.org/competitions/13967/#/results-tab",
       "source": "codabench",
       "team": "wuhao"
@@ -427,10 +453,23 @@
       "mrr": 0.363,
       "ndcg10": 0.4557,
       "ndcg5": 0.3989,
-      "rank": 31,
+      "rank": 33,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "mduofg"
+    },
+    {
+      "auc": 0.7185,
+      "competition_id": 13967,
+      "date_display": "Mar. 30, 2026",
+      "date_iso": "2026-03-30",
+      "mrr": 0.3677,
+      "ndcg10": 0.4605,
+      "ndcg5": 0.4046,
+      "rank": 34,
+      "results_url": "https://www.codabench.org/competitions/13967/#/results-tab",
+      "source": "codabench",
+      "team": "lifanyao"
     },
     {
       "auc": 0.7184,
@@ -441,7 +480,7 @@
       "mrr": 0.3617,
       "ndcg10": 0.4541,
       "ndcg5": 0.3971,
-      "rank": 32,
+      "rank": 35,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "Test_srn_team_rec"
@@ -455,10 +494,23 @@
       "mrr": 0.3632,
       "ndcg10": 0.4561,
       "ndcg5": 0.3996,
-      "rank": 33,
+      "rank": 36,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "lichenyu"
+    },
+    {
+      "auc": 0.7179,
+      "competition_id": 13967,
+      "date_display": "Apr. 30, 2026",
+      "date_iso": "2026-04-30",
+      "mrr": 0.3612,
+      "ndcg10": 0.4536,
+      "ndcg5": 0.397,
+      "rank": 37,
+      "results_url": "https://www.codabench.org/competitions/13967/#/results-tab",
+      "source": "codabench",
+      "team": "v1ceversa"
     },
     {
       "auc": 0.7175,
@@ -469,7 +521,7 @@
       "mrr": 0.3632,
       "ndcg10": 0.4562,
       "ndcg5": 0.3998,
-      "rank": 34,
+      "rank": 38,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "rollingUp"
@@ -483,7 +535,7 @@
       "mrr": 0.3611,
       "ndcg10": 0.4534,
       "ndcg5": 0.3964,
-      "rank": 35,
+      "rank": 39,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "shouju"
@@ -497,7 +549,7 @@
       "mrr": 0.3609,
       "ndcg10": 0.4536,
       "ndcg5": 0.3966,
-      "rank": 36,
+      "rank": 40,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "ranranran"
@@ -511,7 +563,7 @@
       "mrr": 0.3628,
       "ndcg10": 0.4555,
       "ndcg5": 0.3988,
-      "rank": 37,
+      "rank": 41,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "wubin"
@@ -525,7 +577,7 @@
       "mrr": 0.3612,
       "ndcg10": 0.4532,
       "ndcg5": 0.3966,
-      "rank": 38,
+      "rank": 42,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "LeonChang"
@@ -539,10 +591,23 @@
       "mrr": 0.3615,
       "ndcg10": 0.4542,
       "ndcg5": 0.3978,
-      "rank": 39,
+      "rank": 43,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Yaobink"
+    },
+    {
+      "auc": 0.7144,
+      "competition_id": 13967,
+      "date_display": "Apr. 21, 2026",
+      "date_iso": "2026-04-21",
+      "mrr": 0.3621,
+      "ndcg10": 0.4539,
+      "ndcg5": 0.3975,
+      "rank": 44,
+      "results_url": "https://www.codabench.org/competitions/13967/#/results-tab",
+      "source": "codabench",
+      "team": "overwindows"
     },
     {
       "auc": 0.7143,
@@ -553,7 +618,7 @@
       "mrr": 0.3616,
       "ndcg10": 0.4529,
       "ndcg5": 0.3967,
-      "rank": 40,
+      "rank": 45,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "wcy419hh"
@@ -567,7 +632,7 @@
       "mrr": 0.3613,
       "ndcg10": 0.4526,
       "ndcg5": 0.3964,
-      "rank": 41,
+      "rank": 46,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "fuxictr"
@@ -581,7 +646,7 @@
       "mrr": 0.3591,
       "ndcg10": 0.4509,
       "ndcg5": 0.3937,
-      "rank": 42,
+      "rank": 47,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "xdr"
@@ -595,10 +660,23 @@
       "mrr": 0.3613,
       "ndcg10": 0.4527,
       "ndcg5": 0.3962,
-      "rank": 43,
+      "rank": 48,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "guody"
+    },
+    {
+      "auc": 0.7136,
+      "competition_id": 13967,
+      "date_display": "May. 06, 2026",
+      "date_iso": "2026-05-06",
+      "mrr": 0.3596,
+      "ndcg10": 0.4511,
+      "ndcg5": 0.3942,
+      "rank": 49,
+      "results_url": "https://www.codabench.org/competitions/13967/#/results-tab",
+      "source": "codabench",
+      "team": "madsrassers"
     },
     {
       "auc": 0.7134,
@@ -609,7 +687,7 @@
       "mrr": 0.3643,
       "ndcg10": 0.4561,
       "ndcg5": 0.4002,
-      "rank": 44,
+      "rank": 50,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "have_a_try"
@@ -623,10 +701,23 @@
       "mrr": 0.3591,
       "ndcg10": 0.4518,
       "ndcg5": 0.3951,
-      "rank": 45,
+      "rank": 51,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Lil.Forest"
+    },
+    {
+      "auc": 0.7127,
+      "competition_id": 13967,
+      "date_display": "Apr. 05, 2026",
+      "date_iso": "2026-04-05",
+      "mrr": 0.3589,
+      "ndcg10": 0.4502,
+      "ndcg5": 0.3934,
+      "rank": 52,
+      "results_url": "https://www.codabench.org/competitions/13967/#/results-tab",
+      "source": "codabench",
+      "team": "qianli"
     },
     {
       "auc": 0.7124,
@@ -637,7 +728,7 @@
       "mrr": 0.3588,
       "ndcg10": 0.4507,
       "ndcg5": 0.394,
-      "rank": 46,
+      "rank": 53,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "chenyue"
@@ -651,7 +742,7 @@
       "mrr": 0.3582,
       "ndcg10": 0.4497,
       "ndcg5": 0.393,
-      "rank": 47,
+      "rank": 54,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "Tingnan"
@@ -664,7 +755,7 @@
       "mrr": 0.3608,
       "ndcg10": 0.4543,
       "ndcg5": 0.3977,
-      "rank": 48,
+      "rank": 55,
       "results_url": "https://www.codabench.org/competitions/13967/#/results-tab",
       "source": "codabench",
       "team": "tienkhoina"
@@ -678,7 +769,7 @@
       "mrr": 0.3633,
       "ndcg10": 0.4556,
       "ndcg5": 0.3996,
-      "rank": 49,
+      "rank": 56,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "Bonj0ur"
@@ -692,7 +783,7 @@
       "mrr": 0.3584,
       "ndcg10": 0.4502,
       "ndcg5": 0.3939,
-      "rank": 50,
+      "rank": 57,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "xcdt123"
@@ -706,7 +797,7 @@
       "mrr": 0.3573,
       "ndcg10": 0.4489,
       "ndcg5": 0.3922,
-      "rank": 51,
+      "rank": 58,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Rui"
@@ -720,7 +811,7 @@
       "mrr": 0.3549,
       "ndcg10": 0.4461,
       "ndcg5": 0.3888,
-      "rank": 52,
+      "rank": 59,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "fake_news"
@@ -734,7 +825,7 @@
       "mrr": 0.3568,
       "ndcg10": 0.4485,
       "ndcg5": 0.3916,
-      "rank": 53,
+      "rank": 60,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "dtsnu"
@@ -748,7 +839,7 @@
       "mrr": 0.3597,
       "ndcg10": 0.4518,
       "ndcg5": 0.3954,
-      "rank": 54,
+      "rank": 61,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "JunyiChen"
@@ -762,7 +853,7 @@
       "mrr": 0.3585,
       "ndcg10": 0.4498,
       "ndcg5": 0.3933,
-      "rank": 55,
+      "rank": 62,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "started2givingup"
@@ -776,23 +867,10 @@
       "mrr": 0.3546,
       "ndcg10": 0.4458,
       "ndcg5": 0.3888,
-      "rank": 56,
+      "rank": 63,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "haibaraqy"
-    },
-    {
-      "auc": 0.7109,
-      "competition_id": 13967,
-      "date_display": "Mar. 10, 2026",
-      "date_iso": "2026-03-10",
-      "mrr": 0.3576,
-      "ndcg10": 0.4489,
-      "ndcg5": 0.3924,
-      "rank": 57,
-      "results_url": "https://www.codabench.org/competitions/13967/#/results-tab",
-      "source": "codabench",
-      "team": "madsrassers"
     },
     {
       "auc": 0.7108,
@@ -803,7 +881,7 @@
       "mrr": 0.356,
       "ndcg10": 0.4473,
       "ndcg5": 0.3906,
-      "rank": 58,
+      "rank": 64,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "vincentni"
@@ -817,7 +895,7 @@
       "mrr": 0.3539,
       "ndcg10": 0.4445,
       "ndcg5": 0.3876,
-      "rank": 59,
+      "rank": 65,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "akirasosa"
@@ -831,7 +909,7 @@
       "mrr": 0.3577,
       "ndcg10": 0.4485,
       "ndcg5": 0.3922,
-      "rank": 60,
+      "rank": 66,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "SFI"
@@ -845,7 +923,7 @@
       "mrr": 0.3557,
       "ndcg10": 0.447,
       "ndcg5": 0.3901,
-      "rank": 61,
+      "rank": 67,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "namespace-Pt"
@@ -859,7 +937,7 @@
       "mrr": 0.3579,
       "ndcg10": 0.4497,
       "ndcg5": 0.3927,
-      "rank": 62,
+      "rank": 68,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "fake_news"
@@ -873,7 +951,7 @@
       "mrr": 0.354,
       "ndcg10": 0.4454,
       "ndcg5": 0.3883,
-      "rank": 63,
+      "rank": 69,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "oahciy"
@@ -887,7 +965,7 @@
       "mrr": 0.3569,
       "ndcg10": 0.4481,
       "ndcg5": 0.3916,
-      "rank": 64,
+      "rank": 70,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "WONNIU"
@@ -901,7 +979,7 @@
       "mrr": 0.3541,
       "ndcg10": 0.4448,
       "ndcg5": 0.3881,
-      "rank": 65,
+      "rank": 71,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "wsm_88888888"
@@ -915,7 +993,7 @@
       "mrr": 0.3554,
       "ndcg10": 0.447,
       "ndcg5": 0.3902,
-      "rank": 66,
+      "rank": 72,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "Yaobink"
@@ -929,7 +1007,7 @@
       "mrr": 0.3581,
       "ndcg10": 0.4489,
       "ndcg5": 0.3926,
-      "rank": 67,
+      "rank": 73,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "martin_bi"
@@ -943,7 +1021,7 @@
       "mrr": 0.3541,
       "ndcg10": 0.4455,
       "ndcg5": 0.3885,
-      "rank": 68,
+      "rank": 74,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "xcdt123"
@@ -957,7 +1035,7 @@
       "mrr": 0.356,
       "ndcg10": 0.4457,
       "ndcg5": 0.3897,
-      "rank": 69,
+      "rank": 75,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "codefish"
@@ -971,7 +1049,7 @@
       "mrr": 0.3535,
       "ndcg10": 0.4436,
       "ndcg5": 0.3866,
-      "rank": 70,
+      "rank": 76,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "yujunhao"
@@ -985,7 +1063,7 @@
       "mrr": 0.3559,
       "ndcg10": 0.4479,
       "ndcg5": 0.3907,
-      "rank": 71,
+      "rank": 77,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "tienkhoina"
@@ -999,10 +1077,23 @@
       "mrr": 0.3564,
       "ndcg10": 0.4475,
       "ndcg5": 0.3909,
-      "rank": 72,
+      "rank": 78,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "jwy"
+    },
+    {
+      "auc": 0.7074,
+      "competition_id": 13967,
+      "date_display": "Apr. 05, 2026",
+      "date_iso": "2026-04-05",
+      "mrr": 0.3541,
+      "ndcg10": 0.4447,
+      "ndcg5": 0.3877,
+      "rank": 79,
+      "results_url": "https://www.codabench.org/competitions/13967/#/results-tab",
+      "source": "codabench",
+      "team": "a-znkkkk"
     },
     {
       "auc": 0.7073,
@@ -1013,7 +1104,7 @@
       "mrr": 0.3543,
       "ndcg10": 0.4451,
       "ndcg5": 0.3882,
-      "rank": 73,
+      "rank": 80,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "Mads_Rasmussen"
@@ -1027,7 +1118,7 @@
       "mrr": 0.3526,
       "ndcg10": 0.4426,
       "ndcg5": 0.3858,
-      "rank": 74,
+      "rank": 81,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "haibaraqy"
@@ -1041,7 +1132,7 @@
       "mrr": 0.3552,
       "ndcg10": 0.4459,
       "ndcg5": 0.3895,
-      "rank": 75,
+      "rank": 82,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "NoahRS"
@@ -1055,7 +1146,7 @@
       "mrr": 0.3544,
       "ndcg10": 0.4457,
       "ndcg5": 0.3891,
-      "rank": 76,
+      "rank": 83,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "smhe"
@@ -1069,7 +1160,7 @@
       "mrr": 0.3514,
       "ndcg10": 0.4418,
       "ndcg5": 0.3847,
-      "rank": 77,
+      "rank": 84,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "doubleQ"
@@ -1083,7 +1174,7 @@
       "mrr": 0.3552,
       "ndcg10": 0.4458,
       "ndcg5": 0.3896,
-      "rank": 78,
+      "rank": 85,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "DistillRec"
@@ -1097,7 +1188,7 @@
       "mrr": 0.3535,
       "ndcg10": 0.4432,
       "ndcg5": 0.3869,
-      "rank": 79,
+      "rank": 86,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "littlefile"
@@ -1110,7 +1201,7 @@
       "mrr": 0.3555,
       "ndcg10": 0.4472,
       "ndcg5": 0.3909,
-      "rank": 80,
+      "rank": 87,
       "results_url": "https://www.codabench.org/competitions/13967/#/results-tab",
       "source": "codabench",
       "team": "ethyl"
@@ -1124,7 +1215,7 @@
       "mrr": 0.3505,
       "ndcg10": 0.4416,
       "ndcg5": 0.3845,
-      "rank": 81,
+      "rank": 88,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Ravox"
@@ -1138,7 +1229,7 @@
       "mrr": 0.3516,
       "ndcg10": 0.4406,
       "ndcg5": 0.3841,
-      "rank": 82,
+      "rank": 89,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "sonchuate"
@@ -1152,7 +1243,7 @@
       "mrr": 0.3561,
       "ndcg10": 0.4462,
       "ndcg5": 0.3901,
-      "rank": 83,
+      "rank": 90,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "martinmarshall"
@@ -1166,7 +1257,7 @@
       "mrr": 0.3504,
       "ndcg10": 0.4408,
       "ndcg5": 0.3838,
-      "rank": 84,
+      "rank": 91,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "guiltrex"
@@ -1180,7 +1271,7 @@
       "mrr": 0.3488,
       "ndcg10": 0.4388,
       "ndcg5": 0.3814,
-      "rank": 85,
+      "rank": 92,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "tsrankPh"
@@ -1194,7 +1285,7 @@
       "mrr": 0.3535,
       "ndcg10": 0.4429,
       "ndcg5": 0.386,
-      "rank": 86,
+      "rank": 93,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "veason"
@@ -1208,7 +1299,7 @@
       "mrr": 0.3496,
       "ndcg10": 0.4397,
       "ndcg5": 0.383,
-      "rank": 87,
+      "rank": 94,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Qinne"
@@ -1222,7 +1313,7 @@
       "mrr": 0.3496,
       "ndcg10": 0.4403,
       "ndcg5": 0.3833,
-      "rank": 88,
+      "rank": 95,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "MengyanZhang"
@@ -1236,7 +1327,7 @@
       "mrr": 0.3498,
       "ndcg10": 0.4395,
       "ndcg5": 0.3825,
-      "rank": 89,
+      "rank": 96,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "alice.jw"
@@ -1250,7 +1341,7 @@
       "mrr": 0.347,
       "ndcg10": 0.4365,
       "ndcg5": 0.3794,
-      "rank": 90,
+      "rank": 97,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Ricky"
@@ -1264,7 +1355,7 @@
       "mrr": 0.3493,
       "ndcg10": 0.4398,
       "ndcg5": 0.3824,
-      "rank": 91,
+      "rank": 98,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "HaoranTan"
@@ -1278,7 +1369,7 @@
       "mrr": 0.3482,
       "ndcg10": 0.438,
       "ndcg5": 0.3808,
-      "rank": 92,
+      "rank": 99,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "Fantasyli"
@@ -1292,7 +1383,7 @@
       "mrr": 0.3482,
       "ndcg10": 0.4377,
       "ndcg5": 0.3808,
-      "rank": 93,
+      "rank": 100,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "MIND_Organizer"
@@ -1306,7 +1397,7 @@
       "mrr": 0.3446,
       "ndcg10": 0.4346,
       "ndcg5": 0.3768,
-      "rank": 94,
+      "rank": 101,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "mytest"
@@ -1320,7 +1411,7 @@
       "mrr": 0.3514,
       "ndcg10": 0.442,
       "ndcg5": 0.3856,
-      "rank": 95,
+      "rank": 102,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "ganweinan"
@@ -1334,7 +1425,7 @@
       "mrr": 0.3475,
       "ndcg10": 0.4363,
       "ndcg5": 0.3793,
-      "rank": 96,
+      "rank": 103,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "lab207_kui"
@@ -1348,7 +1439,7 @@
       "mrr": 0.3475,
       "ndcg10": 0.4374,
       "ndcg5": 0.3803,
-      "rank": 97,
+      "rank": 104,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "noah_lijian"
@@ -1362,7 +1453,7 @@
       "mrr": 0.3468,
       "ndcg10": 0.4364,
       "ndcg5": 0.3792,
-      "rank": 98,
+      "rank": 105,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "namnguyenba0604"
@@ -1376,7 +1467,7 @@
       "mrr": 0.3473,
       "ndcg10": 0.4363,
       "ndcg5": 0.3796,
-      "rank": 99,
+      "rank": 106,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "test_competition"
@@ -1389,7 +1480,7 @@
       "mrr": 0.3475,
       "ndcg10": 0.4368,
       "ndcg5": 0.3797,
-      "rank": 100,
+      "rank": 107,
       "results_url": "https://www.codabench.org/competitions/13967/#/results-tab",
       "source": "codabench",
       "team": "superbabara"
@@ -1403,7 +1494,7 @@
       "mrr": 0.3463,
       "ndcg10": 0.4352,
       "ndcg5": 0.378,
-      "rank": 101,
+      "rank": 108,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Kimyungi"
@@ -1417,7 +1508,7 @@
       "mrr": 0.3457,
       "ndcg10": 0.4353,
       "ndcg5": 0.378,
-      "rank": 102,
+      "rank": 109,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "luozhhh"
@@ -1431,10 +1522,23 @@
       "mrr": 0.3475,
       "ndcg10": 0.4365,
       "ndcg5": 0.3793,
-      "rank": 103,
+      "rank": 110,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Coloratura"
+    },
+    {
+      "auc": 0.6984,
+      "competition_id": 13967,
+      "date_display": "Apr. 02, 2026",
+      "date_iso": "2026-04-02",
+      "mrr": 0.344,
+      "ndcg10": 0.4345,
+      "ndcg5": 0.3767,
+      "rank": 111,
+      "results_url": "https://www.codabench.org/competitions/13967/#/results-tab",
+      "source": "codabench",
+      "team": "vin39"
     },
     {
       "auc": 0.698,
@@ -1445,7 +1549,7 @@
       "mrr": 0.3476,
       "ndcg10": 0.4383,
       "ndcg5": 0.3814,
-      "rank": 104,
+      "rank": 112,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "xyzhang"
@@ -1459,7 +1563,7 @@
       "mrr": 0.348,
       "ndcg10": 0.4377,
       "ndcg5": 0.3809,
-      "rank": 105,
+      "rank": 113,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "YangZhenghong"
@@ -1473,7 +1577,7 @@
       "mrr": 0.3479,
       "ndcg10": 0.4373,
       "ndcg5": 0.3806,
-      "rank": 106,
+      "rank": 114,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "gcc_microsoft"
@@ -1487,7 +1591,7 @@
       "mrr": 0.3438,
       "ndcg10": 0.4331,
       "ndcg5": 0.3755,
-      "rank": 107,
+      "rank": 115,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "mytest"
@@ -1501,7 +1605,7 @@
       "mrr": 0.3467,
       "ndcg10": 0.4366,
       "ndcg5": 0.3796,
-      "rank": 108,
+      "rank": 116,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "chenyipu"
@@ -1515,7 +1619,7 @@
       "mrr": 0.3445,
       "ndcg10": 0.4335,
       "ndcg5": 0.3763,
-      "rank": 109,
+      "rank": 117,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "lyw"
@@ -1528,7 +1632,7 @@
       "mrr": 0.3459,
       "ndcg10": 0.4345,
       "ndcg5": 0.3774,
-      "rank": 110,
+      "rank": 118,
       "results_url": "https://www.codabench.org/competitions/13967/#/results-tab",
       "source": "codabench",
       "team": "dulig1902"
@@ -1542,7 +1646,7 @@
       "mrr": 0.3422,
       "ndcg10": 0.4309,
       "ndcg5": 0.3732,
-      "rank": 111,
+      "rank": 119,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "hawei"
@@ -1556,7 +1660,7 @@
       "mrr": 0.3492,
       "ndcg10": 0.4386,
       "ndcg5": 0.3812,
-      "rank": 112,
+      "rank": 120,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "huailei"
@@ -1570,7 +1674,7 @@
       "mrr": 0.3441,
       "ndcg10": 0.4336,
       "ndcg5": 0.3764,
-      "rank": 113,
+      "rank": 121,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "hanyan"
@@ -1584,7 +1688,7 @@
       "mrr": 0.3469,
       "ndcg10": 0.4356,
       "ndcg5": 0.3791,
-      "rank": 114,
+      "rank": 122,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Chenbin_Zhang"
@@ -1598,7 +1702,7 @@
       "mrr": 0.3467,
       "ndcg10": 0.4361,
       "ndcg5": 0.3793,
-      "rank": 115,
+      "rank": 123,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "h_h_h_h_h_h_"
@@ -1612,7 +1716,7 @@
       "mrr": 0.3424,
       "ndcg10": 0.4312,
       "ndcg5": 0.3735,
-      "rank": 116,
+      "rank": 124,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "kirbyye"
@@ -1626,7 +1730,7 @@
       "mrr": 0.3435,
       "ndcg10": 0.4321,
       "ndcg5": 0.3752,
-      "rank": 117,
+      "rank": 125,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "xiaoxiang"
@@ -1640,7 +1744,7 @@
       "mrr": 0.3452,
       "ndcg10": 0.435,
       "ndcg5": 0.3778,
-      "rank": 118,
+      "rank": 126,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "ml4lyfe"
@@ -1654,7 +1758,7 @@
       "mrr": 0.3425,
       "ndcg10": 0.4312,
       "ndcg5": 0.3739,
-      "rank": 119,
+      "rank": 127,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "davidpenta"
@@ -1668,7 +1772,7 @@
       "mrr": 0.3441,
       "ndcg10": 0.4331,
       "ndcg5": 0.376,
-      "rank": 120,
+      "rank": 128,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "gittbin"
@@ -1682,7 +1786,7 @@
       "mrr": 0.3425,
       "ndcg10": 0.4317,
       "ndcg5": 0.3741,
-      "rank": 121,
+      "rank": 129,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "andrew_the_drawer"
@@ -1696,7 +1800,7 @@
       "mrr": 0.3438,
       "ndcg10": 0.4335,
       "ndcg5": 0.3765,
-      "rank": 122,
+      "rank": 130,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "lixmcm"
@@ -1710,7 +1814,7 @@
       "mrr": 0.3433,
       "ndcg10": 0.4317,
       "ndcg5": 0.3747,
-      "rank": 123,
+      "rank": 131,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "HerbertOnRoad"
@@ -1724,7 +1828,7 @@
       "mrr": 0.346,
       "ndcg10": 0.4353,
       "ndcg5": 0.3785,
-      "rank": 124,
+      "rank": 132,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Liangzhuge"
@@ -1738,7 +1842,7 @@
       "mrr": 0.3452,
       "ndcg10": 0.4348,
       "ndcg5": 0.3777,
-      "rank": 125,
+      "rank": 133,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "testtesttest"
@@ -1752,7 +1856,7 @@
       "mrr": 0.3428,
       "ndcg10": 0.4324,
       "ndcg5": 0.3753,
-      "rank": 126,
+      "rank": 134,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "duchunning"
@@ -1766,7 +1870,7 @@
       "mrr": 0.3448,
       "ndcg10": 0.4336,
       "ndcg5": 0.377,
-      "rank": 127,
+      "rank": 135,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "fanxiaoxing"
@@ -1780,7 +1884,7 @@
       "mrr": 0.3456,
       "ndcg10": 0.4338,
       "ndcg5": 0.3773,
-      "rank": 128,
+      "rank": 136,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "libowei"
@@ -1794,7 +1898,7 @@
       "mrr": 0.3443,
       "ndcg10": 0.4334,
       "ndcg5": 0.3764,
-      "rank": 129,
+      "rank": 137,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "SA-NRMS"
@@ -1808,7 +1912,7 @@
       "mrr": 0.3444,
       "ndcg10": 0.4326,
       "ndcg5": 0.3759,
-      "rank": 130,
+      "rank": 138,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Chiu"
@@ -1822,7 +1926,7 @@
       "mrr": 0.3433,
       "ndcg10": 0.4318,
       "ndcg5": 0.3748,
-      "rank": 131,
+      "rank": 139,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Ruixinhua"
@@ -1836,7 +1940,7 @@
       "mrr": 0.3445,
       "ndcg10": 0.4332,
       "ndcg5": 0.3767,
-      "rank": 132,
+      "rank": 140,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "overlord"
@@ -1850,7 +1954,7 @@
       "mrr": 0.3422,
       "ndcg10": 0.4311,
       "ndcg5": 0.3739,
-      "rank": 133,
+      "rank": 141,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "SunYunLong"
@@ -1864,7 +1968,7 @@
       "mrr": 0.3423,
       "ndcg10": 0.4311,
       "ndcg5": 0.3738,
-      "rank": 134,
+      "rank": 142,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "xiaoxiang"
@@ -1878,7 +1982,7 @@
       "mrr": 0.3451,
       "ndcg10": 0.4344,
       "ndcg5": 0.3773,
-      "rank": 135,
+      "rank": 143,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "id500"
@@ -1892,7 +1996,7 @@
       "mrr": 0.3423,
       "ndcg10": 0.431,
       "ndcg5": 0.3742,
-      "rank": 136,
+      "rank": 144,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "husthusthust"
@@ -1906,7 +2010,7 @@
       "mrr": 0.3433,
       "ndcg10": 0.4322,
       "ndcg5": 0.3752,
-      "rank": 137,
+      "rank": 145,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "zclfe"
@@ -1920,7 +2024,7 @@
       "mrr": 0.3432,
       "ndcg10": 0.4312,
       "ndcg5": 0.3745,
-      "rank": 138,
+      "rank": 146,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "msj"
@@ -1934,7 +2038,7 @@
       "mrr": 0.3419,
       "ndcg10": 0.4303,
       "ndcg5": 0.3733,
-      "rank": 139,
+      "rank": 147,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "christineC2021"
@@ -1948,7 +2052,7 @@
       "mrr": 0.3424,
       "ndcg10": 0.4309,
       "ndcg5": 0.3738,
-      "rank": 140,
+      "rank": 148,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "kuailede_cr"
@@ -1962,7 +2066,7 @@
       "mrr": 0.3459,
       "ndcg10": 0.4347,
       "ndcg5": 0.3781,
-      "rank": 141,
+      "rank": 149,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "smhe"
@@ -1976,7 +2080,7 @@
       "mrr": 0.3457,
       "ndcg10": 0.4345,
       "ndcg5": 0.3779,
-      "rank": 142,
+      "rank": 150,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "ctthong18"
@@ -1990,7 +2094,7 @@
       "mrr": 0.3441,
       "ndcg10": 0.4325,
       "ndcg5": 0.3762,
-      "rank": 143,
+      "rank": 151,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "wsm_victor"
@@ -2004,7 +2108,7 @@
       "mrr": 0.3441,
       "ndcg10": 0.4325,
       "ndcg5": 0.3762,
-      "rank": 144,
+      "rank": 152,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "JamesCYL"
@@ -2018,7 +2122,7 @@
       "mrr": 0.3415,
       "ndcg10": 0.4298,
       "ndcg5": 0.3731,
-      "rank": 145,
+      "rank": 153,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Jiawei_ust"
@@ -2032,7 +2136,7 @@
       "mrr": 0.3416,
       "ndcg10": 0.4304,
       "ndcg5": 0.3731,
-      "rank": 146,
+      "rank": 154,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "chenyipu"
@@ -2046,7 +2150,7 @@
       "mrr": 0.3395,
       "ndcg10": 0.4289,
       "ndcg5": 0.3712,
-      "rank": 147,
+      "rank": 155,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "mango_yx"
@@ -2060,7 +2164,7 @@
       "mrr": 0.344,
       "ndcg10": 0.4351,
       "ndcg5": 0.3778,
-      "rank": 148,
+      "rank": 156,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Ironball"
@@ -2074,7 +2178,7 @@
       "mrr": 0.3385,
       "ndcg10": 0.428,
       "ndcg5": 0.3704,
-      "rank": 149,
+      "rank": 157,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "MEM"
@@ -2088,7 +2192,7 @@
       "mrr": 0.3412,
       "ndcg10": 0.4297,
       "ndcg5": 0.3722,
-      "rank": 150,
+      "rank": 158,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Area"
@@ -2102,7 +2206,7 @@
       "mrr": 0.3407,
       "ndcg10": 0.4288,
       "ndcg5": 0.3719,
-      "rank": 151,
+      "rank": 159,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "LLC"
@@ -2116,7 +2220,7 @@
       "mrr": 0.3393,
       "ndcg10": 0.4282,
       "ndcg5": 0.3708,
-      "rank": 152,
+      "rank": 160,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "peijie"
@@ -2130,7 +2234,7 @@
       "mrr": 0.3432,
       "ndcg10": 0.4314,
       "ndcg5": 0.3744,
-      "rank": 153,
+      "rank": 161,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "xiezheyong"
@@ -2144,7 +2248,7 @@
       "mrr": 0.3415,
       "ndcg10": 0.4305,
       "ndcg5": 0.3728,
-      "rank": 154,
+      "rank": 162,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "zwt"
@@ -2158,7 +2262,7 @@
       "mrr": 0.3409,
       "ndcg10": 0.4296,
       "ndcg5": 0.3723,
-      "rank": 155,
+      "rank": 163,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "breezedeus"
@@ -2172,7 +2276,7 @@
       "mrr": 0.3425,
       "ndcg10": 0.4301,
       "ndcg5": 0.3733,
-      "rank": 156,
+      "rank": 164,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Tmail"
@@ -2186,7 +2290,7 @@
       "mrr": 0.3421,
       "ndcg10": 0.4306,
       "ndcg5": 0.3731,
-      "rank": 157,
+      "rank": 165,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Zongzhihan"
@@ -2200,7 +2304,7 @@
       "mrr": 0.3413,
       "ndcg10": 0.4307,
       "ndcg5": 0.3732,
-      "rank": 158,
+      "rank": 166,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "fit4you"
@@ -2214,7 +2318,7 @@
       "mrr": 0.3392,
       "ndcg10": 0.4281,
       "ndcg5": 0.3706,
-      "rank": 159,
+      "rank": 167,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "kiennt10"
@@ -2228,7 +2332,7 @@
       "mrr": 0.3493,
       "ndcg10": 0.438,
       "ndcg5": 0.3822,
-      "rank": 160,
+      "rank": 168,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "nhom1_kpw"
@@ -2242,7 +2346,7 @@
       "mrr": 0.3389,
       "ndcg10": 0.4272,
       "ndcg5": 0.3698,
-      "rank": 161,
+      "rank": 169,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "forest"
@@ -2256,7 +2360,7 @@
       "mrr": 0.3398,
       "ndcg10": 0.4285,
       "ndcg5": 0.3712,
-      "rank": 162,
+      "rank": 170,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "xyqq"
@@ -2270,7 +2374,7 @@
       "mrr": 0.3419,
       "ndcg10": 0.4299,
       "ndcg5": 0.3735,
-      "rank": 163,
+      "rank": 171,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "QQs"
@@ -2284,7 +2388,7 @@
       "mrr": 0.3413,
       "ndcg10": 0.4299,
       "ndcg5": 0.3727,
-      "rank": 164,
+      "rank": 172,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "AndreaChao"
@@ -2298,7 +2402,7 @@
       "mrr": 0.3419,
       "ndcg10": 0.4299,
       "ndcg5": 0.3735,
-      "rank": 165,
+      "rank": 173,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Bravooo"
@@ -2312,7 +2416,7 @@
       "mrr": 0.3412,
       "ndcg10": 0.4297,
       "ndcg5": 0.373,
-      "rank": 166,
+      "rank": 174,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "hhhhh"
@@ -2326,7 +2430,7 @@
       "mrr": 0.3412,
       "ndcg10": 0.4297,
       "ndcg5": 0.373,
-      "rank": 167,
+      "rank": 175,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "destinylu"
@@ -2340,7 +2444,7 @@
       "mrr": 0.3414,
       "ndcg10": 0.4299,
       "ndcg5": 0.3726,
-      "rank": 168,
+      "rank": 176,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Ivy"
@@ -2354,7 +2458,7 @@
       "mrr": 0.3405,
       "ndcg10": 0.4285,
       "ndcg5": 0.3714,
-      "rank": 169,
+      "rank": 177,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "jiarui"
@@ -2368,7 +2472,7 @@
       "mrr": 0.3385,
       "ndcg10": 0.4255,
       "ndcg5": 0.3685,
-      "rank": 170,
+      "rank": 178,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "wsm_EasternHarvard"
@@ -2382,7 +2486,7 @@
       "mrr": 0.3408,
       "ndcg10": 0.4283,
       "ndcg5": 0.3712,
-      "rank": 171,
+      "rank": 179,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Wales-Z"
@@ -2396,7 +2500,7 @@
       "mrr": 0.338,
       "ndcg10": 0.4258,
       "ndcg5": 0.3686,
-      "rank": 172,
+      "rank": 180,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Nick1998"
@@ -2410,7 +2514,7 @@
       "mrr": 0.3383,
       "ndcg10": 0.4263,
       "ndcg5": 0.3687,
-      "rank": 173,
+      "rank": 181,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "laiping"
@@ -2424,7 +2528,7 @@
       "mrr": 0.3373,
       "ndcg10": 0.4253,
       "ndcg5": 0.3679,
-      "rank": 174,
+      "rank": 182,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "YJH0804"
@@ -2438,7 +2542,7 @@
       "mrr": 0.3396,
       "ndcg10": 0.4273,
       "ndcg5": 0.3706,
-      "rank": 175,
+      "rank": 183,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "changebin"
@@ -2452,7 +2556,7 @@
       "mrr": 0.3357,
       "ndcg10": 0.4239,
       "ndcg5": 0.3667,
-      "rank": 176,
+      "rank": 184,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "saltyfish"
@@ -2466,7 +2570,7 @@
       "mrr": 0.3382,
       "ndcg10": 0.4255,
       "ndcg5": 0.369,
-      "rank": 177,
+      "rank": 185,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Sony"
@@ -2480,7 +2584,7 @@
       "mrr": 0.3398,
       "ndcg10": 0.4273,
       "ndcg5": 0.3709,
-      "rank": 178,
+      "rank": 186,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "chuyueh"
@@ -2494,7 +2598,7 @@
       "mrr": 0.3425,
       "ndcg10": 0.4306,
       "ndcg5": 0.3741,
-      "rank": 179,
+      "rank": 187,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Yuemiao"
@@ -2508,7 +2612,7 @@
       "mrr": 0.3374,
       "ndcg10": 0.4229,
       "ndcg5": 0.3667,
-      "rank": 180,
+      "rank": 188,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "hitarth.narvala"
@@ -2522,7 +2626,7 @@
       "mrr": 0.3386,
       "ndcg10": 0.4261,
       "ndcg5": 0.3695,
-      "rank": 181,
+      "rank": 189,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "wzz2579421845"
@@ -2536,7 +2640,7 @@
       "mrr": 0.3371,
       "ndcg10": 0.4253,
       "ndcg5": 0.3677,
-      "rank": 182,
+      "rank": 190,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "Jiyounglee"
@@ -2550,7 +2654,7 @@
       "mrr": 0.3377,
       "ndcg10": 0.4253,
       "ndcg5": 0.3685,
-      "rank": 183,
+      "rank": 191,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "maiph"
@@ -2564,7 +2668,7 @@
       "mrr": 0.3391,
       "ndcg10": 0.4275,
       "ndcg5": 0.3705,
-      "rank": 184,
+      "rank": 192,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "jiangyt"
@@ -2578,7 +2682,7 @@
       "mrr": 0.3359,
       "ndcg10": 0.4239,
       "ndcg5": 0.3665,
-      "rank": 185,
+      "rank": 193,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "kkq10466"
@@ -2592,7 +2696,7 @@
       "mrr": 0.3352,
       "ndcg10": 0.4232,
       "ndcg5": 0.3656,
-      "rank": 186,
+      "rank": 194,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "xbj"
@@ -2606,7 +2710,7 @@
       "mrr": 0.3404,
       "ndcg10": 0.4288,
       "ndcg5": 0.3721,
-      "rank": 187,
+      "rank": 195,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "yupei"
@@ -2620,10 +2724,23 @@
       "mrr": 0.3372,
       "ndcg10": 0.4248,
       "ndcg5": 0.3674,
-      "rank": 188,
+      "rank": 196,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "ReleaseWang"
+    },
+    {
+      "auc": 0.6866,
+      "competition_id": 13967,
+      "date_display": "May. 08, 2026",
+      "date_iso": "2026-05-08",
+      "mrr": 0.3365,
+      "ndcg10": 0.4242,
+      "ndcg5": 0.3664,
+      "rank": 197,
+      "results_url": "https://www.codabench.org/competitions/13967/#/results-tab",
+      "source": "codabench",
+      "team": "yufan"
     },
     {
       "auc": 0.6866,
@@ -2634,7 +2751,7 @@
       "mrr": 0.3357,
       "ndcg10": 0.4236,
       "ndcg5": 0.3664,
-      "rank": 189,
+      "rank": 198,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "fzy37920"
@@ -2648,7 +2765,7 @@
       "mrr": 0.3344,
       "ndcg10": 0.4226,
       "ndcg5": 0.3651,
-      "rank": 190,
+      "rank": 199,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "qxe34517"
@@ -2662,7 +2779,7 @@
       "mrr": 0.3377,
       "ndcg10": 0.4252,
       "ndcg5": 0.3681,
-      "rank": 191,
+      "rank": 200,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "HJS_TJU"
@@ -2676,7 +2793,7 @@
       "mrr": 0.336,
       "ndcg10": 0.4234,
       "ndcg5": 0.3659,
-      "rank": 192,
+      "rank": 201,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "alexchiu"
@@ -2690,7 +2807,7 @@
       "mrr": 0.3371,
       "ndcg10": 0.4245,
       "ndcg5": 0.3674,
-      "rank": 193,
+      "rank": 202,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Whonor"
@@ -2704,7 +2821,7 @@
       "mrr": 0.3397,
       "ndcg10": 0.4274,
       "ndcg5": 0.3705,
-      "rank": 194,
+      "rank": 203,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "majinc"
@@ -2718,7 +2835,7 @@
       "mrr": 0.3374,
       "ndcg10": 0.4253,
       "ndcg5": 0.3676,
-      "rank": 195,
+      "rank": 204,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Tsar"
@@ -2732,7 +2849,7 @@
       "mrr": 0.3379,
       "ndcg10": 0.4256,
       "ndcg5": 0.3689,
-      "rank": 196,
+      "rank": 205,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Spring_945"
@@ -2746,7 +2863,7 @@
       "mrr": 0.3377,
       "ndcg10": 0.426,
       "ndcg5": 0.3688,
-      "rank": 197,
+      "rank": 206,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "NAML"
@@ -2760,7 +2877,7 @@
       "mrr": 0.3363,
       "ndcg10": 0.4237,
       "ndcg5": 0.3668,
-      "rank": 198,
+      "rank": 207,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "ConnollyLeon"
@@ -2774,7 +2891,7 @@
       "mrr": 0.3385,
       "ndcg10": 0.426,
       "ndcg5": 0.3688,
-      "rank": 199,
+      "rank": 208,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "DengLi"
@@ -2788,7 +2905,7 @@
       "mrr": 0.3369,
       "ndcg10": 0.4249,
       "ndcg5": 0.3676,
-      "rank": 200,
+      "rank": 209,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "nhom5"
@@ -2802,7 +2919,7 @@
       "mrr": 0.3358,
       "ndcg10": 0.4234,
       "ndcg5": 0.3664,
-      "rank": 201,
+      "rank": 210,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "tingting0119"
@@ -2815,7 +2932,7 @@
       "mrr": 0.3384,
       "ndcg10": 0.4262,
       "ndcg5": 0.3689,
-      "rank": 202,
+      "rank": 211,
       "results_url": "https://www.codabench.org/competitions/13967/#/results-tab",
       "source": "codabench",
       "team": "lelele"
@@ -2829,7 +2946,7 @@
       "mrr": 0.3372,
       "ndcg10": 0.4243,
       "ndcg5": 0.3672,
-      "rank": 203,
+      "rank": 212,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "nhom7-lopthaylinh"
@@ -2843,7 +2960,7 @@
       "mrr": 0.3367,
       "ndcg10": 0.4247,
       "ndcg5": 0.3676,
-      "rank": 204,
+      "rank": 213,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "PekingXJL"
@@ -2856,7 +2973,7 @@
       "mrr": 0.3331,
       "ndcg10": 0.4199,
       "ndcg5": 0.3622,
-      "rank": 205,
+      "rank": 214,
       "results_url": "https://www.codabench.org/competitions/13967/#/results-tab",
       "source": "codabench",
       "team": "zyy_catcat"
@@ -2870,7 +2987,7 @@
       "mrr": 0.3377,
       "ndcg10": 0.4247,
       "ndcg5": 0.3678,
-      "rank": 206,
+      "rank": 215,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "csb266"
@@ -2884,7 +3001,7 @@
       "mrr": 0.3322,
       "ndcg10": 0.4201,
       "ndcg5": 0.3624,
-      "rank": 207,
+      "rank": 216,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "ybm15387"
@@ -2898,7 +3015,7 @@
       "mrr": 0.3278,
       "ndcg10": 0.4146,
       "ndcg5": 0.3557,
-      "rank": 208,
+      "rank": 217,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "lyw"
@@ -2912,7 +3029,7 @@
       "mrr": 0.3367,
       "ndcg10": 0.4242,
       "ndcg5": 0.3672,
-      "rank": 209,
+      "rank": 218,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Group_1_IT4613_20211_HUST"
@@ -2926,7 +3043,7 @@
       "mrr": 0.3405,
       "ndcg10": 0.4282,
       "ndcg5": 0.3717,
-      "rank": 210,
+      "rank": 219,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Jyonn"
@@ -2940,7 +3057,7 @@
       "mrr": 0.3383,
       "ndcg10": 0.427,
       "ndcg5": 0.3699,
-      "rank": 211,
+      "rank": 220,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "ShangxiWu"
@@ -2954,7 +3071,7 @@
       "mrr": 0.3376,
       "ndcg10": 0.4244,
       "ndcg5": 0.3677,
-      "rank": 212,
+      "rank": 221,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "heroddaji"
@@ -2968,7 +3085,7 @@
       "mrr": 0.3363,
       "ndcg10": 0.4238,
       "ndcg5": 0.367,
-      "rank": 213,
+      "rank": 222,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "ducchudinh"
@@ -2982,7 +3099,7 @@
       "mrr": 0.3361,
       "ndcg10": 0.4229,
       "ndcg5": 0.3654,
-      "rank": 214,
+      "rank": 223,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "LURM"
@@ -2996,7 +3113,7 @@
       "mrr": 0.3355,
       "ndcg10": 0.4232,
       "ndcg5": 0.3662,
-      "rank": 215,
+      "rank": 224,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "TianTian_Zhang"
@@ -3010,7 +3127,7 @@
       "mrr": 0.3339,
       "ndcg10": 0.421,
       "ndcg5": 0.3634,
-      "rank": 216,
+      "rank": 225,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "khanh"
@@ -3024,7 +3141,7 @@
       "mrr": 0.333,
       "ndcg10": 0.4187,
       "ndcg5": 0.3612,
-      "rank": 217,
+      "rank": 226,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "aditya117b"
@@ -3038,7 +3155,7 @@
       "mrr": 0.3358,
       "ndcg10": 0.4233,
       "ndcg5": 0.3662,
-      "rank": 218,
+      "rank": 227,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "nghgphi"
@@ -3052,7 +3169,7 @@
       "mrr": 0.3356,
       "ndcg10": 0.4235,
       "ndcg5": 0.3665,
-      "rank": 219,
+      "rank": 228,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Cora"
@@ -3066,7 +3183,7 @@
       "mrr": 0.3343,
       "ndcg10": 0.4219,
       "ndcg5": 0.3644,
-      "rank": 220,
+      "rank": 229,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "faysir"
@@ -3080,7 +3197,7 @@
       "mrr": 0.336,
       "ndcg10": 0.423,
       "ndcg5": 0.3663,
-      "rank": 221,
+      "rank": 230,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "huynx1190M"
@@ -3094,7 +3211,7 @@
       "mrr": 0.3373,
       "ndcg10": 0.4258,
       "ndcg5": 0.3683,
-      "rank": 222,
+      "rank": 231,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "CyberFish"
@@ -3108,7 +3225,7 @@
       "mrr": 0.333,
       "ndcg10": 0.4198,
       "ndcg5": 0.3622,
-      "rank": 223,
+      "rank": 232,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "LPP"
@@ -3122,7 +3239,7 @@
       "mrr": 0.3358,
       "ndcg10": 0.4229,
       "ndcg5": 0.3659,
-      "rank": 224,
+      "rank": 233,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "zhihaoxu"
@@ -3136,7 +3253,7 @@
       "mrr": 0.3343,
       "ndcg10": 0.4219,
       "ndcg5": 0.365,
-      "rank": 225,
+      "rank": 234,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "siyuanssss"
@@ -3150,7 +3267,7 @@
       "mrr": 0.3358,
       "ndcg10": 0.4214,
       "ndcg5": 0.3644,
-      "rank": 226,
+      "rank": 235,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "NoParty4PR"
@@ -3164,7 +3281,7 @@
       "mrr": 0.3324,
       "ndcg10": 0.42,
       "ndcg5": 0.3623,
-      "rank": 227,
+      "rank": 236,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "xqu19316"
@@ -3178,7 +3295,7 @@
       "mrr": 0.3365,
       "ndcg10": 0.424,
       "ndcg5": 0.3665,
-      "rank": 228,
+      "rank": 237,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "again_and_again"
@@ -3192,7 +3309,7 @@
       "mrr": 0.3349,
       "ndcg10": 0.4227,
       "ndcg5": 0.3654,
-      "rank": 229,
+      "rank": 238,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "dvesely"
@@ -3206,7 +3323,7 @@
       "mrr": 0.3347,
       "ndcg10": 0.4219,
       "ndcg5": 0.3648,
-      "rank": 230,
+      "rank": 239,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Codle"
@@ -3220,7 +3337,7 @@
       "mrr": 0.3385,
       "ndcg10": 0.4259,
       "ndcg5": 0.3691,
-      "rank": 231,
+      "rank": 240,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "xinghuaz"
@@ -3234,7 +3351,7 @@
       "mrr": 0.332,
       "ndcg10": 0.4196,
       "ndcg5": 0.3615,
-      "rank": 232,
+      "rank": 241,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "amgis3"
@@ -3248,7 +3365,7 @@
       "mrr": 0.3351,
       "ndcg10": 0.4225,
       "ndcg5": 0.3656,
-      "rank": 233,
+      "rank": 242,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "wsm_baseline"
@@ -3262,7 +3379,7 @@
       "mrr": 0.3326,
       "ndcg10": 0.4203,
       "ndcg5": 0.363,
-      "rank": 234,
+      "rank": 243,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "hieunm"
@@ -3276,7 +3393,7 @@
       "mrr": 0.3341,
       "ndcg10": 0.4216,
       "ndcg5": 0.3648,
-      "rank": 235,
+      "rank": 244,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "phu.ict4138"
@@ -3290,7 +3407,7 @@
       "mrr": 0.3353,
       "ndcg10": 0.4226,
       "ndcg5": 0.366,
-      "rank": 236,
+      "rank": 245,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "raingstar"
@@ -3304,7 +3421,7 @@
       "mrr": 0.3338,
       "ndcg10": 0.4213,
       "ndcg5": 0.3637,
-      "rank": 237,
+      "rank": 246,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "airi-lategame"
@@ -3318,7 +3435,7 @@
       "mrr": 0.3355,
       "ndcg10": 0.4235,
       "ndcg5": 0.3659,
-      "rank": 238,
+      "rank": 247,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "huy40025071"
@@ -3332,7 +3449,7 @@
       "mrr": 0.3358,
       "ndcg10": 0.4234,
       "ndcg5": 0.3663,
-      "rank": 239,
+      "rank": 248,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "wsm-soslab"
@@ -3346,7 +3463,7 @@
       "mrr": 0.3325,
       "ndcg10": 0.4192,
       "ndcg5": 0.3614,
-      "rank": 240,
+      "rank": 249,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "dengjia284"
@@ -3360,7 +3477,7 @@
       "mrr": 0.3331,
       "ndcg10": 0.4191,
       "ndcg5": 0.3617,
-      "rank": 241,
+      "rank": 250,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "hoangnn"
@@ -3374,7 +3491,7 @@
       "mrr": 0.3331,
       "ndcg10": 0.4191,
       "ndcg5": 0.3617,
-      "rank": 242,
+      "rank": 251,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "Nhom1RecSys-Fastformer"
@@ -3388,7 +3505,7 @@
       "mrr": 0.3379,
       "ndcg10": 0.4257,
       "ndcg5": 0.369,
-      "rank": 243,
+      "rank": 252,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "feature"
@@ -3402,7 +3519,7 @@
       "mrr": 0.335,
       "ndcg10": 0.4224,
       "ndcg5": 0.365,
-      "rank": 244,
+      "rank": 253,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "pstkim"
@@ -3416,7 +3533,7 @@
       "mrr": 0.3322,
       "ndcg10": 0.42,
       "ndcg5": 0.3624,
-      "rank": 245,
+      "rank": 254,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "TH_KIM"
@@ -3430,7 +3547,7 @@
       "mrr": 0.3371,
       "ndcg10": 0.4243,
       "ndcg5": 0.3675,
-      "rank": 246,
+      "rank": 255,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "clilyn"
@@ -3444,7 +3561,7 @@
       "mrr": 0.3337,
       "ndcg10": 0.4208,
       "ndcg5": 0.3633,
-      "rank": 247,
+      "rank": 256,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "ustc_jingang"
@@ -3458,7 +3575,7 @@
       "mrr": 0.3338,
       "ndcg10": 0.4207,
       "ndcg5": 0.3634,
-      "rank": 248,
+      "rank": 257,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "AAU-Bruno"
@@ -3472,7 +3589,7 @@
       "mrr": 0.3338,
       "ndcg10": 0.4206,
       "ndcg5": 0.3634,
-      "rank": 249,
+      "rank": 258,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "group7-lopthaylinh"
@@ -3486,7 +3603,7 @@
       "mrr": 0.3334,
       "ndcg10": 0.4205,
       "ndcg5": 0.3633,
-      "rank": 250,
+      "rank": 259,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "unchat"
@@ -3500,7 +3617,7 @@
       "mrr": 0.3337,
       "ndcg10": 0.4207,
       "ndcg5": 0.3638,
-      "rank": 251,
+      "rank": 260,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "yangyongqiang1"
@@ -3514,7 +3631,7 @@
       "mrr": 0.3336,
       "ndcg10": 0.4213,
       "ndcg5": 0.3644,
-      "rank": 252,
+      "rank": 261,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "qqyysg"
@@ -3528,7 +3645,7 @@
       "mrr": 0.3316,
       "ndcg10": 0.4175,
       "ndcg5": 0.3595,
-      "rank": 253,
+      "rank": 262,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "madmoon"
@@ -3542,7 +3659,7 @@
       "mrr": 0.3352,
       "ndcg10": 0.4223,
       "ndcg5": 0.3655,
-      "rank": 254,
+      "rank": 263,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "hvv"
@@ -3556,7 +3673,7 @@
       "mrr": 0.3341,
       "ndcg10": 0.4215,
       "ndcg5": 0.3647,
-      "rank": 255,
+      "rank": 264,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "hapoyige"
@@ -3570,7 +3687,7 @@
       "mrr": 0.3338,
       "ndcg10": 0.4192,
       "ndcg5": 0.3624,
-      "rank": 256,
+      "rank": 265,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "YHu"
@@ -3584,7 +3701,7 @@
       "mrr": 0.3343,
       "ndcg10": 0.4215,
       "ndcg5": 0.3646,
-      "rank": 257,
+      "rank": 266,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "anhductn2001"
@@ -3598,7 +3715,7 @@
       "mrr": 0.3321,
       "ndcg10": 0.4188,
       "ndcg5": 0.3621,
-      "rank": 258,
+      "rank": 267,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "LiJT"
@@ -3612,7 +3729,7 @@
       "mrr": 0.3346,
       "ndcg10": 0.4221,
       "ndcg5": 0.3653,
-      "rank": 259,
+      "rank": 268,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "finegrained"
@@ -3626,7 +3743,7 @@
       "mrr": 0.3316,
       "ndcg10": 0.4181,
       "ndcg5": 0.3612,
-      "rank": 260,
+      "rank": 269,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Ala-Fu"
@@ -3640,10 +3757,23 @@
       "mrr": 0.3316,
       "ndcg10": 0.4181,
       "ndcg5": 0.3611,
-      "rank": 261,
+      "rank": 270,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "wangwenhua"
+    },
+    {
+      "auc": 0.6785,
+      "competition_id": 13967,
+      "date_display": "May. 13, 2026",
+      "date_iso": "2026-05-13",
+      "mrr": 0.3312,
+      "ndcg10": 0.4178,
+      "ndcg5": 0.3609,
+      "rank": 271,
+      "results_url": "https://www.codabench.org/competitions/13967/#/results-tab",
+      "source": "codabench",
+      "team": "hhhhh123456"
     },
     {
       "auc": 0.6783,
@@ -3654,7 +3784,7 @@
       "mrr": 0.3288,
       "ndcg10": 0.4153,
       "ndcg5": 0.3575,
-      "rank": 262,
+      "rank": 272,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Reto-hitsz"
@@ -3668,7 +3798,7 @@
       "mrr": 0.3292,
       "ndcg10": 0.4163,
       "ndcg5": 0.3586,
-      "rank": 263,
+      "rank": 273,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "teopapad92"
@@ -3682,7 +3812,7 @@
       "mrr": 0.3287,
       "ndcg10": 0.414,
       "ndcg5": 0.3567,
-      "rank": 264,
+      "rank": 274,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "xuhongqing"
@@ -3695,7 +3825,7 @@
       "mrr": 0.3282,
       "ndcg10": 0.415,
       "ndcg5": 0.3572,
-      "rank": 265,
+      "rank": 275,
       "results_url": "https://www.codabench.org/competitions/13967/#/results-tab",
       "source": "codabench",
       "team": "yifanlan"
@@ -3709,7 +3839,7 @@
       "mrr": 0.3339,
       "ndcg10": 0.4213,
       "ndcg5": 0.364,
-      "rank": 266,
+      "rank": 276,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "fyzl"
@@ -3723,7 +3853,7 @@
       "mrr": 0.3311,
       "ndcg10": 0.4184,
       "ndcg5": 0.3609,
-      "rank": 267,
+      "rank": 277,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "simple2better"
@@ -3737,7 +3867,7 @@
       "mrr": 0.3282,
       "ndcg10": 0.4149,
       "ndcg5": 0.3576,
-      "rank": 268,
+      "rank": 278,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "shahnawaz"
@@ -3751,7 +3881,7 @@
       "mrr": 0.3297,
       "ndcg10": 0.4163,
       "ndcg5": 0.3591,
-      "rank": 269,
+      "rank": 279,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "hmguo"
@@ -3765,7 +3895,7 @@
       "mrr": 0.3331,
       "ndcg10": 0.4188,
       "ndcg5": 0.3626,
-      "rank": 270,
+      "rank": 280,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "garbcollec"
@@ -3779,7 +3909,7 @@
       "mrr": 0.3292,
       "ndcg10": 0.4154,
       "ndcg5": 0.3581,
-      "rank": 271,
+      "rank": 281,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Autumn"
@@ -3793,7 +3923,7 @@
       "mrr": 0.3314,
       "ndcg10": 0.4186,
       "ndcg5": 0.3614,
-      "rank": 272,
+      "rank": 282,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "trankhiem"
@@ -3807,7 +3937,7 @@
       "mrr": 0.3314,
       "ndcg10": 0.4186,
       "ndcg5": 0.3614,
-      "rank": 273,
+      "rank": 283,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "hungmd321"
@@ -3821,7 +3951,7 @@
       "mrr": 0.3285,
       "ndcg10": 0.414,
       "ndcg5": 0.3569,
-      "rank": 274,
+      "rank": 284,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "wsm_KoreaMoos"
@@ -3835,7 +3965,7 @@
       "mrr": 0.3313,
       "ndcg10": 0.4178,
       "ndcg5": 0.3607,
-      "rank": 275,
+      "rank": 285,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "KTH_CS3"
@@ -3849,7 +3979,7 @@
       "mrr": 0.3288,
       "ndcg10": 0.4135,
       "ndcg5": 0.357,
-      "rank": 276,
+      "rank": 286,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "TranAnhVuNhom7"
@@ -3863,7 +3993,7 @@
       "mrr": 0.3284,
       "ndcg10": 0.4141,
       "ndcg5": 0.3571,
-      "rank": 277,
+      "rank": 287,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "ZgDaMoWang"
@@ -3877,7 +4007,7 @@
       "mrr": 0.3292,
       "ndcg10": 0.4144,
       "ndcg5": 0.3573,
-      "rank": 278,
+      "rank": 288,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "whitepurple"
@@ -3891,7 +4021,7 @@
       "mrr": 0.3292,
       "ndcg10": 0.4144,
       "ndcg5": 0.3573,
-      "rank": 279,
+      "rank": 289,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "DICELab"
@@ -3905,7 +4035,7 @@
       "mrr": 0.3264,
       "ndcg10": 0.412,
       "ndcg5": 0.3549,
-      "rank": 280,
+      "rank": 290,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "vietpt"
@@ -3919,7 +4049,7 @@
       "mrr": 0.3248,
       "ndcg10": 0.4102,
       "ndcg5": 0.3528,
-      "rank": 281,
+      "rank": 291,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "mrbighead"
@@ -3933,7 +4063,7 @@
       "mrr": 0.3259,
       "ndcg10": 0.4115,
       "ndcg5": 0.3541,
-      "rank": 282,
+      "rank": 292,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "thuantop2003"
@@ -3947,7 +4077,7 @@
       "mrr": 0.3242,
       "ndcg10": 0.41,
       "ndcg5": 0.3519,
-      "rank": 283,
+      "rank": 293,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "cevahir"
@@ -3961,7 +4091,7 @@
       "mrr": 0.3241,
       "ndcg10": 0.4108,
       "ndcg5": 0.3533,
-      "rank": 284,
+      "rank": 294,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "hungbuile04"
@@ -3975,7 +4105,7 @@
       "mrr": 0.3225,
       "ndcg10": 0.4077,
       "ndcg5": 0.3498,
-      "rank": 285,
+      "rank": 295,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "Ngoc_06"
@@ -3989,7 +4119,7 @@
       "mrr": 0.3236,
       "ndcg10": 0.4093,
       "ndcg5": 0.3523,
-      "rank": 286,
+      "rank": 296,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "zidane4ever21"
@@ -4003,7 +4133,7 @@
       "mrr": 0.3235,
       "ndcg10": 0.409,
       "ndcg5": 0.3511,
-      "rank": 287,
+      "rank": 297,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "chenyiqing"
@@ -4017,7 +4147,7 @@
       "mrr": 0.3266,
       "ndcg10": 0.4117,
       "ndcg5": 0.3546,
-      "rank": 288,
+      "rank": 298,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "bboylyg"
@@ -4031,7 +4161,7 @@
       "mrr": 0.3256,
       "ndcg10": 0.4105,
       "ndcg5": 0.3532,
-      "rank": 289,
+      "rank": 299,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "jaing885"
@@ -4044,7 +4174,7 @@
       "mrr": 0.326,
       "ndcg10": 0.4101,
       "ndcg5": 0.3529,
-      "rank": 290,
+      "rank": 300,
       "results_url": "https://www.codabench.org/competitions/13967/#/results-tab",
       "source": "codabench",
       "team": "peramor"
@@ -4058,7 +4188,7 @@
       "mrr": 0.3228,
       "ndcg10": 0.4083,
       "ndcg5": 0.3504,
-      "rank": 291,
+      "rank": 301,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "ab25"
@@ -4072,7 +4202,7 @@
       "mrr": 0.3241,
       "ndcg10": 0.4096,
       "ndcg5": 0.352,
-      "rank": 292,
+      "rank": 302,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "nhom5-nrms"
@@ -4086,7 +4216,7 @@
       "mrr": 0.3277,
       "ndcg10": 0.413,
       "ndcg5": 0.3559,
-      "rank": 293,
+      "rank": 303,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "OpenMind"
@@ -4100,7 +4230,7 @@
       "mrr": 0.3283,
       "ndcg10": 0.4141,
       "ndcg5": 0.3572,
-      "rank": 294,
+      "rank": 304,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "richard007"
@@ -4114,7 +4244,7 @@
       "mrr": 0.3283,
       "ndcg10": 0.4141,
       "ndcg5": 0.3572,
-      "rank": 295,
+      "rank": 305,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "khuongvd2k"
@@ -4128,7 +4258,7 @@
       "mrr": 0.3267,
       "ndcg10": 0.4109,
       "ndcg5": 0.3539,
-      "rank": 296,
+      "rank": 306,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "dust"
@@ -4142,7 +4272,7 @@
       "mrr": 0.3225,
       "ndcg10": 0.4079,
       "ndcg5": 0.3499,
-      "rank": 297,
+      "rank": 307,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "shuix007"
@@ -4156,7 +4286,7 @@
       "mrr": 0.3254,
       "ndcg10": 0.4096,
       "ndcg5": 0.3525,
-      "rank": 298,
+      "rank": 308,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Rachelxuan11"
@@ -4170,7 +4300,7 @@
       "mrr": 0.3265,
       "ndcg10": 0.412,
       "ndcg5": 0.3554,
-      "rank": 299,
+      "rank": 309,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "mduofg"
@@ -4184,7 +4314,7 @@
       "mrr": 0.3251,
       "ndcg10": 0.4106,
       "ndcg5": 0.3533,
-      "rank": 300,
+      "rank": 310,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "ab"
@@ -4198,7 +4328,7 @@
       "mrr": 0.3234,
       "ndcg10": 0.4076,
       "ndcg5": 0.3504,
-      "rank": 301,
+      "rank": 311,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "NamFam"
@@ -4212,7 +4342,7 @@
       "mrr": 0.3236,
       "ndcg10": 0.4074,
       "ndcg5": 0.3502,
-      "rank": 302,
+      "rank": 312,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "jazzzminewang"
@@ -4226,7 +4356,7 @@
       "mrr": 0.321,
       "ndcg10": 0.4044,
       "ndcg5": 0.3474,
-      "rank": 303,
+      "rank": 313,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "marktang"
@@ -4240,7 +4370,7 @@
       "mrr": 0.3321,
       "ndcg10": 0.417,
       "ndcg5": 0.3612,
-      "rank": 304,
+      "rank": 314,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "dxdiag"
@@ -4254,7 +4384,7 @@
       "mrr": 0.3185,
       "ndcg10": 0.4046,
       "ndcg5": 0.346,
-      "rank": 305,
+      "rank": 315,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "TJ_Arthur"
@@ -4268,7 +4398,7 @@
       "mrr": 0.3201,
       "ndcg10": 0.405,
       "ndcg5": 0.3479,
-      "rank": 306,
+      "rank": 316,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "testtest"
@@ -4282,7 +4412,7 @@
       "mrr": 0.3242,
       "ndcg10": 0.4093,
       "ndcg5": 0.3522,
-      "rank": 307,
+      "rank": 317,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Namngo"
@@ -4296,7 +4426,7 @@
       "mrr": 0.3191,
       "ndcg10": 0.4042,
       "ndcg5": 0.3466,
-      "rank": 308,
+      "rank": 318,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "akjindal53244"
@@ -4310,7 +4440,7 @@
       "mrr": 0.3205,
       "ndcg10": 0.4036,
       "ndcg5": 0.346,
-      "rank": 309,
+      "rank": 319,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "yma2"
@@ -4324,7 +4454,7 @@
       "mrr": 0.319,
       "ndcg10": 0.4038,
       "ndcg5": 0.3464,
-      "rank": 310,
+      "rank": 320,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "phucvh183608"
@@ -4338,7 +4468,7 @@
       "mrr": 0.3188,
       "ndcg10": 0.4027,
       "ndcg5": 0.3451,
-      "rank": 311,
+      "rank": 321,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "zhangy7738"
@@ -4352,7 +4482,7 @@
       "mrr": 0.318,
       "ndcg10": 0.4014,
       "ndcg5": 0.3438,
-      "rank": 312,
+      "rank": 322,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "xiaxuan"
@@ -4366,7 +4496,7 @@
       "mrr": 0.3197,
       "ndcg10": 0.4039,
       "ndcg5": 0.3466,
-      "rank": 313,
+      "rank": 323,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "jybdscvubyesc"
@@ -4380,7 +4510,7 @@
       "mrr": 0.3197,
       "ndcg10": 0.4038,
       "ndcg5": 0.3461,
-      "rank": 314,
+      "rank": 324,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "AdarshMIND"
@@ -4394,7 +4524,7 @@
       "mrr": 0.3205,
       "ndcg10": 0.4042,
       "ndcg5": 0.3473,
-      "rank": 315,
+      "rank": 325,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "freddy_2077"
@@ -4408,7 +4538,7 @@
       "mrr": 0.3219,
       "ndcg10": 0.4064,
       "ndcg5": 0.3489,
-      "rank": 316,
+      "rank": 326,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "phu.ict4138"
@@ -4422,7 +4552,7 @@
       "mrr": 0.3181,
       "ndcg10": 0.4009,
       "ndcg5": 0.3435,
-      "rank": 317,
+      "rank": 327,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "hustnhom7"
@@ -4436,7 +4566,7 @@
       "mrr": 0.3169,
       "ndcg10": 0.4005,
       "ndcg5": 0.3436,
-      "rank": 318,
+      "rank": 328,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Hieulm"
@@ -4450,7 +4580,7 @@
       "mrr": 0.3141,
       "ndcg10": 0.3994,
       "ndcg5": 0.341,
-      "rank": 319,
+      "rank": 329,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "zy0055"
@@ -4464,7 +4594,7 @@
       "mrr": 0.3167,
       "ndcg10": 0.4005,
       "ndcg5": 0.3429,
-      "rank": 320,
+      "rank": 330,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "wujie"
@@ -4478,7 +4608,7 @@
       "mrr": 0.3189,
       "ndcg10": 0.4025,
       "ndcg5": 0.3458,
-      "rank": 321,
+      "rank": 331,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "pd"
@@ -4492,7 +4622,7 @@
       "mrr": 0.3179,
       "ndcg10": 0.4014,
       "ndcg5": 0.3446,
-      "rank": 322,
+      "rank": 332,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "xulongteng"
@@ -4506,7 +4636,7 @@
       "mrr": 0.3141,
       "ndcg10": 0.3967,
       "ndcg5": 0.3384,
-      "rank": 323,
+      "rank": 333,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Silence"
@@ -4520,7 +4650,7 @@
       "mrr": 0.3177,
       "ndcg10": 0.4,
       "ndcg5": 0.3425,
-      "rank": 324,
+      "rank": 334,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "duong"
@@ -4534,7 +4664,7 @@
       "mrr": 0.3173,
       "ndcg10": 0.3989,
       "ndcg5": 0.3425,
-      "rank": 325,
+      "rank": 335,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "aqweteddy"
@@ -4548,7 +4678,7 @@
       "mrr": 0.3198,
       "ndcg10": 0.4035,
       "ndcg5": 0.3467,
-      "rank": 326,
+      "rank": 336,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "khuong5trieu"
@@ -4562,7 +4692,7 @@
       "mrr": 0.3172,
       "ndcg10": 0.4,
       "ndcg5": 0.3434,
-      "rank": 327,
+      "rank": 337,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "xcw"
@@ -4576,7 +4706,7 @@
       "mrr": 0.315,
       "ndcg10": 0.3982,
       "ndcg5": 0.3406,
-      "rank": 328,
+      "rank": 338,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "wsm_Mark4PM"
@@ -4590,7 +4720,7 @@
       "mrr": 0.3125,
       "ndcg10": 0.3953,
       "ndcg5": 0.3381,
-      "rank": 329,
+      "rank": 339,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "TranAnhVuNhom7"
@@ -4604,7 +4734,7 @@
       "mrr": 0.3133,
       "ndcg10": 0.3963,
       "ndcg5": 0.3389,
-      "rank": 330,
+      "rank": 340,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "christineC2021_1"
@@ -4618,7 +4748,7 @@
       "mrr": 0.3166,
       "ndcg10": 0.3995,
       "ndcg5": 0.3428,
-      "rank": 331,
+      "rank": 341,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "jingqinghe"
@@ -4631,7 +4761,7 @@
       "mrr": 0.3059,
       "ndcg10": 0.3884,
       "ndcg5": 0.3298,
-      "rank": 332,
+      "rank": 342,
       "results_url": "https://www.codabench.org/competitions/13967/#/results-tab",
       "source": "codabench",
       "team": "tingnanliu1"
@@ -4645,7 +4775,7 @@
       "mrr": 0.3128,
       "ndcg10": 0.395,
       "ndcg5": 0.337,
-      "rank": 333,
+      "rank": 343,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "ThachAnh"
@@ -4659,7 +4789,7 @@
       "mrr": 0.3147,
       "ndcg10": 0.3978,
       "ndcg5": 0.3408,
-      "rank": 334,
+      "rank": 344,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "mapingshuo"
@@ -4673,7 +4803,7 @@
       "mrr": 0.3114,
       "ndcg10": 0.3921,
       "ndcg5": 0.3341,
-      "rank": 335,
+      "rank": 345,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "weiyezhimeng"
@@ -4687,7 +4817,7 @@
       "mrr": 0.3168,
       "ndcg10": 0.3994,
       "ndcg5": 0.3427,
-      "rank": 336,
+      "rank": 346,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "trongnd106"
@@ -4701,7 +4831,7 @@
       "mrr": 0.3079,
       "ndcg10": 0.3898,
       "ndcg5": 0.332,
-      "rank": 337,
+      "rank": 347,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "AND-OR"
@@ -4715,7 +4845,7 @@
       "mrr": 0.3087,
       "ndcg10": 0.3905,
       "ndcg5": 0.3333,
-      "rank": 338,
+      "rank": 348,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "drew"
@@ -4729,7 +4859,7 @@
       "mrr": 0.3114,
       "ndcg10": 0.3922,
       "ndcg5": 0.3352,
-      "rank": 339,
+      "rank": 349,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "changecandy"
@@ -4743,7 +4873,7 @@
       "mrr": 0.3085,
       "ndcg10": 0.3897,
       "ndcg5": 0.3322,
-      "rank": 340,
+      "rank": 350,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "KGN"
@@ -4757,7 +4887,7 @@
       "mrr": 0.3,
       "ndcg10": 0.3811,
       "ndcg5": 0.3218,
-      "rank": 341,
+      "rank": 351,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "cynricshu"
@@ -4771,7 +4901,7 @@
       "mrr": 0.3069,
       "ndcg10": 0.3883,
       "ndcg5": 0.3306,
-      "rank": 342,
+      "rank": 352,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "huongnv"
@@ -4785,7 +4915,7 @@
       "mrr": 0.3009,
       "ndcg10": 0.3848,
       "ndcg5": 0.3257,
-      "rank": 343,
+      "rank": 353,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "ductaingn"
@@ -4799,7 +4929,7 @@
       "mrr": 0.3115,
       "ndcg10": 0.3929,
       "ndcg5": 0.3362,
-      "rank": 344,
+      "rank": 354,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "nguyennam2025"
@@ -4813,7 +4943,7 @@
       "mrr": 0.3054,
       "ndcg10": 0.3875,
       "ndcg5": 0.3286,
-      "rank": 345,
+      "rank": 355,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "minhndn"
@@ -4827,7 +4957,7 @@
       "mrr": 0.301,
       "ndcg10": 0.3802,
       "ndcg5": 0.3225,
-      "rank": 346,
+      "rank": 356,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "yjin48"
@@ -4841,7 +4971,7 @@
       "mrr": 0.3071,
       "ndcg10": 0.3892,
       "ndcg5": 0.3316,
-      "rank": 347,
+      "rank": 357,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "Jyonn"
@@ -4855,7 +4985,7 @@
       "mrr": 0.3022,
       "ndcg10": 0.3839,
       "ndcg5": 0.3267,
-      "rank": 348,
+      "rank": 358,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "Anis"
@@ -4868,7 +4998,7 @@
       "mrr": 0.3061,
       "ndcg10": 0.3848,
       "ndcg5": 0.3281,
-      "rank": 349,
+      "rank": 359,
       "results_url": "https://www.codabench.org/competitions/13967/#/results-tab",
       "source": "codabench",
       "team": "new_lmy"
@@ -4882,7 +5012,7 @@
       "mrr": 0.2987,
       "ndcg10": 0.3781,
       "ndcg5": 0.3206,
-      "rank": 350,
+      "rank": 360,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "surupendu"
@@ -4896,7 +5026,7 @@
       "mrr": 0.2986,
       "ndcg10": 0.3784,
       "ndcg5": 0.3205,
-      "rank": 351,
+      "rank": 361,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "tj2364"
@@ -4910,7 +5040,7 @@
       "mrr": 0.3007,
       "ndcg10": 0.3821,
       "ndcg5": 0.3249,
-      "rank": 352,
+      "rank": 362,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "MengTong"
@@ -4924,7 +5054,7 @@
       "mrr": 0.3112,
       "ndcg10": 0.3919,
       "ndcg5": 0.3358,
-      "rank": 353,
+      "rank": 363,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "gaojx"
@@ -4938,7 +5068,7 @@
       "mrr": 0.3008,
       "ndcg10": 0.379,
       "ndcg5": 0.3219,
-      "rank": 354,
+      "rank": 364,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "zxpyouming"
@@ -4952,7 +5082,7 @@
       "mrr": 0.2993,
       "ndcg10": 0.379,
       "ndcg5": 0.3211,
-      "rank": 355,
+      "rank": 365,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "gminh1503"
@@ -4966,7 +5096,7 @@
       "mrr": 0.2977,
       "ndcg10": 0.3782,
       "ndcg5": 0.3207,
-      "rank": 356,
+      "rank": 366,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "dylanqi"
@@ -4980,7 +5110,7 @@
       "mrr": 0.3027,
       "ndcg10": 0.3828,
       "ndcg5": 0.3264,
-      "rank": 357,
+      "rank": 367,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "vancurv"
@@ -4994,7 +5124,7 @@
       "mrr": 0.2942,
       "ndcg10": 0.3727,
       "ndcg5": 0.3148,
-      "rank": 358,
+      "rank": 368,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "dangptpt"
@@ -5008,7 +5138,7 @@
       "mrr": 0.2919,
       "ndcg10": 0.3718,
       "ndcg5": 0.3141,
-      "rank": 359,
+      "rank": 369,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "TerryMa"
@@ -5022,7 +5152,7 @@
       "mrr": 0.2901,
       "ndcg10": 0.3669,
       "ndcg5": 0.3093,
-      "rank": 360,
+      "rank": 370,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "zy0055"
@@ -5036,7 +5166,7 @@
       "mrr": 0.287,
       "ndcg10": 0.3687,
       "ndcg5": 0.3097,
-      "rank": 361,
+      "rank": 371,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "trung061204"
@@ -5050,7 +5180,7 @@
       "mrr": 0.2847,
       "ndcg10": 0.3625,
       "ndcg5": 0.3039,
-      "rank": 362,
+      "rank": 372,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "ifan"
@@ -5064,7 +5194,7 @@
       "mrr": 0.2882,
       "ndcg10": 0.3646,
       "ndcg5": 0.3059,
-      "rank": 363,
+      "rank": 373,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "miabao"
@@ -5078,7 +5208,7 @@
       "mrr": 0.291,
       "ndcg10": 0.3699,
       "ndcg5": 0.3126,
-      "rank": 364,
+      "rank": 374,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Lil.Forest"
@@ -5092,10 +5222,23 @@
       "mrr": 0.2949,
       "ndcg10": 0.373,
       "ndcg5": 0.3166,
-      "rank": 365,
+      "rank": 375,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "WSM_winwin"
+    },
+    {
+      "auc": 0.6059,
+      "competition_id": 13967,
+      "date_display": "May. 22, 2026",
+      "date_iso": "2026-05-22",
+      "mrr": 0.28,
+      "ndcg10": 0.3573,
+      "ndcg5": 0.2995,
+      "rank": 376,
+      "results_url": "https://www.codabench.org/competitions/13967/#/results-tab",
+      "source": "codabench",
+      "team": "harshadayini"
     },
     {
       "auc": 0.601,
@@ -5106,7 +5249,7 @@
       "mrr": 0.2877,
       "ndcg10": 0.3612,
       "ndcg5": 0.3057,
-      "rank": 366,
+      "rank": 377,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "pavt1024"
@@ -5120,7 +5263,7 @@
       "mrr": 0.2794,
       "ndcg10": 0.3551,
       "ndcg5": 0.2974,
-      "rank": 367,
+      "rank": 378,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "tcchiang"
@@ -5134,7 +5277,7 @@
       "mrr": 0.2744,
       "ndcg10": 0.3464,
       "ndcg5": 0.2899,
-      "rank": 368,
+      "rank": 379,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "cmchen"
@@ -5148,7 +5291,7 @@
       "mrr": 0.2742,
       "ndcg10": 0.3458,
       "ndcg5": 0.2898,
-      "rank": 369,
+      "rank": 380,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "KennyW"
@@ -5162,7 +5305,7 @@
       "mrr": 0.2717,
       "ndcg10": 0.3448,
       "ndcg5": 0.2877,
-      "rank": 370,
+      "rank": 381,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "saran_pandian"
@@ -5176,7 +5319,7 @@
       "mrr": 0.2641,
       "ndcg10": 0.3352,
       "ndcg5": 0.2778,
-      "rank": 371,
+      "rank": 382,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Mluleki"
@@ -5190,7 +5333,7 @@
       "mrr": 0.2648,
       "ndcg10": 0.3361,
       "ndcg5": 0.2786,
-      "rank": 372,
+      "rank": 383,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "learner"
@@ -5204,7 +5347,7 @@
       "mrr": 0.2731,
       "ndcg10": 0.3448,
       "ndcg5": 0.2885,
-      "rank": 373,
+      "rank": 384,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "psasikarn"
@@ -5218,7 +5361,7 @@
       "mrr": 0.2626,
       "ndcg10": 0.3341,
       "ndcg5": 0.2759,
-      "rank": 374,
+      "rank": 385,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "liwencong"
@@ -5232,7 +5375,7 @@
       "mrr": 0.2738,
       "ndcg10": 0.3446,
       "ndcg5": 0.2889,
-      "rank": 375,
+      "rank": 386,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "Trong"
@@ -5246,7 +5389,7 @@
       "mrr": 0.262,
       "ndcg10": 0.3358,
       "ndcg5": 0.2773,
-      "rank": 376,
+      "rank": 387,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "nitesh.sawadia"
@@ -5260,7 +5403,7 @@
       "mrr": 0.2596,
       "ndcg10": 0.3293,
       "ndcg5": 0.2715,
-      "rank": 377,
+      "rank": 388,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "sim"
@@ -5274,7 +5417,7 @@
       "mrr": 0.2769,
       "ndcg10": 0.3495,
       "ndcg5": 0.2945,
-      "rank": 378,
+      "rank": 389,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "chang861224"
@@ -5288,10 +5431,23 @@
       "mrr": 0.2575,
       "ndcg10": 0.3268,
       "ndcg5": 0.2698,
-      "rank": 379,
+      "rank": 390,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "group_5"
+    },
+    {
+      "auc": 0.5582,
+      "competition_id": 13967,
+      "date_display": "May. 03, 2026",
+      "date_iso": "2026-05-03",
+      "mrr": 0.2499,
+      "ndcg10": 0.3164,
+      "ndcg5": 0.2599,
+      "rank": 391,
+      "results_url": "https://www.codabench.org/competitions/13967/#/results-tab",
+      "source": "codabench",
+      "team": "aibertcat"
     },
     {
       "auc": 0.5519,
@@ -5302,7 +5458,7 @@
       "mrr": 0.2469,
       "ndcg10": 0.3136,
       "ndcg5": 0.2573,
-      "rank": 380,
+      "rank": 392,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "lwj"
@@ -5316,7 +5472,7 @@
       "mrr": 0.2443,
       "ndcg10": 0.3117,
       "ndcg5": 0.2552,
-      "rank": 381,
+      "rank": 393,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "lx600"
@@ -5330,7 +5486,7 @@
       "mrr": 0.2475,
       "ndcg10": 0.3135,
       "ndcg5": 0.2574,
-      "rank": 382,
+      "rank": 394,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "shoemaker"
@@ -5344,7 +5500,7 @@
       "mrr": 0.2458,
       "ndcg10": 0.3128,
       "ndcg5": 0.2566,
-      "rank": 383,
+      "rank": 395,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "youn97"
@@ -5358,7 +5514,7 @@
       "mrr": 0.2387,
       "ndcg10": 0.3023,
       "ndcg5": 0.2468,
-      "rank": 384,
+      "rank": 396,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "ashok03"
@@ -5372,7 +5528,7 @@
       "mrr": 0.2364,
       "ndcg10": 0.299,
       "ndcg5": 0.2422,
-      "rank": 385,
+      "rank": 397,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "YJack0000"
@@ -5386,7 +5542,7 @@
       "mrr": 0.2381,
       "ndcg10": 0.2973,
       "ndcg5": 0.2427,
-      "rank": 386,
+      "rank": 398,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "dangkh"
@@ -5400,7 +5556,7 @@
       "mrr": 0.2328,
       "ndcg10": 0.2938,
       "ndcg5": 0.238,
-      "rank": 387,
+      "rank": 399,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Brucenccu"
@@ -5414,7 +5570,7 @@
       "mrr": 0.2319,
       "ndcg10": 0.293,
       "ndcg5": 0.2373,
-      "rank": 388,
+      "rank": 400,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "a-borel"
@@ -5428,7 +5584,7 @@
       "mrr": 0.237,
       "ndcg10": 0.2961,
       "ndcg5": 0.2415,
-      "rank": 389,
+      "rank": 401,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "vancurv"
@@ -5442,7 +5598,7 @@
       "mrr": 0.2318,
       "ndcg10": 0.2948,
       "ndcg5": 0.2385,
-      "rank": 390,
+      "rank": 402,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Leon-chang"
@@ -5456,7 +5612,7 @@
       "mrr": 0.2348,
       "ndcg10": 0.2983,
       "ndcg5": 0.2427,
-      "rank": 391,
+      "rank": 403,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "zichongli"
@@ -5470,7 +5626,7 @@
       "mrr": 0.2327,
       "ndcg10": 0.2953,
       "ndcg5": 0.2395,
-      "rank": 392,
+      "rank": 404,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "cs880141"
@@ -5484,7 +5640,7 @@
       "mrr": 0.2339,
       "ndcg10": 0.2972,
       "ndcg5": 0.2416,
-      "rank": 393,
+      "rank": 405,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "xhran2011"
@@ -5498,7 +5654,7 @@
       "mrr": 0.2339,
       "ndcg10": 0.2972,
       "ndcg5": 0.2416,
-      "rank": 394,
+      "rank": 406,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "xhran2010"
@@ -5512,7 +5668,7 @@
       "mrr": 0.2375,
       "ndcg10": 0.2998,
       "ndcg5": 0.2452,
-      "rank": 395,
+      "rank": 407,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "usydnlp"
@@ -5526,7 +5682,7 @@
       "mrr": 0.2336,
       "ndcg10": 0.2932,
       "ndcg5": 0.2383,
-      "rank": 396,
+      "rank": 408,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "beckersense"
@@ -5540,7 +5696,7 @@
       "mrr": 0.2308,
       "ndcg10": 0.2942,
       "ndcg5": 0.2381,
-      "rank": 397,
+      "rank": 409,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "NijiaMo"
@@ -5554,7 +5710,7 @@
       "mrr": 0.2296,
       "ndcg10": 0.2924,
       "ndcg5": 0.2363,
-      "rank": 398,
+      "rank": 410,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "christineC2021_2"
@@ -5568,7 +5724,7 @@
       "mrr": 0.2299,
       "ndcg10": 0.2893,
       "ndcg5": 0.2337,
-      "rank": 399,
+      "rank": 411,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "jingda_yu"
@@ -5582,7 +5738,7 @@
       "mrr": 0.2268,
       "ndcg10": 0.2885,
       "ndcg5": 0.2328,
-      "rank": 400,
+      "rank": 412,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "lsx_0816"
@@ -5596,7 +5752,7 @@
       "mrr": 0.2249,
       "ndcg10": 0.2869,
       "ndcg5": 0.2309,
-      "rank": 401,
+      "rank": 413,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "jkrse"
@@ -5610,7 +5766,7 @@
       "mrr": 0.229,
       "ndcg10": 0.29,
       "ndcg5": 0.235,
-      "rank": 402,
+      "rank": 414,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "cdj0311"
@@ -5624,7 +5780,7 @@
       "mrr": 0.2274,
       "ndcg10": 0.2899,
       "ndcg5": 0.2339,
-      "rank": 403,
+      "rank": 415,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "pneuma"
@@ -5638,7 +5794,7 @@
       "mrr": 0.2244,
       "ndcg10": 0.2858,
       "ndcg5": 0.2302,
-      "rank": 404,
+      "rank": 416,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "JiangxuLin"
@@ -5652,7 +5808,7 @@
       "mrr": 0.2236,
       "ndcg10": 0.2872,
       "ndcg5": 0.231,
-      "rank": 405,
+      "rank": 417,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "DaveWuuu"
@@ -5666,7 +5822,7 @@
       "mrr": 0.2269,
       "ndcg10": 0.2886,
       "ndcg5": 0.2335,
-      "rank": 406,
+      "rank": 418,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Jingqi_wang"
@@ -5680,7 +5836,7 @@
       "mrr": 0.2256,
       "ndcg10": 0.2869,
       "ndcg5": 0.2316,
-      "rank": 407,
+      "rank": 419,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "zhoubang1"
@@ -5694,7 +5850,7 @@
       "mrr": 0.2214,
       "ndcg10": 0.2821,
       "ndcg5": 0.2265,
-      "rank": 408,
+      "rank": 420,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "JiangxuLin"
@@ -5708,7 +5864,7 @@
       "mrr": 0.2249,
       "ndcg10": 0.2859,
       "ndcg5": 0.2306,
-      "rank": 409,
+      "rank": 421,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Hakjong"
@@ -5722,7 +5878,7 @@
       "mrr": 0.2242,
       "ndcg10": 0.2852,
       "ndcg5": 0.2298,
-      "rank": 410,
+      "rank": 422,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "thomsoren"
@@ -5736,7 +5892,7 @@
       "mrr": 0.225,
       "ndcg10": 0.2878,
       "ndcg5": 0.2317,
-      "rank": 411,
+      "rank": 423,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "doistha"
@@ -5750,7 +5906,7 @@
       "mrr": 0.2239,
       "ndcg10": 0.2849,
       "ndcg5": 0.2294,
-      "rank": 412,
+      "rank": 424,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "rockandroll"
@@ -5764,7 +5920,7 @@
       "mrr": 0.2238,
       "ndcg10": 0.2847,
       "ndcg5": 0.2293,
-      "rank": 413,
+      "rank": 425,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "KhuoVie"
@@ -5778,7 +5934,7 @@
       "mrr": 0.2248,
       "ndcg10": 0.2862,
       "ndcg5": 0.2304,
-      "rank": 414,
+      "rank": 426,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "bird"
@@ -5792,7 +5948,7 @@
       "mrr": 0.224,
       "ndcg10": 0.2851,
       "ndcg5": 0.2299,
-      "rank": 415,
+      "rank": 427,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "Layotiver"
@@ -5806,7 +5962,7 @@
       "mrr": 0.2236,
       "ndcg10": 0.2846,
       "ndcg5": 0.2291,
-      "rank": 416,
+      "rank": 428,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "PradaBear"
@@ -5820,7 +5976,7 @@
       "mrr": 0.224,
       "ndcg10": 0.285,
       "ndcg5": 0.2295,
-      "rank": 417,
+      "rank": 429,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "coangshrimp"
@@ -5834,7 +5990,7 @@
       "mrr": 0.2239,
       "ndcg10": 0.2849,
       "ndcg5": 0.2294,
-      "rank": 418,
+      "rank": 430,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "david116711"
@@ -5848,7 +6004,7 @@
       "mrr": 0.2236,
       "ndcg10": 0.2845,
       "ndcg5": 0.2291,
-      "rank": 419,
+      "rank": 431,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "morganfang"
@@ -5862,7 +6018,7 @@
       "mrr": 0.2236,
       "ndcg10": 0.2845,
       "ndcg5": 0.2291,
-      "rank": 420,
+      "rank": 432,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "jayhwanlee"
@@ -5876,7 +6032,7 @@
       "mrr": 0.2236,
       "ndcg10": 0.2845,
       "ndcg5": 0.2291,
-      "rank": 421,
+      "rank": 433,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "XUX"
@@ -5890,7 +6046,7 @@
       "mrr": 0.2237,
       "ndcg10": 0.2846,
       "ndcg5": 0.2291,
-      "rank": 422,
+      "rank": 434,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "mysorf"
@@ -5904,7 +6060,7 @@
       "mrr": 0.2232,
       "ndcg10": 0.2845,
       "ndcg5": 0.2289,
-      "rank": 423,
+      "rank": 435,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "longtruongv"
@@ -5918,7 +6074,7 @@
       "mrr": 0.2296,
       "ndcg10": 0.2931,
       "ndcg5": 0.2415,
-      "rank": 424,
+      "rank": 436,
       "results_url": "https://codalab.lisn.upsaclay.fr/competitions/420#results",
       "source": "codalab-new",
       "team": "jppoleb"
@@ -5932,7 +6088,7 @@
       "mrr": 0.2211,
       "ndcg10": 0.2821,
       "ndcg5": 0.2268,
-      "rank": 425,
+      "rank": 437,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "ali_c"
@@ -5946,7 +6102,7 @@
       "mrr": 0.2194,
       "ndcg10": 0.2795,
       "ndcg5": 0.2244,
-      "rank": 426,
+      "rank": 438,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "Yoon"
@@ -5960,7 +6116,7 @@
       "mrr": 0.215,
       "ndcg10": 0.2743,
       "ndcg5": 0.2197,
-      "rank": 427,
+      "rank": 439,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "leemeng"
@@ -5974,10 +6130,23 @@
       "mrr": 0.2136,
       "ndcg10": 0.2758,
       "ndcg5": 0.2198,
-      "rank": 428,
+      "rank": 440,
       "results_url": "https://competitions.codalab.org/competitions/24122#results",
       "source": "codalab-old",
       "team": "pevnak"
+    },
+    {
+      "auc": 0.4794,
+      "competition_id": 13967,
+      "date_display": "May. 27, 2026",
+      "date_iso": "2026-05-27",
+      "mrr": 0.2218,
+      "ndcg10": 0.2802,
+      "ndcg5": 0.2282,
+      "rank": 441,
+      "results_url": "https://www.codabench.org/competitions/13967/#/results-tab",
+      "source": "codabench",
+      "team": "aryanaab"
     }
   ],
   "sources": [
@@ -5995,7 +6164,7 @@
     },
     {
       "competition_id": 13967,
-      "fetched_at": "2026-04-01T05:20:01Z",
+      "fetched_at": "2026-06-01T08:30:24Z",
       "results_url": "https://www.codabench.org/competitions/13967/#/results-tab",
       "source": "codabench"
     }
