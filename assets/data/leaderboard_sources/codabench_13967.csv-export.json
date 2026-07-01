@@ -1,11 +1,20 @@
 {
   "base_url": "https://www.codabench.org",
   "competition_id": 13967,
-  "fetched_at": "2026-06-01T08:30:24Z",
+  "fetched_at": "2026-07-01T07:07:19Z",
   "method": "scrape",
   "phase_id": 23196,
   "results_url": "https://www.codabench.org/competitions/13967/#/results-tab",
   "rows": [
+    {
+      "auc": 0.7326,
+      "date_display": "Jun. 23, 2026",
+      "date_iso": "2026-06-23",
+      "mrr": 0.378,
+      "ndcg10": 0.4735,
+      "ndcg5": 0.4175,
+      "team": "zetik"
+    },
     {
       "auc": 0.7316,
       "date_display": "May. 29, 2026",
@@ -106,6 +115,15 @@
       "team": "tienkhoina"
     },
     {
+      "auc": 0.7099,
+      "date_display": "Jun. 16, 2026",
+      "date_iso": "2026-06-16",
+      "mrr": 0.3557,
+      "ndcg10": 0.4473,
+      "ndcg5": 0.3905,
+      "team": "bannie"
+    },
+    {
       "auc": 0.7074,
       "date_display": "Apr. 05, 2026",
       "date_iso": "2026-04-05",
@@ -124,13 +142,22 @@
       "team": "ethyl"
     },
     {
-      "auc": 0.6995,
-      "date_display": "Mar. 30, 2026",
-      "date_iso": "2026-03-30",
-      "mrr": 0.3475,
-      "ndcg10": 0.4368,
-      "ndcg5": 0.3797,
+      "auc": 0.7033,
+      "date_display": "Jun. 24, 2026",
+      "date_iso": "2026-06-24",
+      "mrr": 0.3498,
+      "ndcg10": 0.4399,
+      "ndcg5": 0.3831,
       "team": "superbabara"
+    },
+    {
+      "auc": 0.7018,
+      "date_display": "Jun. 30, 2026",
+      "date_iso": "2026-06-30",
+      "mrr": 0.3503,
+      "ndcg10": 0.4399,
+      "ndcg5": 0.3827,
+      "team": "louisa"
     },
     {
       "auc": 0.6984,
@@ -230,6 +257,15 @@
       "ndcg10": 0.3573,
       "ndcg5": 0.2995,
       "team": "harshadayini"
+    },
+    {
+      "auc": 0.569,
+      "date_display": "Jun. 23, 2026",
+      "date_iso": "2026-06-23",
+      "mrr": 0.2518,
+      "ndcg10": 0.3218,
+      "ndcg5": 0.2652,
+      "team": "zachcky"
     },
     {
       "auc": 0.5582,
