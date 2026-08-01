@@ -1,7 +1,7 @@
 {
   "base_url": "https://www.codabench.org",
   "competition_id": 13967,
-  "fetched_at": "2026-07-01T07:07:19Z",
+  "fetched_at": "2026-08-01T05:50:02Z",
   "method": "scrape",
   "phase_id": 23196,
   "results_url": "https://www.codabench.org/competitions/13967/#/results-tab",
@@ -34,6 +34,24 @@
       "team": "kemalli"
     },
     {
+      "auc": 0.7209,
+      "date_display": "Jul. 13, 2026",
+      "date_iso": "2026-07-13",
+      "mrr": 0.3661,
+      "ndcg10": 0.4595,
+      "ndcg5": 0.4029,
+      "team": "i4never"
+    },
+    {
+      "auc": 0.7208,
+      "date_display": "Jul. 12, 2026",
+      "date_iso": "2026-07-12",
+      "mrr": 0.3675,
+      "ndcg10": 0.461,
+      "ndcg5": 0.4046,
+      "team": "koen666"
+    },
+    {
       "auc": 0.7201,
       "date_display": "Mar. 13, 2026",
       "date_iso": "2026-03-13",
@@ -59,6 +77,15 @@
       "ndcg10": 0.4588,
       "ndcg5": 0.4025,
       "team": "wuhao"
+    },
+    {
+      "auc": 0.7189,
+      "date_display": "Jul. 31, 2026",
+      "date_iso": "2026-07-31",
+      "mrr": 0.3649,
+      "ndcg10": 0.4576,
+      "ndcg5": 0.4012,
+      "team": "jianchunyang"
     },
     {
       "auc": 0.7185,
