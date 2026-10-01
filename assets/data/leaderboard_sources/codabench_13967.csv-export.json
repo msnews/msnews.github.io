@@ -1,7 +1,7 @@
 {
   "base_url": "https://www.codabench.org",
   "competition_id": 13967,
-  "fetched_at": "2026-09-01T08:12:49Z",
+  "fetched_at": "2026-10-01T09:41:18Z",
   "method": "scrape",
   "phase_id": 23196,
   "results_url": "https://www.codabench.org/competitions/13967/#/results-tab",
@@ -25,22 +25,31 @@
       "team": "newsbang"
     },
     {
-      "auc": 0.7231,
-      "date_display": "Aug. 18, 2026",
-      "date_iso": "2026-08-18",
-      "mrr": 0.3665,
-      "ndcg10": 0.4607,
-      "ndcg5": 0.4039,
+      "auc": 0.7258,
+      "date_display": "Sept. 08, 2026",
+      "date_iso": "2026-09-08",
+      "mrr": 0.3703,
+      "ndcg10": 0.4652,
+      "ndcg5": 0.4088,
       "team": "i4never"
     },
     {
-      "auc": 0.7226,
-      "date_display": "Aug. 29, 2026",
-      "date_iso": "2026-08-29",
-      "mrr": 0.3691,
-      "ndcg10": 0.4629,
-      "ndcg5": 0.4066,
+      "auc": 0.725,
+      "date_display": "Sept. 30, 2026",
+      "date_iso": "2026-09-30",
+      "mrr": 0.3703,
+      "ndcg10": 0.4646,
+      "ndcg5": 0.4083,
       "team": "jianchunyang"
+    },
+    {
+      "auc": 0.7249,
+      "date_display": "Sept. 07, 2026",
+      "date_iso": "2026-09-07",
+      "mrr": 0.3702,
+      "ndcg10": 0.4643,
+      "ndcg5": 0.408,
+      "team": "qinzixuan"
     },
     {
       "auc": 0.7212,
@@ -152,6 +161,15 @@
     },
     {
       "auc": 0.7099,
+      "date_display": "Sept. 10, 2026",
+      "date_iso": "2026-09-10",
+      "mrr": 0.3553,
+      "ndcg10": 0.447,
+      "ndcg5": 0.39,
+      "team": "haoranliu"
+    },
+    {
+      "auc": 0.7099,
       "date_display": "Jun. 16, 2026",
       "date_iso": "2026-06-16",
       "mrr": 0.3557,
@@ -205,15 +223,6 @@
       "team": "louisa"
     },
     {
-      "auc": 0.7009,
-      "date_display": "Aug. 29, 2026",
-      "date_iso": "2026-08-29",
-      "mrr": 0.3489,
-      "ndcg10": 0.4381,
-      "ndcg5": 0.3807,
-      "team": "qinzixuan"
-    },
-    {
       "auc": 0.6984,
       "date_display": "Apr. 02, 2026",
       "date_iso": "2026-04-02",
@@ -221,6 +230,15 @@
       "ndcg10": 0.4345,
       "ndcg5": 0.3767,
       "team": "vin39"
+    },
+    {
+      "auc": 0.6972,
+      "date_display": "Sept. 21, 2026",
+      "date_iso": "2026-09-21",
+      "mrr": 0.3475,
+      "ndcg10": 0.4387,
+      "ndcg5": 0.3817,
+      "team": "kanru-wang"
     },
     {
       "auc": 0.697,
@@ -232,13 +250,13 @@
       "team": "dulig1902"
     },
     {
-      "auc": 0.6948,
-      "date_display": "Aug. 30, 2026",
-      "date_iso": "2026-08-30",
-      "mrr": 0.3448,
-      "ndcg10": 0.4356,
-      "ndcg5": 0.3784,
-      "team": "kanru-wang"
+      "auc": 0.6885,
+      "date_display": "Sept. 18, 2026",
+      "date_iso": "2026-09-18",
+      "mrr": 0.3422,
+      "ndcg10": 0.429,
+      "ndcg5": 0.373,
+      "team": "vubsss"
     },
     {
       "auc": 0.6866,
@@ -286,6 +304,15 @@
       "team": "yifanlan"
     },
     {
+      "auc": 0.6766,
+      "date_display": "Sept. 18, 2026",
+      "date_iso": "2026-09-18",
+      "mrr": 0.3293,
+      "ndcg10": 0.4151,
+      "ndcg5": 0.3575,
+      "team": "apollo19"
+    },
+    {
       "auc": 0.6706,
       "date_display": "Mar. 18, 2026",
       "date_iso": "2026-03-18",
@@ -295,13 +322,67 @@
       "team": "peramor"
     },
     {
-      "auc": 0.6685,
-      "date_display": "Aug. 29, 2026",
-      "date_iso": "2026-08-29",
-      "mrr": 0.3329,
+      "auc": 0.6699,
+      "date_display": "Sept. 16, 2026",
+      "date_iso": "2026-09-16",
+      "mrr": 0.3322,
       "ndcg10": 0.4168,
-      "ndcg5": 0.3609,
+      "ndcg5": 0.3606,
+      "team": "shivek_gupta"
+    },
+    {
+      "auc": 0.6692,
+      "date_display": "Sept. 10, 2026",
+      "date_iso": "2026-09-10",
+      "mrr": 0.3332,
+      "ndcg10": 0.4172,
+      "ndcg5": 0.3613,
       "team": "shamboroy"
+    },
+    {
+      "auc": 0.6692,
+      "date_display": "Sept. 20, 2026",
+      "date_iso": "2026-09-20",
+      "mrr": 0.3332,
+      "ndcg10": 0.4172,
+      "ndcg5": 0.3613,
+      "team": "nitinnair"
+    },
+    {
+      "auc": 0.6672,
+      "date_display": "Sept. 19, 2026",
+      "date_iso": "2026-09-19",
+      "mrr": 0.3235,
+      "ndcg10": 0.4072,
+      "ndcg5": 0.35,
+      "team": "aryanmishra777"
+    },
+    {
+      "auc": 0.665,
+      "date_display": "Sept. 18, 2026",
+      "date_iso": "2026-09-18",
+      "mrr": 0.3311,
+      "ndcg10": 0.4155,
+      "ndcg5": 0.3596,
+      "team": "flexwheeler"
+    },
+    {
+      "auc": 0.6601,
+      "date_display": "Sept. 19, 2026",
+      "date_iso": "2026-09-19",
+      "mrr": 0.3268,
+      "ndcg10": 0.4093,
+      "ndcg5": 0.3536,
+      "team": "s0han24"
+    },
+    {
+      "auc": 0.6601,
+      "date_display": "Sept. 22, 2026",
+      "date_iso": "2026-09-22",
+      "mrr": 0.3268,
+      "ndcg10": 0.4093,
+      "ndcg5": 0.3536,
+      "team": "aryanil"
     },
     {
       "auc": 0.6597,
@@ -313,13 +394,13 @@
       "team": "kartik_gupta"
     },
     {
-      "auc": 0.6578,
-      "date_display": "Aug. 24, 2026",
-      "date_iso": "2026-08-24",
-      "mrr": 0.3242,
-      "ndcg10": 0.4078,
-      "ndcg5": 0.3518,
-      "team": "vubsss"
+      "auc": 0.6596,
+      "date_display": "Sept. 14, 2026",
+      "date_iso": "2026-09-14",
+      "mrr": 0.3256,
+      "ndcg10": 0.4087,
+      "ndcg5": 0.3528,
+      "team": "matthaider955"
     },
     {
       "auc": 0.6567,
@@ -367,94 +448,13 @@
       "team": "tingnanliu1"
     },
     {
-      "auc": 0.6518,
-      "date_display": "Aug. 26, 2026",
-      "date_iso": "2026-08-26",
-      "mrr": 0.3218,
-      "ndcg10": 0.4037,
-      "ndcg5": 0.3478,
-      "team": "suyashnpande"
-    },
-    {
-      "auc": 0.6515,
-      "date_display": "Aug. 22, 2026",
-      "date_iso": "2026-08-22",
-      "mrr": 0.319,
-      "ndcg10": 0.4002,
-      "ndcg5": 0.344,
-      "team": "shivek_gupta"
-    },
-    {
-      "auc": 0.6503,
-      "date_display": "Aug. 23, 2026",
-      "date_iso": "2026-08-23",
-      "mrr": 0.3198,
-      "ndcg10": 0.401,
-      "ndcg5": 0.3454,
-      "team": "namsyn"
-    },
-    {
-      "auc": 0.6503,
-      "date_display": "Aug. 24, 2026",
-      "date_iso": "2026-08-24",
-      "mrr": 0.3183,
-      "ndcg10": 0.4005,
-      "ndcg5": 0.3439,
-      "team": "ionic21"
-    },
-    {
-      "auc": 0.6501,
-      "date_display": "Aug. 26, 2026",
-      "date_iso": "2026-08-26",
-      "mrr": 0.3183,
-      "ndcg10": 0.3993,
-      "ndcg5": 0.3434,
-      "team": "muskan_jain"
-    },
-    {
-      "auc": 0.65,
-      "date_display": "Aug. 24, 2026",
-      "date_iso": "2026-08-24",
-      "mrr": 0.3183,
-      "ndcg10": 0.3991,
-      "ndcg5": 0.3433,
-      "team": "vedavyas"
-    },
-    {
-      "auc": 0.6497,
-      "date_display": "Aug. 23, 2026",
-      "date_iso": "2026-08-23",
-      "mrr": 0.3181,
-      "ndcg10": 0.3991,
-      "ndcg5": 0.3432,
-      "team": "parth11"
-    },
-    {
-      "auc": 0.6496,
-      "date_display": "Aug. 27, 2026",
-      "date_iso": "2026-08-27",
-      "mrr": 0.318,
-      "ndcg10": 0.399,
-      "ndcg5": 0.3432,
-      "team": "sajid42"
-    },
-    {
-      "auc": 0.6484,
-      "date_display": "Aug. 19, 2026",
-      "date_iso": "2026-08-19",
-      "mrr": 0.3174,
-      "ndcg10": 0.3981,
-      "ndcg5": 0.3422,
-      "team": "matthaider955"
-    },
-    {
-      "auc": 0.647,
-      "date_display": "Aug. 17, 2026",
-      "date_iso": "2026-08-17",
-      "mrr": 0.3129,
-      "ndcg10": 0.3952,
-      "ndcg5": 0.3387,
-      "team": "joepei"
+      "auc": 0.6523,
+      "date_display": "Sept. 19, 2026",
+      "date_iso": "2026-09-19",
+      "mrr": 0.3126,
+      "ndcg10": 0.3936,
+      "ndcg5": 0.3363,
+      "team": "shraw_06"
     }
   ],
   "source": "codabench"
