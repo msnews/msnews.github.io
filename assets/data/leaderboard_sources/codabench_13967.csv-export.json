@@ -1,11 +1,29 @@
 {
   "base_url": "https://www.codabench.org",
   "competition_id": 13967,
-  "fetched_at": "2026-10-01T09:41:18Z",
+  "fetched_at": "2026-11-01T09:58:12Z",
   "method": "scrape",
   "phase_id": 23196,
   "results_url": "https://www.codabench.org/competitions/13967/#/results-tab",
   "rows": [
+    {
+      "auc": 0.753,
+      "date_display": "Oct. 17, 2026",
+      "date_iso": "2026-10-17",
+      "mrr": 0.407,
+      "ndcg10": 0.4979,
+      "ndcg5": 0.4462,
+      "team": "dingjian"
+    },
+    {
+      "auc": 0.7413,
+      "date_display": "Nov. 01, 2026",
+      "date_iso": "2026-11-01",
+      "mrr": 0.3924,
+      "ndcg10": 0.4865,
+      "ndcg5": 0.4329,
+      "team": "gugugu"
+    },
     {
       "auc": 0.7326,
       "date_display": "Jun. 23, 2026",
@@ -25,6 +43,15 @@
       "team": "newsbang"
     },
     {
+      "auc": 0.7278,
+      "date_display": "Oct. 03, 2026",
+      "date_iso": "2026-10-03",
+      "mrr": 0.3729,
+      "ndcg10": 0.4669,
+      "ndcg5": 0.411,
+      "team": "jianchunyang"
+    },
+    {
       "auc": 0.7258,
       "date_display": "Sept. 08, 2026",
       "date_iso": "2026-09-08",
@@ -32,15 +59,6 @@
       "ndcg10": 0.4652,
       "ndcg5": 0.4088,
       "team": "i4never"
-    },
-    {
-      "auc": 0.725,
-      "date_display": "Sept. 30, 2026",
-      "date_iso": "2026-09-30",
-      "mrr": 0.3703,
-      "ndcg10": 0.4646,
-      "ndcg5": 0.4083,
-      "team": "jianchunyang"
     },
     {
       "auc": 0.7249,
@@ -133,6 +151,15 @@
       "team": "overwindows"
     },
     {
+      "auc": 0.7138,
+      "date_display": "Oct. 30, 2026",
+      "date_iso": "2026-10-30",
+      "mrr": 0.3597,
+      "ndcg10": 0.4514,
+      "ndcg5": 0.3948,
+      "team": "zhiweioxygen"
+    },
+    {
       "auc": 0.7136,
       "date_display": "May. 06, 2026",
       "date_iso": "2026-05-06",
@@ -158,6 +185,15 @@
       "ndcg10": 0.4543,
       "ndcg5": 0.3977,
       "team": "tienkhoina"
+    },
+    {
+      "auc": 0.7102,
+      "date_display": "Oct. 11, 2026",
+      "date_iso": "2026-10-11",
+      "mrr": 0.3583,
+      "ndcg10": 0.4495,
+      "ndcg5": 0.393,
+      "team": "frank_thou"
     },
     {
       "auc": 0.7099,
@@ -223,6 +259,15 @@
       "team": "louisa"
     },
     {
+      "auc": 0.7011,
+      "date_display": "Oct. 31, 2026",
+      "date_iso": "2026-10-31",
+      "mrr": 0.3463,
+      "ndcg10": 0.4375,
+      "ndcg5": 0.3799,
+      "team": "kanru-wang"
+    },
+    {
       "auc": 0.6984,
       "date_display": "Apr. 02, 2026",
       "date_iso": "2026-04-02",
@@ -230,15 +275,6 @@
       "ndcg10": 0.4345,
       "ndcg5": 0.3767,
       "team": "vin39"
-    },
-    {
-      "auc": 0.6972,
-      "date_display": "Sept. 21, 2026",
-      "date_iso": "2026-09-21",
-      "mrr": 0.3475,
-      "ndcg10": 0.4387,
-      "ndcg5": 0.3817,
-      "team": "kanru-wang"
     },
     {
       "auc": 0.697,
@@ -419,42 +455,6 @@
       "ndcg10": 0.4059,
       "ndcg5": 0.3486,
       "team": "sherley_sonali"
-    },
-    {
-      "auc": 0.6552,
-      "date_display": "Aug. 22, 2026",
-      "date_iso": "2026-08-22",
-      "mrr": 0.3235,
-      "ndcg10": 0.406,
-      "ndcg5": 0.3504,
-      "team": "nihargu"
-    },
-    {
-      "auc": 0.6544,
-      "date_display": "Aug. 25, 2026",
-      "date_iso": "2026-08-25",
-      "mrr": 0.3211,
-      "ndcg10": 0.4023,
-      "ndcg5": 0.3464,
-      "team": "shubham749"
-    },
-    {
-      "auc": 0.6529,
-      "date_display": "Mar. 03, 2026",
-      "date_iso": "2026-03-03",
-      "mrr": 0.3059,
-      "ndcg10": 0.3884,
-      "ndcg5": 0.3298,
-      "team": "tingnanliu1"
-    },
-    {
-      "auc": 0.6523,
-      "date_display": "Sept. 19, 2026",
-      "date_iso": "2026-09-19",
-      "mrr": 0.3126,
-      "ndcg10": 0.3936,
-      "ndcg5": 0.3363,
-      "team": "shraw_06"
     }
   ],
   "source": "codabench"
